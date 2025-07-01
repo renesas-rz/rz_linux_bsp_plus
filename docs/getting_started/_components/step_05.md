@@ -36,7 +36,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](){ align=left .switch-icon }
+                ![](images/smarc-rzg2l-board-SW1_eMMC.png){ align=left .switch-icon }
 
                 |      SW1-1     |      SW1-2     |
                 |:--------------:|:--------------:|
@@ -54,7 +54,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](){ align=left .switch-icon }
+                ![](images/smarc-carrier-board-SW11_SCIF.png){ align=left .switch-icon }
 
                 |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -66,7 +66,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](){ align=left .switch-icon }
+                ![](images/smarc-carrier-board-SW11_QSPI.png){ align=left .switch-icon }
 
                 |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -78,7 +78,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](){ align=left .switch-icon }
+                ![](images/smarc-carrier-board-SW11_eMMC.png){ align=left .switch-icon }
 
                 |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -147,7 +147,7 @@ Connect the board to the programing PC by using the USB serial cable.
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](){ align=left .switch-icon }
+        ![](images/smarc-carrier-board-SW11_SCIF.png){ align=left .switch-icon }
 
         |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
         |:--------------:|:--------------:|:--------------:|:--------------:|

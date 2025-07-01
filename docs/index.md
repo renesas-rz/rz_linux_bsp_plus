@@ -8,7 +8,7 @@ A S/W package with latest LTS Kernel and Yocto support running on Renesas EVK.
 
 ![](assets/images/banner-01.svg){ width=100% }
 
-* Linux BSP Plus is a software package with latest Linux LTS kernel and Yocto support running on EVK
+* Linux BSP Plus is a software package with latest Linux LTS kernel and Yocto support running on EVK.
     This software package of each product has a minimal configuration. 
 
 * Linux BSP Plus target users are Linux expert skilled engineers.

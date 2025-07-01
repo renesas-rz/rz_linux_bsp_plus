@@ -22,7 +22,7 @@ In this case use **QSPI boot** and SD card.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            ![](){ align=left .switch-icon }
+            ![](images/smarc-carrier-board-SW11_QSPI.png){ align=left .switch-icon }
 
             |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
             |:--------------:|:--------------:|:--------------:|:--------------:|

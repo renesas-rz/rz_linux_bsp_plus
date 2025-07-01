@@ -94,7 +94,7 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
     The graphics package and the video codec package can be used at the same time, or just one of the packages can be used individually.
 
     !!! note
-        You need to download Graphics and Video Codec packages for this steps.
+        You need to download Graphics and Video Codec packages for this step.
 
         See [Step 1: Obtain Renesas RZ Linux BSP Plus source code](#step-1-obtain-renesas-rz-linux-bsp-plus-source-code).
 
@@ -127,8 +127,8 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
 
             ```bash
             cd ${WORK}
-            unzip ./RTK0EF0045Z16002ZJ-*.zip
-            tar zxvf ./RTK0EF0045Z16002ZJ-*/meta-rz-features_codecs_*.tar.gz
+            unzip ./RTK0EF0045Z16002ZJ_*.zip
+            tar zxvf ./RTK0EF0045Z16002ZJ_*/meta-rz-features_codec_*.tar.gz
             ```
             {: .dollar }
 

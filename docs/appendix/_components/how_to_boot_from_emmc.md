@@ -108,7 +108,7 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
                 | `#!bash bl2_bp_mmc-smarc-rzg2l_pmic.srec` | `#!bash 1`                |`#!bash 00000001`        |`#!bash 11E00`          |
                 | `#!bash fip-smarc-rzg2l_pmic.srec`        | `#!bash 1`                |`#!bash 00000100`        |`#!bash 00000`          |
 
-### Create a microSD card to boot linux for eMMC boot
+### Create a microSD card to boot Linux for eMMC boot
 
 Please create a microSD card (see [Step 4: Deploy Renesas RZ Linux BSP Plus](../getting_started/index.md#step-4-deploy-renesas-rz-linux-bsp-plus)).
 
@@ -134,7 +134,7 @@ sudo umount /media/user/rootfs
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](){ align=left .switch-icon }
+        ![](images/smarc-carrier-board-SW11_eMMC.png){ align=left .switch-icon }
 
         |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
         |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -144,7 +144,7 @@ sudo umount /media/user/rootfs
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](){ align=left .switch-icon }
+        ![](images/smarc-rzg2l-board-SW1_eMMC.png){ align=left .switch-icon }
 
         |      SW1-1     |      SW1-2     |
         |:--------------:|:--------------:|

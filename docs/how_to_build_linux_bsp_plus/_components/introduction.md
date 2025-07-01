@@ -3,7 +3,7 @@
 This page explains how to build Linux BSP Plus source code.
 
 !!! note "Requirement"
-    1.  To build Linux BSP Plus (Yocto Linux), the below equipment should be prepared.
+    1.  To build Linux BSP Plus (Yocto Linux), the equipment below should be prepared.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
