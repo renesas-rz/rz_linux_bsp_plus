@@ -29,7 +29,7 @@ Please prepare the following equipment for your EVK.
     |                                                        | on a PC, rebuild HMI SDK Linux, or use it as a development device | debugging using a serial connection and cannot be used for       |
     |                                                        | for applications.                                                 | development such as building software.                           |
     |                                                        |                                                                   |                                                                  |
-    |                                                        | * At least 100GB or more free space of HDD/SDD                    | * Ubuntu 20.04 LTS, 64-bit version                               |
+    |                                                        | * At least 100GB or more free space of HDD/SDD                    | * Ubuntu 22.04 LTS, 64-bit version                               |
     |                                                        | * 8GB or more RAM                                                 | * Windows 10 or 11                                               |
     |                                                        | * 4-core or more CPU                                              |                                                                  |
     +--------------------------------------------------------+-------------------------------------------------------------------+------------------------------------------------------------------+

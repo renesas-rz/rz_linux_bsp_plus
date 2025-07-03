@@ -12,7 +12,7 @@ This page explains how to build Linux BSP Plus source code.
             +===========+==================================================+
             | Linux PC  | Approximately **110GB free space** is necessary. |
             |           +-------------+------------------------------------+
-            |           | OS          | **Ubuntu 24.04 LTS**               |
+            |           | OS          | **Ubuntu 22.04 LTS**               |
             |           |             |                                    |
             |           |             | 64bit OS must be used.             |
             +-----------+-------------+------------------------------------+
