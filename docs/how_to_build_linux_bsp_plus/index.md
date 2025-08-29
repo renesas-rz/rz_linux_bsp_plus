@@ -5,3 +5,5 @@
 {% include "./_components/step_01.md" %}
 
 {% include "./_components/step_02.md" %}
+
+{% include "./_components/step_03.md" %}
