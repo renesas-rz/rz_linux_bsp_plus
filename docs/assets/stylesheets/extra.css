@@ -769,3 +769,15 @@ p.hash + .language-bash code>span::before {
 .cards-fullwidth {
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 32rem), 1fr)) !important;
 }
+
+/* footers */
+/* ======= */
+
+.footer-link {
+  margin: 0.3em 0.7em;
+  padding: 0 0.3em;
+}
+
+a.md-source[target=_blank].footer-link::after {
+  margin-top: 0.375em;
+}
