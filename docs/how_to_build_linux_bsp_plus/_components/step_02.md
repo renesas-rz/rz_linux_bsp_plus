@@ -45,49 +45,71 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
         ```
         {: .dollar }
 
+    === "RZ/G2LC"
+
+        ```bash
+        export WORK=<A directory path for building>
+        export BOARD=smarc-rzg2lc
+        ```
+        {: .dollar }
+
+    === "RZ/G2UL"
+
+        ```bash
+        export WORK=<A directory path for building>
+        export BOARD=smarc-rzg2ul
+        ```
+        {: .dollar }
+
+    === "RZ/G3S"
+
+        ```bash
+        export WORK=<A directory path for building>
+        export BOARD=smarc-rzg3s
+        ```
+        {: .dollar }
+
 4.  Clone Yocto recipe package
 
     Create a working directory, and clone Yocto recipe package.
 
-    === "RZ/G2L"
+    ```bash
+    mkdir ${WORK}
+    cd ${WORK}
+    ```
+    {: .dollar }
 
-        ```bash
-        mkdir ${WORK}
-        cd ${WORK}
-        ```
-        {: .dollar }
+    ```bash
+    git clone https://git.yoctoproject.org/git/poky
+    cd poky
+    git checkout -b tmp ae2d52758fc2fcb0ed996aa234430464ebf4b310
+    cd ${WORK}
+    ```
+    {: .dollar }
 
-        ```bash
-        git clone https://git.yoctoproject.org/git/poky
-        cd poky
-        git checkout -b tmp dc4827b3660bc1a03a2bc3b0672615b50e9137ff
-        cd ${WORK}
-        ```
-        {: .dollar }
+    ```bash
+    git clone https://git.yoctoproject.org/meta-arm
+    cd meta-arm
+    git checkout -b tmp 8e0f8af90fefb03f08cd2228cde7a89902a6b37c
+    cd ${WORK}
+    ```
+    {: .dollar }
 
-        ```bash
-        git clone https://git.yoctoproject.org/meta-arm
-        cd meta-arm
-        git checkout -b tmp 950a4afce46a359def2958bd9ae33fc08ff9bb0d
-        cd ${WORK}
-        ```
-        {: .dollar }
+    ```bash
+    git clone https://git.openembedded.org/meta-openembedded
+    cd meta-openembedded
+    git checkout -b tmp c29a18fa39ede952f3f6108ec007c1906e2d9a0d
+    cd ${WORK}
+    ```
+    {: .dollar }
 
-        ```bash
-        git clone https://git.openembedded.org/meta-openembedded
-        cd meta-openembedded
-        git checkout -b tmp  67ad83dd7c2485dae0c90eac345007af6195b84d
-        cd ${WORK}
-        ```
-        {: .dollar }
-
-        ```bash
-        git clone https://github.com/renesas-rz/meta-renesas
-        cd meta-renesas
-        git checkout -b tmp a50fccc0d577195ea258e7557d8fa01bad176c23
-        cd ${WORK}
-        ```
-        {: .dollar }
+    ```bash
+    git clone https://github.com/renesas-rz/meta-renesas
+    cd meta-renesas
+    git checkout -b tmp BSP-PLUS-K6.12-V2.0
+    cd ${WORK}
+    ```
+    {: .dollar }
 
 5.  Enable Graphics and Video Codec
 
@@ -132,6 +154,37 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
             ```
             {: .dollar }
 
+    === "RZ/G2LC"
+
+        Graphics package is **RTK0EF0045Z14001ZJ-*.zip**.
+
+        - Graphics package
+
+            !!! note
+                If you want to enable the Graphics on RZ/G2LC when building `#!bash core-image-weston`,
+                please copy the Graphics package to working directory and run the commands below.
+
+                If you build `#!bash core-image-minimal`, please ignore this step.
+
+            After copying the Graphics package, please extract the package as below.
+
+            ```bash
+            cd ${WORK}
+            unzip ./RTK0EF0045Z14001ZJ-*.zip
+            tar zxvf ./RTK0EF0045Z14001ZJ-*/meta-rz-features_graphics_*.tar.gz
+            ```
+            {: .dollar }
+
+        \* RZ/G2LC does not support Video Codecs package.
+
+    === "RZ/G2UL"
+
+        \* RZ/G2UL does not support Graphics and Video Codecs packages.
+
+    === "RZ/G3S"
+
+        \* RZ/G3S does not support Graphics and Video Codecs packages.
+
 6.  Initialize build environment
 
     Run an environment setup script as follows.
@@ -164,6 +217,22 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
             ```
             {: .dollar }
 
+    === "RZ/G2LC"
+
+        * Graphics: Please run the command below if you need the Graphics library.
+
+            ```bash
+            cd ${WORK}/build
+            bitbake-layers add-layer ../meta-rz-features/meta-rz-graphics
+            ```
+            {: .dollar }
+
+    === "RZ/G2UL"
+        Not Applicable
+
+    === "RZ/G3S"
+        Not Applicable
+
 8.  Enable `#!bash mke2fs` (Make Extended Filesystem) command sets
 
     If you need to create the filesystem for the block devices on the evaluation board,
@@ -192,18 +261,16 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
         ```
         {: .dollar }
 
-    !!! note
-        Available build options (`#!bash <image name>`) are:
+        !!! note
+            Available build options (`#!bash <image name>`) are:
 
-        * `#!bash core-image-minimal`
-        * `#!bash core-image-weston`
+            * `#!bash core-image-minimal`
+            * `#!bash core-image-weston`
 
-    !!! note
-        After building images, you can find them in the following directories.
+        !!! note
+            After building images, you can find them in the following directories.
 
-        * Images: `#!bash ${WORK}/build/tmp/deploy/images/${BOARD}/`
-
-        === "RZ/G2L"
+            * Images: `#!bash ${WORK}/build/tmp/deploy/images/${BOARD}/`
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
@@ -225,4 +292,125 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
                 |        +------------------+---------------------------------------------------------------+
                 |        | SD image (wic)   | * `#!bash <image name>-smarc-rzg2l.rootfs.wic.gz`             |
                 |        |                  | * `#!bash <image name>-smarc-rzg2l.rootfs.wic.bmap`           |
+                +--------+------------------+---------------------------------------------------------------+
+
+    === "RZ/G2LC"
+
+        ```bash
+        cd ${WORK}/build
+        MACHINE=${BOARD} bitbake <image name>
+        ```
+        {: .dollar }
+
+        !!! note
+            Available build options (`#!bash <image name>`) are:
+
+            * `#!bash core-image-minimal`
+            * `#!bash core-image-weston`
+
+        !!! note
+            After building images, you can find them in the following directories.
+
+            * Images: `#!bash ${WORK}/build/tmp/deploy/images/${BOARD}/`
+
+            !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+                +---------+------------------+---------------------------------------------------------------+
+                | Device  | Category         | File name                                                     |
+                +=========+==================+===============================================================+
+                | RZ/G2LC | Linux kernel     | `#!bash Image-smarc-rzg2lc.bin`                               |
+                |         +------------------+---------------------------------------------------------------+
+                |         | Device tree file | `#!bash r9a07g044l2-smarc.dtb`                                |
+                |         +------------------+---------------------------------------------------------------+
+                |         | Root filesystem  | `#!bash <image name>-smarc-rzg2lc.rootfs.tar.bz2`             |
+                |         +------------------+---------------------------------------------------------------+
+                |         | Boot loader      | * `#!bash bl2_bp_esd-smarc-rzg2lc_pmic.bin`                   |
+                |         |                  | * `#!bash bl2_bp_mmc-smarc-rzg2lc_pmic.srec`                  |
+                |         |                  | * `#!bash bl2_bp_spi-smarc-rzg2lc_pmic.srec`                  |
+                |         |                  | * `#!bash fip-smarc-rzg2lc_pmic.srec`                         |
+                |         +------------------+---------------------------------------------------------------+
+                |         | Flash Writer     | `#!bash Flash_Writer_SCIF_RZG2LC_SMARC_PMIC_DDR4_2GB_1PCS.mot`|
+                |         +------------------+---------------------------------------------------------------+
+                |         | SD image (wic)   | * `#!bash <image name>-smarc-rzg2lc.rootfs.wic.gz`            |
+                |         |                  | * `#!bash <image name>-smarc-rzg2lc.rootfs.wic.bmap`          |
+                +---------+------------------+---------------------------------------------------------------+
+
+    === "RZ/G2UL"
+
+        ```bash
+        cd ${WORK}/build
+        MACHINE=${BOARD} bitbake <image name>
+        ```
+        {: .dollar }
+
+        !!! note
+            Available build options (`#!bash <image name>`) are:
+
+            * `#!bash core-image-minimal`
+
+        !!! note
+            After building images, you can find them in the following directories.
+
+            * Images: `#!bash ${WORK}/build/tmp/deploy/images/${BOARD}/`
+
+            !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+                +---------+------------------+---------------------------------------------------------------+
+                | Device  | Category         | File name                                                     |
+                +=========+==================+===============================================================+
+                | RZ/G2UL | Linux kernel     | `#!bash Image-smarc-rzg2ul.bin`                               |
+                |         +------------------+---------------------------------------------------------------+
+                |         | Device tree file | `#!bash r9a07g044l2-smarc.dtb`                                |
+                |         +------------------+---------------------------------------------------------------+
+                |         | Root filesystem  | `#!bash <image name>-smarc-rzg2ul.rootfs.tar.bz2`             |
+                |         +------------------+---------------------------------------------------------------+
+                |         | Boot loader      | * `#!bash bl2_bp_esd-smarc-rzg2ul_pmic.bin`                   |
+                |         |                  | * `#!bash bl2_bp_mmc-smarc-rzg2ul_pmic.srec`                  |
+                |         |                  | * `#!bash bl2_bp_spi-smarc-rzg2ul_pmic.srec`                  |
+                |         |                  | * `#!bash fip-smarc-rzg2ul_pmic.srec`                         |
+                |         +------------------+---------------------------------------------------------------+
+                |         | Flash Writer     | `#!bash Flash_Writer_SCIF_RZG2UL_SMARC_PMIC_DDR4_2GB_1PCS.mot`|
+                |         +------------------+---------------------------------------------------------------+
+                |         | SD image (wic)   | * `#!bash <image name>-smarc-rzg2ul.rootfs.wic.gz`            |
+                |         |                  | * `#!bash <image name>-smarc-rzg2ul.rootfs.wic.bmap`          |
+                +---------+------------------+---------------------------------------------------------------+
+
+    === "RZ/G3S"
+
+        ```bash
+        cd ${WORK}/build
+        MACHINE=${BOARD} bitbake <image name>
+        ```
+        {: .dollar }
+
+        !!! note
+            Available build options (`#!bash <image name>`) are:
+
+            * `#!bash core-image-minimal`
+
+        !!! note
+            After building images, you can find them in the following directories.
+
+            * Images: `#!bash ${WORK}/build/tmp/deploy/images/${BOARD}/`
+
+            !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+                +--------+------------------+---------------------------------------------------------------+
+                | Device | Category         | File name                                                     |
+                +========+==================+===============================================================+
+                | RZ/G3S | Linux kernel     | `#!bash Image-smarc-rzg3s.bin`                                |
+                |        +------------------+---------------------------------------------------------------+
+                |        | Device tree file | `#!bash r9a07g044l2-smarc.dtb`                                |
+                |        +------------------+---------------------------------------------------------------+
+                |        | Root filesystem  | `#!bash <image name>-smarc-rzg3s.rootfs.tar.bz2`              |
+                |        +------------------+---------------------------------------------------------------+
+                |        | Boot loader      | * `#!bash bl2_bp_esd-smarc-rzg3s_pmic.bin`                    |
+                |        |                  | * `#!bash bl2_bp_mmc-smarc-rzg3s_pmic.srec`                   |
+                |        |                  | * `#!bash bl2_bp_spi-smarc-rzg3s_pmic.srec`                   |
+                |        |                  | * `#!bash fip-smarc-rzg3s_pmic.srec`                          |
+                |        +------------------+---------------------------------------------------------------+
+                |        | Flash Writer     | `#!bash Flash_Writer_SCIF_RZG3S_SMARC_PMIC_DDR4_2GB_1PCS.mot` |
+                |        +------------------+---------------------------------------------------------------+
+                |        | SD image (wic)   | * `#!bash <image name>-smarc-rzg3s.rootfs.wic.gz`             |
+                |        |                  | * `#!bash <image name>-smarc-rzg3s.rootfs.wic.bmap`           |
                 +--------+------------------+---------------------------------------------------------------+

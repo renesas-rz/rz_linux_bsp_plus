@@ -18,14 +18,57 @@ Below steps are for `#!bash wic` image.
 
         * `#!bash <image name>-smarc-rzg2l.rootfs.wic.gz`
 
-    !!! note
-        Where `#!bash <image name>` is one of the following:
+        !!! note
+            Where `#!bash <image name>` is one of the following:
 
-        * `#!bash core-image-minimal`
-        * `#!bash core-image-weston`
+            * `#!bash core-image-minimal`
+            * `#!bash core-image-weston`
 
-	!!! danger "Caution"
-        Even if you see a message such as `#!bash you need to format the disk` before/after writing the image, do not format the SD card.
+        !!! danger "Caution"
+            Even if you see a message such as `#!bash you need to format the disk` before/after writing the image, do not format the SD card.
+
+    === "RZ/G2LC"
+
+        Image file is:
+
+        * `#!bash <image name>-smarc-rzg2lc.rootfs.wic.gz`
+
+        !!! note
+            Where `#!bash <image name>` is one of the following:
+
+            * `#!bash core-image-minimal`
+            * `#!bash core-image-weston`
+
+        !!! danger "Caution"
+            Even if you see a message such as `#!bash you need to format the disk` before/after writing the image, do not format the SD card.
+
+    === "RZ/G2UL"
+
+        Image file is:
+
+        * `#!bash <image name>-smarc-rzg2ul.rootfs.wic.gz`
+
+        !!! note
+            Where `#!bash <image name>` is one of the following:
+
+            * `#!bash core-image-minimal`
+
+        !!! danger "Caution"
+            Even if you see a message such as `#!bash you need to format the disk` before/after writing the image, do not format the SD card.
+
+    === "RZ/G3S"
+
+        Image file is:
+
+        * `#!bash <image name>-smarc-rzg3s.rootfs.wic.gz`
+
+        !!! note
+            Where `#!bash <image name>` is one of the following:
+
+            * `#!bash core-image-minimal`
+
+        !!! danger "Caution"
+            Even if you see a message such as `#!bash you need to format the disk` before/after writing the image, do not format the SD card.
 
 ### 2. In case of Linux PC (Ubuntu)
 
@@ -103,8 +146,57 @@ Below steps are for `#!bash wic` image.
 
             * `#!bash <image name>-smarc-rzg2l.rootfs.wic.bmap`
 
-    !!! note
-        Where `#!bash <image name>` is one of the following:
+        !!! note
+            Where `#!bash <image name>` is one of the following:
 
-        * `#!bash core-image-minimal`
-        * `#!bash core-image-weston`
+            * `#!bash core-image-minimal`
+            * `#!bash core-image-weston`
+
+    === "RZ/G2LC"
+
+        Image file is:
+
+        * `#!bash <image name>-smarc-rzg2lc.rootfs.wic.gz`
+
+        !!! note
+            Additionally, the file below is also required:
+
+            * `#!bash <image name>-smarc-rzg2lc.rootfs.wic.bmap`
+
+        !!! note
+            Where `#!bash <image name>` is one of the following:
+
+            * `#!bash core-image-minimal`
+            * `#!bash core-image-weston`
+
+    === "RZ/G2UL"
+
+        Image file is:
+
+        * `#!bash <image name>-smarc-rzg2ul.rootfs.wic.gz`
+
+        !!! note
+            Additionally, the file below is also required:
+
+            * `#!bash <image name>-smarc-rzg2ul.rootfs.wic.bmap`
+
+        !!! note
+            Where `#!bash <image name>` is one of the following:
+
+            * `#!bash core-image-minimal`
+
+    === "RZ/G3S"
+
+        Image file is:
+
+        * `#!bash <image name>-smarc-rzg3s.rootfs.wic.gz`
+
+        !!! note
+            Additionally, the file below is also required:
+
+            * `#!bash <image name>-smarc-rzg3s.rootfs.wic.bmap`
+
+        !!! note
+            Where `#!bash <image name>` is one of the following:
+
+            * `#!bash core-image-minimal`

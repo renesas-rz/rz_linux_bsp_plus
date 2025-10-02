@@ -10,8 +10,25 @@ please download from [Renesas.com](https://www.renesas.com/){: target=_blank } w
 
 === "RZ/G2L"
 
-    [:octicons-download-16: Get Graphics package](https://www.renesas.com/document/swo/rz-mpu-graphics-library-package-v5125-rzg2l-rtk0ef0045z14001zj-v5125rzgenzip){ .md-button .btn-round target=_blank }
+    [:octicons-download-16: Get Graphics package](https://www.renesas.com/document/swo/rz-graphics-library-package-v5126-rtk0ef0045z14001zj-5126enzip){ .md-button .btn-round target=_blank }
 
     [:octicons-download-16: Get Video Codecs package](https://www.renesas.com/document/swo/rz-mpu-codec-library-package-v5140-alpha-rtk0ef0045z16002zjv5140-alphaenzip){ .md-button .btn-round target=_blank }
 
-Once downloaded, please check the Release Note included inside each package.
+    Once downloaded, please check the Release Note included inside each package.
+
+=== "RZ/G2LC"
+
+    [:octicons-download-16: Get Graphics package](https://www.renesas.com/document/swo/rz-graphics-library-package-v5126-rtk0ef0045z14001zj-5126enzip){ .md-button .btn-round target=_blank }
+
+    \* RZ/G2LC does not support Video Codecs package.
+
+    Once downloaded, please check the Release Note included inside each package.
+
+=== "RZ/G2UL"
+
+    \* RZ/G2UL does not support Graphics and Video Codecs packages. Please skip this step.
+
+=== "RZ/G3S"
+
+    \* RZ/G3S does not support Graphics and Video Codecs packages. Please skip this step.
+
