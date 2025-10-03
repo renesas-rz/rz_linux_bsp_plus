@@ -744,7 +744,7 @@ This command receives binary data from the serial port and writes the data to a 
     SAVE SPI-FLASH.......
     ======= Qspi  Save Information  =================
      SpiFlashMemory Stat Address : H'00000000
-     SpiFlashMemory End Address  : H'00009A80
+     SpiFlashMemory End Address  : H'0000BAC8
     ===========================================================
     ```
 
@@ -769,7 +769,7 @@ This command receives binary data from the serial port and writes the data to a 
       Please Input : H'00000
 
     ===== Please Input Qspi Save Address ===
-      Please Input : H'1D200
+      Please Input : H'20000
     Work RAM(H'50000000-H'53FFFFFF) Clear....
     please send ! ('.' & CR stop load)
     ```
@@ -782,7 +782,7 @@ This command receives binary data from the serial port and writes the data to a 
     SPI Data Clear(H'FF) Check :H'00000000-0000FFFF Erasing..Erase Completed
     SAVE SPI-FLASH.......
     ======= Qspi  Save Information  =================
-     SpiFlashMemory Stat Address : H'0001D200
+     SpiFlashMemory Stat Address : H'00020000
      SpiFlashMemory End Address  : H'000CC73F
     ===========================================================
     ```
@@ -808,7 +808,7 @@ This command receives binary data from the serial port and writes the data to a 
                 |                 File name                 | Address to load to RAM | Address to save to ROM |
                 |:-----------------------------------------:|:----------------------:|:----------------------:|
                 | `#!bash bl2_bp_spi-smarc-rzg2l_pmic.srec` | `#!bash 11E00`         | `#!bash 00000`         |
-                | `#!bash fip-smarc-rzg2l_pmic.srec`        | `#!bash 00000`         | `#!bash 1D200`         |
+                | `#!bash fip-smarc-rzg2l_pmic.srec`        | `#!bash 00000`         | `#!bash 20000`         |
 
 === "RZ/G2LC"
 
@@ -839,7 +839,7 @@ This command receives binary data from the serial port and writes the data to a 
     SAVE SPI-FLASH.......
     ======= Qspi  Save Information  =================
      SpiFlashMemory Stat Address : H'00000000
-     SpiFlashMemory End Address  : H'00009A80
+     SpiFlashMemory End Address  : H'0000BAC8
     ===========================================================
     ```
 
@@ -864,7 +864,7 @@ This command receives binary data from the serial port and writes the data to a 
       Please Input : H'00000
 
     ===== Please Input Qspi Save Address ===
-      Please Input : H'1D200
+      Please Input : H'20000
     Work RAM(H'50000000-H'53FFFFFF) Clear....
     please send ! ('.' & CR stop load)
     ```
@@ -877,7 +877,7 @@ This command receives binary data from the serial port and writes the data to a 
     SPI Data Clear(H'FF) Check :H'00000000-0000FFFF Erasing..Erase Completed
     SAVE SPI-FLASH.......
     ======= Qspi  Save Information  =================
-     SpiFlashMemory Stat Address : H'0001D200
+     SpiFlashMemory Stat Address : H'00020000
      SpiFlashMemory End Address  : H'000CC73F
     ===========================================================
     ```
@@ -903,7 +903,7 @@ This command receives binary data from the serial port and writes the data to a 
                 |                 File name                 | Address to load to RAM | Address to save to ROM |
                 |:-----------------------------------------:|:----------------------:|:----------------------:|
                 | `#!bash bl2_bp_spi-smarc-rzg2lc_pmic.srec`| `#!bash 11E00`         | `#!bash 00000`         |
-                | `#!bash fip-smarc-rzg2lc_pmic.srec`       | `#!bash 00000`         | `#!bash 1D200`         |
+                | `#!bash fip-smarc-rzg2lc_pmic.srec`       | `#!bash 00000`         | `#!bash 20000`         |
 
 === "RZ/G2UL"
 
@@ -934,7 +934,7 @@ This command receives binary data from the serial port and writes the data to a 
     SAVE SPI-FLASH.......
     ======= Qspi  Save Information  =================
      SpiFlashMemory Stat Address : H'00000000
-     SpiFlashMemory End Address  : H'00009A80
+     SpiFlashMemory End Address  : H'0000BAC8
     ===========================================================
     ```
 
@@ -959,7 +959,7 @@ This command receives binary data from the serial port and writes the data to a 
       Please Input : H'00000
 
     ===== Please Input Qspi Save Address ===
-      Please Input : H'1D200
+      Please Input : H'20000
     Work RAM(H'50000000-H'53FFFFFF) Clear....
     please send ! ('.' & CR stop load)
     ```
@@ -972,7 +972,7 @@ This command receives binary data from the serial port and writes the data to a 
     SPI Data Clear(H'FF) Check :H'00000000-0000FFFF Erasing..Erase Completed
     SAVE SPI-FLASH.......
     ======= Qspi  Save Information  =================
-     SpiFlashMemory Stat Address : H'0001D200
+     SpiFlashMemory Stat Address : H'00020000
      SpiFlashMemory End Address  : H'000CC73F
     ===========================================================
     ```
@@ -998,7 +998,7 @@ This command receives binary data from the serial port and writes the data to a 
                 |                 File name                 | Address to load to RAM | Address to save to ROM |
                 |:-----------------------------------------:|:----------------------:|:----------------------:|
                 | `#!bash bl2_bp_spi-smarc-rzg2ul_pmic.srec`| `#!bash 11E00`         | `#!bash 00000`         |
-                | `#!bash fip-smarc-rzg2ul_pmic.srec`       | `#!bash 00000`         | `#!bash 1D200`         |
+                | `#!bash fip-smarc-rzg2ul_pmic.srec`       | `#!bash 00000`         | `#!bash 20000`         |
 
 === "RZ/G3S"
 
@@ -1012,7 +1012,7 @@ This command receives binary data from the serial port and writes the data to a 
      Micron : MT25QU512
     Program Top Address & Qspi Save Address
     ===== Please Input Program Top Address ============
-      Please Input : H'11E00
+      Please Input : H'A1E00
 
     ===== Please Input Qspi Save Address ===
       Please Input : H'00000
@@ -1029,7 +1029,7 @@ This command receives binary data from the serial port and writes the data to a 
     SAVE SPI-FLASH.......
     ======= Qspi  Save Information  =================
      SpiFlashMemory Stat Address : H'00000000
-     SpiFlashMemory End Address  : H'00009A80
+     SpiFlashMemory End Address  : H'0001ECC8
     ===========================================================
     ```
 
@@ -1054,7 +1054,7 @@ This command receives binary data from the serial port and writes the data to a 
       Please Input : H'00000
 
     ===== Please Input Qspi Save Address ===
-      Please Input : H'1D200
+      Please Input : H'60000
     Work RAM(H'50000000-H'53FFFFFF) Clear....
     please send ! ('.' & CR stop load)
     ```
@@ -1067,8 +1067,8 @@ This command receives binary data from the serial port and writes the data to a 
     SPI Data Clear(H'FF) Check :H'00000000-0000FFFF Erasing..Erase Completed
     SAVE SPI-FLASH.......
     ======= Qspi  Save Information  =================
-     SpiFlashMemory Stat Address : H'0001D200
-     SpiFlashMemory End Address  : H'000CC73F
+     SpiFlashMemory Stat Address : H'00060000
+     SpiFlashMemory End Address  : H'0014267E
     ===========================================================
     ```
 
@@ -1092,5 +1092,5 @@ This command receives binary data from the serial port and writes the data to a 
 
                 |                 File name                 | Address to load to RAM | Address to save to ROM |
                 |:-----------------------------------------:|:----------------------:|:----------------------:|
-                | `#!bash bl2_bp_spi-smarc-rzg3s_pmic.srec` | `#!bash 11E00`         | `#!bash 00000`         |
-                | `#!bash fip-smarc-rzg3s_pmic.srec`        | `#!bash 00000`         | `#!bash 1D200`         |
+                | `#!bash bl2_bp_spi-smarc-rzg3s_pmic.srec` | `#!bash A1E00`         | `#!bash 00000`         |
+                | `#!bash fip-smarc-rzg3s_pmic.srec`        | `#!bash 00000`         | `#!bash 60000`         |
