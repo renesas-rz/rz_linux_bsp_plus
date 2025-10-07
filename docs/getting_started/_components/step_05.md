@@ -609,7 +609,7 @@ Send an image of `#!bash Flash Writer` using the terminal software after the mes
 
     `#!bash Flash Writer` image file is:
 
-    * `#!bash Flash_Writer_SCIF_RZG2LC_SMARC_PMIC_DDR4_2GB_1PCS.mot`
+    * `#!bash Flash_Writer_SCIF_RZG2LC_SMARC_DDR4_1GB_1PCS.mot`
 
     Below is a sample procedure with **TeraTerm**.
 
@@ -639,7 +639,7 @@ Send an image of `#!bash Flash Writer` using the terminal software after the mes
 
     `#!bash Flash Writer` image file is:
 
-    * `#!bash Flash_Writer_SCIF_RZG2UL_SMARC_PMIC_DDR4_2GB_1PCS.mot`
+    * `#!bash Flash_Writer_SCIF_RZG2UL_SMARC_DDR4_1GB_1PCS.mot`
 
     Below is a sample procedure with **TeraTerm**.
 
@@ -669,7 +669,7 @@ Send an image of `#!bash Flash Writer` using the terminal software after the mes
 
     `#!bash Flash Writer` image file is:
 
-    * `#!bash Flash_Writer_SCIF_RZG3S_SMARC_PMIC_DDR4_2GB_1PCS.mot`
+    * `#!bash FlashWriter-smarc-rzg3s.mot`
 
     Below is a sample procedure with **TeraTerm**.
 
@@ -830,7 +830,7 @@ This command receives binary data from the serial port and writes the data to a 
     please send ! ('.' & CR stop load)
     ```
 
-    Send the data of `#!bash bl2_bp_spi-smarc-rzg2lc_pmic.srec` from terminal software after the message **please send !** is shown.
+    Send the data of `#!bash bl2_bp_spi-smarc-rzg2lc.srec` from terminal software after the message **please send !** is shown.
 
     After successfully downloading the binary, messages like below are shown on the terminal.
 
@@ -869,7 +869,7 @@ This command receives binary data from the serial port and writes the data to a 
     please send ! ('.' & CR stop load)
     ```
 
-    Send the data of `#!bash fip-smarc-rzg2lc_pmic.srec` from terminal software after the message **please send !** is shown.
+    Send the data of `#!bash fip-smarc-rzg2lc.srec` from terminal software after the message **please send !** is shown.
 
     After successfully downloading the binary, messages like below are shown on the terminal.
 
@@ -902,8 +902,8 @@ This command receives binary data from the serial port and writes the data to a 
 
                 |                 File name                 | Address to load to RAM | Address to save to ROM |
                 |:-----------------------------------------:|:----------------------:|:----------------------:|
-                | `#!bash bl2_bp_spi-smarc-rzg2lc_pmic.srec`| `#!bash 11E00`         | `#!bash 00000`         |
-                | `#!bash fip-smarc-rzg2lc_pmic.srec`       | `#!bash 00000`         | `#!bash 20000`         |
+                | `#!bash bl2_bp_spi-smarc-rzg2lc.srec`     | `#!bash 11E00`         | `#!bash 00000`         |
+                | `#!bash fip-smarc-rzg2lc.srec`            | `#!bash 00000`         | `#!bash 20000`         |
 
 === "RZ/G2UL"
 
@@ -925,7 +925,7 @@ This command receives binary data from the serial port and writes the data to a 
     please send ! ('.' & CR stop load)
     ```
 
-    Send the data of `#!bash bl2_bp_spi-smarc-rzg2ul_pmic.srec` from terminal software after the message **please send !** is shown.
+    Send the data of `#!bash bl2_bp_spi-smarc-rzg2ul.srec` from terminal software after the message **please send !** is shown.
 
     After successfully downloading the binary, messages like below are shown on the terminal.
 
@@ -964,7 +964,7 @@ This command receives binary data from the serial port and writes the data to a 
     please send ! ('.' & CR stop load)
     ```
 
-    Send the data of `#!bash fip-smarc-rzg2ul_pmic.srec` from terminal software after the message **please send !** is shown.
+    Send the data of `#!bash fip-smarc-rzg2ul.srec` from terminal software after the message **please send !** is shown.
 
     After successfully downloading the binary, messages like below are shown on the terminal.
 
@@ -997,8 +997,8 @@ This command receives binary data from the serial port and writes the data to a 
 
                 |                 File name                 | Address to load to RAM | Address to save to ROM |
                 |:-----------------------------------------:|:----------------------:|:----------------------:|
-                | `#!bash bl2_bp_spi-smarc-rzg2ul_pmic.srec`| `#!bash 11E00`         | `#!bash 00000`         |
-                | `#!bash fip-smarc-rzg2ul_pmic.srec`       | `#!bash 00000`         | `#!bash 20000`         |
+                | `#!bash bl2_bp_spi-smarc-rzg2ul.srec`     | `#!bash 11E00`         | `#!bash 00000`         |
+                | `#!bash fip-smarc-rzg2ul.srec`            | `#!bash 00000`         | `#!bash 20000`         |
 
 === "RZ/G3S"
 
@@ -1020,7 +1020,7 @@ This command receives binary data from the serial port and writes the data to a 
     please send ! ('.' & CR stop load)
     ```
 
-    Send the data of `#!bash bl2_bp_spi-smarc-rzg3s_pmic.srec` from terminal software after the message **please send !** is shown.
+    Send the data of `#!bash bl2_bp_spi-smarc-rzg3s.srec` from terminal software after the message **please send !** is shown.
 
     After successfully downloading the binary, messages like below are shown on the terminal.
 
@@ -1059,7 +1059,7 @@ This command receives binary data from the serial port and writes the data to a 
     please send ! ('.' & CR stop load)
     ```
 
-    Send the data of `#!bash fip-smarc-rzg3s_pmic.srec` from terminal software after the message **please send !** is shown.
+    Send the data of `#!bash fip-smarc-rzg3s.srec` from terminal software after the message **please send !** is shown.
 
     After successfully downloading the binary, messages like below are shown on the terminal.
 
@@ -1092,5 +1092,5 @@ This command receives binary data from the serial port and writes the data to a 
 
                 |                 File name                 | Address to load to RAM | Address to save to ROM |
                 |:-----------------------------------------:|:----------------------:|:----------------------:|
-                | `#!bash bl2_bp_spi-smarc-rzg3s_pmic.srec` | `#!bash A1E00`         | `#!bash 00000`         |
-                | `#!bash fip-smarc-rzg3s_pmic.srec`        | `#!bash 00000`         | `#!bash 60000`         |
+                | `#!bash bl2_bp_spi-smarc-rzg3s.srec`      | `#!bash A1E00`         | `#!bash 00000`         |
+                | `#!bash fip-smarc-rzg3s.srec`             | `#!bash 00000`         | `#!bash 60000`         |

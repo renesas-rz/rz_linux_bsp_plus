@@ -15,7 +15,7 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
 
     ```bash
     sudo apt-get update
-    sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath socat cpio python python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping libsdl1.2-dev xterm p7zip-full libyaml-dev libssl-dev bmap-tools
+    sudo apt install build-essential chrpath cpio debianutils diffstat file gawk gcc git iputils-ping libacl1 liblz4-tool locales python3 python3-git python3-jinja2 python3-pexpect python3-pip python3-subunit socat texinfo unzip wget xz-utils zstd bmap-tools
 
     ```
     {: .dollar }
@@ -320,16 +320,16 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
                 +=========+==================+===============================================================+
                 | RZ/G2LC | Linux kernel     | `#!bash Image-smarc-rzg2lc.bin`                               |
                 |         +------------------+---------------------------------------------------------------+
-                |         | Device tree file | `#!bash r9a07g044l2-smarc.dtb`                                |
+                |         | Device tree file | `#!bash r9a07g044c2-smarc.dtb`                                |
                 |         +------------------+---------------------------------------------------------------+
                 |         | Root filesystem  | `#!bash <image name>-smarc-rzg2lc.rootfs.tar.bz2`             |
                 |         +------------------+---------------------------------------------------------------+
-                |         | Boot loader      | * `#!bash bl2_bp_esd-smarc-rzg2lc_pmic.bin`                   |
-                |         |                  | * `#!bash bl2_bp_mmc-smarc-rzg2lc_pmic.srec`                  |
-                |         |                  | * `#!bash bl2_bp_spi-smarc-rzg2lc_pmic.srec`                  |
-                |         |                  | * `#!bash fip-smarc-rzg2lc_pmic.srec`                         |
+                |         | Boot loader      | * `#!bash bl2_bp_esd-smarc-rzg2lc.bin`                        |
+                |         |                  | * `#!bash bl2_bp_mmc-smarc-rzg2lc.srec`                       |
+                |         |                  | * `#!bash bl2_bp_spi-smarc-rzg2lc.srec`                       |
+                |         |                  | * `#!bash fip-smarc-rzg2lc.srec`                              |
                 |         +------------------+---------------------------------------------------------------+
-                |         | Flash Writer     | `#!bash Flash_Writer_SCIF_RZG2LC_SMARC_PMIC_DDR4_2GB_1PCS.mot`|
+                |         | Flash Writer     | `#!bash Flash_Writer_SCIF_RZG2LC_SMARC_DDR4_1GB_1PCS.mot`     |
                 |         +------------------+---------------------------------------------------------------+
                 |         | SD image (wic)   | * `#!bash <image name>-smarc-rzg2lc.rootfs.wic.gz`            |
                 |         |                  | * `#!bash <image name>-smarc-rzg2lc.rootfs.wic.bmap`          |
@@ -360,16 +360,16 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
                 +=========+==================+===============================================================+
                 | RZ/G2UL | Linux kernel     | `#!bash Image-smarc-rzg2ul.bin`                               |
                 |         +------------------+---------------------------------------------------------------+
-                |         | Device tree file | `#!bash r9a07g044l2-smarc.dtb`                                |
+                |         | Device tree file | `#!bash r9a07g043u11-smarc.dtb`                               |
                 |         +------------------+---------------------------------------------------------------+
                 |         | Root filesystem  | `#!bash <image name>-smarc-rzg2ul.rootfs.tar.bz2`             |
                 |         +------------------+---------------------------------------------------------------+
-                |         | Boot loader      | * `#!bash bl2_bp_esd-smarc-rzg2ul_pmic.bin`                   |
-                |         |                  | * `#!bash bl2_bp_mmc-smarc-rzg2ul_pmic.srec`                  |
-                |         |                  | * `#!bash bl2_bp_spi-smarc-rzg2ul_pmic.srec`                  |
-                |         |                  | * `#!bash fip-smarc-rzg2ul_pmic.srec`                         |
+                |         | Boot loader      | * `#!bash bl2_bp_esd-smarc-rzg2ul.bin`                        |
+                |         |                  | * `#!bash bl2_bp_mmc-smarc-rzg2ul.srec`                       |
+                |         |                  | * `#!bash bl2_bp_spi-smarc-rzg2ul.srec`                       |
+                |         |                  | * `#!bash fip-smarc-rzg2ul.srec`                              |
                 |         +------------------+---------------------------------------------------------------+
-                |         | Flash Writer     | `#!bash Flash_Writer_SCIF_RZG2UL_SMARC_PMIC_DDR4_2GB_1PCS.mot`|
+                |         | Flash Writer     | `#!bash Flash_Writer_SCIF_RZG2UL_SMARC_DDR4_1GB_1PCS.mot`     |
                 |         +------------------+---------------------------------------------------------------+
                 |         | SD image (wic)   | * `#!bash <image name>-smarc-rzg2ul.rootfs.wic.gz`            |
                 |         |                  | * `#!bash <image name>-smarc-rzg2ul.rootfs.wic.bmap`          |
@@ -400,16 +400,16 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
                 +========+==================+===============================================================+
                 | RZ/G3S | Linux kernel     | `#!bash Image-smarc-rzg3s.bin`                                |
                 |        +------------------+---------------------------------------------------------------+
-                |        | Device tree file | `#!bash r9a07g044l2-smarc.dtb`                                |
+                |        | Device tree file | `#!bash r9a08g045s33-smarc.dtb`                               |
                 |        +------------------+---------------------------------------------------------------+
                 |        | Root filesystem  | `#!bash <image name>-smarc-rzg3s.rootfs.tar.bz2`              |
                 |        +------------------+---------------------------------------------------------------+
-                |        | Boot loader      | * `#!bash bl2_bp_esd-smarc-rzg3s_pmic.bin`                    |
-                |        |                  | * `#!bash bl2_bp_mmc-smarc-rzg3s_pmic.srec`                   |
-                |        |                  | * `#!bash bl2_bp_spi-smarc-rzg3s_pmic.srec`                   |
-                |        |                  | * `#!bash fip-smarc-rzg3s_pmic.srec`                          |
+                |        | Boot loader      | * `#!bash bl2_bp_esd-smarc-rzg3s.bin`                         |
+                |        |                  | * `#!bash bl2_bp_mmc-smarc-rzg3s.srec`                        |
+                |        |                  | * `#!bash bl2_bp_spi-smarc-rzg3s.srec`                        |
+                |        |                  | * `#!bash fip-smarc-rzg3s.srec`                               |
                 |        +------------------+---------------------------------------------------------------+
-                |        | Flash Writer     | `#!bash Flash_Writer_SCIF_RZG3S_SMARC_PMIC_DDR4_2GB_1PCS.mot` |
+                |        | Flash Writer     | `#!bash FlashWriter_smarc-rzg3s.mot`                          |
                 |        +------------------+---------------------------------------------------------------+
                 |        | SD image (wic)   | * `#!bash <image name>-smarc-rzg3s.rootfs.wic.gz`             |
                 |        |                  | * `#!bash <image name>-smarc-rzg3s.rootfs.wic.bmap`           |
