@@ -374,11 +374,27 @@ Please setup following below diagram.
 Connect the board to the programing PC by using the USB serial cable.
 
 === "RZ/G2L"
-    1.	Bring up **TeraTerm** and select the **File** > **New Connection** to set the connection on the software.
+    1. To set the board to SCIF Download mode, set the SW11 as below.
+
+        !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+            ![](images/smarc-carrier-board-SW11_SCIF.png){ align=left .switch-icon }
+
+            |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
+            |:--------------:|:--------------:|:--------------:|:--------------:|
+            |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  | ON {: .green } |
+ 
+    2. Press the power button to turn on the power.
+        * When turning on the power, press and hold the power button for 1 second.
+        * When turn off the power, press and hold the power button for 2 seconds
+ 
+        ![](./images/RZG2L_EVK_POWER.png)
+
+    3. Bring up **TeraTerm** and select the **File** > **New Connection** to set the connection on the software.
 
         ![](./images/Open-Connection.png)
 
-    2.	Select the **Setup** > **Serial port** to set the settings about serial communication protocol on **TeraTerm**.
+    4. Select the **Setup** > **Serial port** to set the settings about serial communication protocol on **TeraTerm**.
 
         Set the settings for the serial communication in **TeraTerm** as below:
 
@@ -394,7 +410,7 @@ Connect the board to the programing PC by using the USB serial cable.
 
         ![](./images/Serialport-Settings.png)
 
-    3. Select the **Setup** > **Terminal** to set the new-line code.
+    5. Select the **Setup** > **Terminal** to set the new-line code.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
@@ -404,28 +420,34 @@ Connect the board to the programing PC by using the USB serial cable.
 
         ![](./images/Terminal-Settings.png)
 
-    4. To set the board to SCIF Download mode, set the SW11 as below.
-
-        !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
-            ![](images/smarc-carrier-board-SW11_SCIF.png){ align=left .switch-icon }
-
-            |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
-            |:--------------:|:--------------:|:--------------:|:--------------:|
-            |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  | ON {: .green } |
-
-    5.	After finishing all settings, when the reset button is pressed, the message below will be displayed on the terminal.
+    6. After finishing all settings, when the reset button is pressed, the message below will be displayed on the terminal.
 
         ![](./images/RZG2L_EVK_RESET.png)
 
         ![](./images/SCIF-Mode.svg)
 
 === "RZ/G2LC"
-    1.	Bring up **TeraTerm** and select the **File** > **New Connection** to set the connection on the software.
+    1. To set the board to SCIF Download mode, set the SW11 as below.
+
+        !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+            ![](images/smarc-carrier-board-SW11_SCIF.png){ align=left .switch-icon }
+
+            |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
+            |:--------------:|:--------------:|:--------------:|:--------------:|
+            |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  | ON {: .green } |
+
+    2. Press the power button to turn on the power.
+        * When turning on the power, press and hold the power button for 1 second.
+        * When turn off the power, press and hold the power button for 2 seconds
+
+        ![](./images/RZG2L_EVK_POWER.png)
+
+    3. Bring up **TeraTerm** and select the **File** > **New Connection** to set the connection on the software.
 
         ![](./images/Open-Connection.png)
 
-    2.	Select the **Setup** > **Serial port** to set the settings about serial communication protocol on **TeraTerm**.
+    4. Select the **Setup** > **Serial port** to set the settings about serial communication protocol on **TeraTerm**.
 
         Set the settings for the serial communication in **TeraTerm** as below:
 
@@ -441,7 +463,7 @@ Connect the board to the programing PC by using the USB serial cable.
 
         ![](./images/Serialport-Settings.png)
 
-    3. Select the **Setup** > **Terminal** to set the new-line code.
+    5. Select the **Setup** > **Terminal** to set the new-line code.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
@@ -451,54 +473,14 @@ Connect the board to the programing PC by using the USB serial cable.
 
         ![](./images/Terminal-Settings.png)
 
-    4. To set the board to SCIF Download mode, set the SW11 as below.
-
-        !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
-            ![](images/smarc-carrier-board-SW11_SCIF.png){ align=left .switch-icon }
-
-            |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
-            |:--------------:|:--------------:|:--------------:|:--------------:|
-            |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  | ON {: .green } |
-
-    5.	After finishing all settings, when the reset button is pressed, the message below will be displayed on the terminal.
+    6. After finishing all settings, when the reset button is pressed, the message below will be displayed on the terminal.
 
         ![](./images/RZG2L_EVK_RESET.png)
 
         ![](./images/SCIF-Mode.svg)
 
 === "RZ/G2UL"
-    1.	Bring up **TeraTerm** and select the **File** > **New Connection** to set the connection on the software.
-
-        ![](./images/Open-Connection.png)
-
-    2.	Select the **Setup** > **Serial port** to set the settings about serial communication protocol on **TeraTerm**.
-
-        Set the settings for the serial communication in **TeraTerm** as below:
-
-        !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
-            |   Variable   |        Value          |
-            |:------------:|:----------------------|
-            | Baud rate    | `#!bash 115200` bps   |
-            | Data         |`#!bash 8 bit`         |
-            | Parity       | `#!bash none`         |
-            | Stop         | `#!bash 1 bit`        |
-            | Flow control | `#!bash none`         |
-
-        ![](./images/Serialport-Settings.png)
-
-    3. Select the **Setup** > **Terminal** to set the new-line code.
-
-        !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
-            |   Variable   |             Value              |
-            |:------------:|:-------------------------------|
-            | New-line     | `#!bash CR` or `#!bash AUTO`   |
-
-        ![](./images/Terminal-Settings.png)
-
-    4. To set the board to SCIF Download mode, set the SW11 as below.
+    1. To set the board to SCIF Download mode, set the SW11 as below.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
@@ -508,18 +490,17 @@ Connect the board to the programing PC by using the USB serial cable.
             |:--------------:|:--------------:|:--------------:|:--------------:|
             |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  | ON {: .green } |
 
-    5.	After finishing all settings, when the reset button is pressed, the message below will be displayed on the terminal.
+    2. Press the power button to turn on the power.
+        * When turning on the power, press and hold the power button for 1 second.
+        * When turn off the power, press and hold the power button for 2 seconds
 
-        ![](./images/RZG2L_EVK_RESET.png)
+        ![](./images/RZG2L_EVK_POWER.png)
 
-        ![](./images/SCIF-Mode.svg)
-
-=== "RZ/G3S"
-    1.	Bring up **TeraTerm** and select the **File** > **New Connection** to set the connection on the software.
+    3. Bring up **TeraTerm** and select the **File** > **New Connection** to set the connection on the software.
 
         ![](./images/Open-Connection.png)
 
-    2.	Select the **Setup** > **Serial port** to set the settings about serial communication protocol on **TeraTerm**.
+    4. Select the **Setup** > **Serial port** to set the settings about serial communication protocol on **TeraTerm**.
 
         Set the settings for the serial communication in **TeraTerm** as below:
 
@@ -535,7 +516,7 @@ Connect the board to the programing PC by using the USB serial cable.
 
         ![](./images/Serialport-Settings.png)
 
-    3. Select the **Setup** > **Terminal** to set the new-line code.
+    5. Select the **Setup** > **Terminal** to set the new-line code.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
@@ -545,7 +526,14 @@ Connect the board to the programing PC by using the USB serial cable.
 
         ![](./images/Terminal-Settings.png)
 
-    4. To set the board to SCIF Download mode, set the SW_MODE as below.
+    6. After finishing all settings, when the reset button is pressed, the message below will be displayed on the terminal.
+
+        ![](./images/RZG2L_EVK_RESET.png)
+
+        ![](./images/SCIF-Mode.svg)
+
+=== "RZ/G3S"
+    1. To set the board to SCIF Download mode, set the SW_MODE as below.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
@@ -553,7 +541,41 @@ Connect the board to the programing PC by using the USB serial cable.
             |:--------------:|:--------------:|:--------------:|:--------------:|
             |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  | ON {: .green } |
 
-    5.	After finishing all settings, when the reset button is pressed, the message below will be displayed on the terminal.
+    2. Press the power button to turn on the power.
+
+        ![](./images/RZG3S_EVK_POWER.png)
+
+    3. Bring up **TeraTerm** and select the **File** > **New Connection** to set the connection on the software.
+
+        ![](./images/Open-Connection.png)
+
+    4. Select the **Setup** > **Serial port** to set the settings about serial communication protocol on **TeraTerm**.
+
+        Set the settings for the serial communication in **TeraTerm** as below:
+
+        !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+            |   Variable   |        Value          |
+            |:------------:|:----------------------|
+            | Baud rate    | `#!bash 115200` bps   |
+            | Data         |`#!bash 8 bit`         |
+            | Parity       | `#!bash none`         |
+            | Stop         | `#!bash 1 bit`        |
+            | Flow control | `#!bash none`         |
+
+        ![](./images/Serialport-Settings.png)
+
+    5. Select the **Setup** > **Terminal** to set the new-line code.
+
+        !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+            |   Variable   |             Value              |
+            |:------------:|:-------------------------------|
+            | New-line     | `#!bash CR` or `#!bash AUTO`   |
+
+        ![](./images/Terminal-Settings.png)
+
+    6. After finishing all settings, when the reset button is pressed, the message below will be displayed on the terminal.
 
         ![](./images/RZG3S_EVK_RESET.png)
 
