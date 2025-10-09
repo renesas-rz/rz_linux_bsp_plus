@@ -333,6 +333,8 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
+                ![](images/smarc-rzg3s-board-SWMODE_SCIF.JPG){ align=left .switch-icon }
+
                 |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
                 |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  | ON {: .green } |
@@ -342,6 +344,8 @@ Please setup following below diagram.
             ---
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+                ![](images/smarc-rzg3s-board-SWMODE_QSPI.JPG){ align=left .switch-icon }
 
                 |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -353,6 +357,8 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
+                ![](images/smarc-rzg3s-board-SWMODE_eMMC.JPG){ align=left .switch-icon }
+
                 |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
                 | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } |
@@ -362,6 +368,8 @@ Please setup following below diagram.
             ---
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+                ![](images/smarc-rzg3s-board-SWMODE_eSD.JPG){ align=left .switch-icon }
 
                 |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -536,6 +544,8 @@ Connect the board to the programing PC by using the USB serial cable.
     1. To set the board to SCIF Download mode, set the SW_MODE as below.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+            ![](images/smarc-rzg3s-board-SWMODE_SCIF.JPG){ align=left .switch-icon }
 
             |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
             |:--------------:|:--------------:|:--------------:|:--------------:|

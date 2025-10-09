@@ -96,6 +96,8 @@ In this case use **QSPI boot** and SD card.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
+            ![](images/smarc-rzg3s-board-SWMODE_QSPI.JPG){ align=left .switch-icon }
+
             |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
             |:--------------:|:--------------:|:--------------:|:--------------:|
             |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } |
