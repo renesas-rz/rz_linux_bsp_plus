@@ -294,6 +294,22 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
                 |        |                  | * `#!bash <image name>-smarc-rzg2l.rootfs.wic.bmap`           |
                 +--------+------------------+---------------------------------------------------------------+
 
+        !!! note
+            If you need to create an SDK toolchain, run `#!bash bitbake`
+            command as follows.
+
+            ```bash
+            cd ${WORK}/build
+            MACHINE=${BOARD} bitbake <image name> -c populate_sdk
+            ```
+            {: .dollar }
+
+            After building SDK toolchain, you can find them in the following directory.
+            ```bash
+            ${WORK}/build/tmp/deploy/sdk/
+            ```
+            {: .dollar }
+
     === "RZ/G2LC"
 
         ```bash
@@ -335,6 +351,22 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
                 |         |                  | * `#!bash <image name>-smarc-rzg2lc.rootfs.wic.bmap`          |
                 +---------+------------------+---------------------------------------------------------------+
 
+        !!! note
+            If you need to create an SDK toolchain, run `#!bash bitbake`
+            command as follows.
+
+            ```bash
+            cd ${WORK}/build
+            MACHINE=${BOARD} bitbake <image name> -c populate_sdk
+            ```
+            {: .dollar }
+
+            After building SDK toolchain, you can find them in the following directory.
+            ```bash
+            ${WORK}/build/tmp/deploy/sdk/
+            ```
+            {: .dollar }
+
     === "RZ/G2UL"
 
         ```bash
@@ -375,6 +407,22 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
                 |         |                  | * `#!bash <image name>-smarc-rzg2ul.rootfs.wic.bmap`          |
                 +---------+------------------+---------------------------------------------------------------+
 
+        !!! note
+            If you need to create an SDK toolchain, run `#!bash bitbake`
+            command as follows.
+
+            ```bash
+            cd ${WORK}/build
+            MACHINE=${BOARD} bitbake <image name> -c populate_sdk
+            ```
+            {: .dollar }
+
+            After building SDK toolchain, you can find them in the following directory.
+            ```bash
+            ${WORK}/build/tmp/deploy/sdk/
+            ```
+            {: .dollar }
+
     === "RZ/G3S"
 
         ```bash
@@ -414,3 +462,19 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
                 |        | SD image (wic)   | * `#!bash <image name>-smarc-rzg3s.rootfs.wic.gz`             |
                 |        |                  | * `#!bash <image name>-smarc-rzg3s.rootfs.wic.bmap`           |
                 +--------+------------------+---------------------------------------------------------------+
+
+        !!! note
+            If you need to create an SDK toolchain, run `#!bash bitbake`
+            command as follows.
+
+            ```bash
+            cd ${WORK}/build
+            MACHINE=${BOARD} bitbake <image name> -c populate_sdk
+            ```
+            {: .dollar }
+
+            After building SDK toolchain, you can find them in the following directory.
+            ```bash
+            ${WORK}/build/tmp/deploy/sdk/
+            ```
+            {: .dollar }
