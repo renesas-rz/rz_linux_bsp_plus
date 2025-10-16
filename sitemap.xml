@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://renesas-rz.github.io/rz_linux_bsp_plus/</loc>
+         <lastmod>2025-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://renesas-rz.github.io/rz_linux_bsp_plus/appendix/</loc>
+         <lastmod>2025-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://renesas-rz.github.io/rz_linux_bsp_plus/evk/</loc>
+         <lastmod>2025-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://renesas-rz.github.io/rz_linux_bsp_plus/getting_started/</loc>
+         <lastmod>2025-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://renesas-rz.github.io/rz_linux_bsp_plus/history/</loc>
+         <lastmod>2025-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://renesas-rz.github.io/rz_linux_bsp_plus/how_to_build_linux_bsp_plus/</loc>
+         <lastmod>2025-10-16</lastmod>
+    </url>
+</urlset>
