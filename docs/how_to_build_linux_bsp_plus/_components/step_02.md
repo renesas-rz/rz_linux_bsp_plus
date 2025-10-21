@@ -457,7 +457,7 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
                 |        |                  | * `#!bash bl2_bp_spi-smarc-rzg3s.srec`                        |
                 |        |                  | * `#!bash fip-smarc-rzg3s.srec`                               |
                 |        +------------------+---------------------------------------------------------------+
-                |        | Flash Writer     | `#!bash FlashWriter_smarc-rzg3s.mot`                          |
+                |        | Flash Writer     | `#!bash FlashWriter-smarc-rzg3s.mot`                          |
                 |        +------------------+---------------------------------------------------------------+
                 |        | SD image (wic)   | * `#!bash <image name>-smarc-rzg3s.rootfs.wic.gz`             |
                 |        |                  | * `#!bash <image name>-smarc-rzg3s.rootfs.wic.bmap`           |

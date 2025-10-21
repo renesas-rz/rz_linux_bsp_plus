@@ -147,11 +147,11 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-rzg2l-board-SW1_eMMC.png){ align=left .switch-icon }
+                ![](images/smarc-rzg2lc-board-SW1_eMMC.JPG){ align=left .switch-icon }
 
-                |      SW1-1     |      SW1-2     |
-                |:--------------:|:--------------:|
-                | ON {: .green } |  OFF {: .red}  |
+                |      SW1-1     |      SW1-2     |      SW1-3     |      SW1-4     |      SW1-5     |      SW1-6     |
+                |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
+                | ON {: .green } | OFF {: .red }  | ON {: .green } | OFF {: .red }  | ON {: .green } | ON {: .green } |
 
         </div>
 
@@ -246,11 +246,11 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-rzg2l-board-SW1_eMMC.png){ align=left .switch-icon }
+                ![](images/smarc-rzg2ul-board-SW1_eMMC.JPG){ align=left .switch-icon }
 
-                |      SW1-1     |      SW1-2     |
-                |:--------------:|:--------------:|
-                | ON {: .green } |  OFF {: .red}  |
+                |      SW1-1     |      SW1-2     |      SW1-3     |
+                |:--------------:|:--------------:|:--------------:|
+                | ON {: .green } |  OFF {: .red}  | ON {: .green } |
 
         </div>
 
@@ -321,7 +321,37 @@ Please setup following below diagram.
 
 === "RZ/G3S"
 
-    EVK's DIP switch (SW_MODE) reference.
+    EVK's DIP switch (SW_CONFIG and SW_MODE) reference.
+
+    * SW_CONFIG
+
+        <div class="grid cards" markdown>
+
+        - **SD Card**
+
+            ---
+
+            !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+                ![](images/smarc-rzg3s-board-SWCONFIG_uSD0.JPG){ align=left .switch-icon }
+
+                |  SW_CONFIG[1]  |  SW_CONFIG[2]  |  SW_CONFIG[3]  |  SW_CONFIG[4]  |  SW_CONFIG[5]  |  SW_CONFIG[6]  |
+                |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
+                |  OFF {: .red}  | ON {: .green } | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  |
+
+        - **eMMC**
+
+            ---
+
+            !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+                ![](images/smarc-rzg3s-board-SWCONFIG_eMMC.JPG){ align=left .switch-icon }
+
+                |  SW_CONFIG[1]  |  SW_CONFIG[2]  |  SW_CONFIG[3]  |  SW_CONFIG[4]  |  SW_CONFIG[5]  |  SW_CONFIG[6]  |
+                |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
+                |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  |
+
+        </div>
 
     * SW_MODE
 

@@ -12,11 +12,11 @@ In this case use **QSPI boot** and SD card.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            ![](images/smarc-rzg2l-board-SW1.png){ align=left .switch-icon }
+            ![](images/smarc-rzg2l-board-SW1_eMMC.png){ align=left .switch-icon }
 
             |      SW1-1     |      SW1-2     |
             |:--------------:|:--------------:|
-            | ON {: .green } | ON {: .green } |
+            | ON {: .green } |  OFF {: .red}  |
 
     * SW11
 
@@ -40,11 +40,11 @@ In this case use **QSPI boot** and SD card.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            ![](images/smarc-rzg2lc-board-SW1.png){ align=left .switch-icon }
+            ![](images/smarc-rzg2lc-board-SW1_eMMC.JPG){ align=left .switch-icon }
 
             |      SW1-1     |      SW1-2     |      SW1-3     |      SW1-4     |      SW1-5     |      SW1-6     |
             |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
-            | ON {: .green } | ON {: .green } | ON {: .green } | OFF {: .red }  | ON {: .green } | ON {: .green } |
+            | ON {: .green } |  OFF {: .red}  | ON {: .green } | OFF {: .red }  | ON {: .green } | ON {: .green } |
 
     * SW11
 
@@ -68,11 +68,11 @@ In this case use **QSPI boot** and SD card.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            ![](images/smarc-rzg2ul-board-SW1.png){ align=left .switch-icon }
+            ![](images/smarc-rzg2ul-board-SW1_eMMC.JPG){ align=left .switch-icon }
 
             |      SW1-1     |      SW1-2     |      SW1-3     |
             |:--------------:|:--------------:|:--------------:|
-            | ON {: .green } | ON {: .green } | ON {: .green } |
+            | ON {: .green } |  OFF {: .red}  | ON {: .green } |
 
     * SW11
 
@@ -90,7 +90,17 @@ In this case use **QSPI boot** and SD card.
 
 === "RZ/G3S"
 
-    Set up the SW_MODE as follows.
+    Set up DIP switch SW_CONFIG and SW_MODE as follows.
+
+    * SW_CONFIG
+
+        !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+            ![](images/smarc-rzg3s-board-SWCONFIG_eMMC.JPG){ align=left .switch-icon }
+
+            |  SW_CONFIG[1]  |  SW_CONFIG[2]  |  SW_CONFIG[3]  |  SW_CONFIG[4]  |  SW_CONFIG[5]  |  SW_CONFIG[6]  |
+            |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
+            |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  |
 
     * SW_MODE
 
@@ -111,8 +121,8 @@ In this case use **QSPI boot** and SD card.
 === "RZ/G2L"
 
     1.  Insert the bootable SD card created at [Step 4](#step-4-build-renesas-rz-linux-bsp-plus-source-code) into the microSD card slot on SMARC module board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
-    2.  Connect a USB cable to CN6 for power supply.
-    3.  Press and hold power button (SW9) for 1 second to turn on the EVK.
+    2.  Connect a USB cable to the connector for power supply.
+    3.  Press and hold power button for 1 second to turn on the EVK.
 
         !!! note
             Press and hold the button for 2 seconds when you turn off the EVK.
@@ -120,8 +130,8 @@ In this case use **QSPI boot** and SD card.
 === "RZ/G2LC"
 
     1.  Insert the bootable SD card created at [Step 4](#step-4-build-renesas-rz-linux-bsp-plus-source-code) into the microSD card slot on SMARC module board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
-    2.  Connect a USB cable to CN6 for power supply.
-    3.  Press and hold power button (SW9) for 1 second to turn on the EVK.
+    2.  Connect a USB cable to the connector for power supply.
+    3.  Press and hold power button for 1 second to turn on the EVK.
 
         !!! note
             Press and hold the button for 2 seconds when you turn off the EVK.
@@ -129,8 +139,8 @@ In this case use **QSPI boot** and SD card.
 === "RZ/G2UL"
 
     1.  Insert the bootable SD card created at [Step 4](#step-4-build-renesas-rz-linux-bsp-plus-source-code) into the microSD card slot on SMARC module board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
-    2.  Connect a USB cable to CN6 for power supply.
-    3.  Press and hold power button (SW9) for 1 second to turn on the EVK.
+    2.  Connect a USB cable to the connector for power supply.
+    3.  Press and hold power button for 1 second to turn on the EVK.
 
         !!! note
             Press and hold the button for 2 seconds when you turn off the EVK.
@@ -138,8 +148,8 @@ In this case use **QSPI boot** and SD card.
 === "RZ/G3S"
 
     1.  Insert the bootable SD card created at [Step 4](#step-4-build-renesas-rz-linux-bsp-plus-source-code) into the microSD card slot on SMARC module board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
-    2.  Connect a USB cable to CN6 for power supply.
-    3.  Press and hold power button (SW9) for 1 second to turn on the EVK.
+    2.  Connect a USB cable to the connector for power supply.
+    3.  Press and hold power button for 1 second to turn on the EVK.
 
         !!! note
             Press and hold the button for 2 seconds when you turn off the EVK.

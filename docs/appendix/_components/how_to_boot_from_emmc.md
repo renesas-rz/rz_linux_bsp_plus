@@ -223,8 +223,8 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
                 |               File name                   | Partition to save to eMMC | Address to save to eMMC | Address to load to RAM |
                 |:-----------------------------------------:|:-------------------------:|:-----------------------:|:----------------------:|
-                | `#!bash bl2_bp_mmc-smarc-rzg2l_pmic.srec` | `#!bash 1`                |`#!bash 00000001`        |`#!bash 11E00`          |
-                | `#!bash fip-smarc-rzg2l_pmic.srec`        | `#!bash 1`                |`#!bash 00000100`        |`#!bash 00000`          |
+                | `#!bash bl2_bp_mmc-smarc-rzg2lc.srec`     | `#!bash 1`                |`#!bash 00000001`        |`#!bash 11E00`          |
+                | `#!bash fip-smarc-rzg2lc.srec`            | `#!bash 1`                |`#!bash 00000100`        |`#!bash 00000`          |
 
 === "RZ/G2UL"
 
@@ -331,8 +331,8 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
                 |               File name                   | Partition to save to eMMC | Address to save to eMMC | Address to load to RAM |
                 |:-----------------------------------------:|:-------------------------:|:-----------------------:|:----------------------:|
-                | `#!bash bl2_bp_mmc-smarc-rzg2l_pmic.srec` | `#!bash 1`                |`#!bash 00000001`        |`#!bash 11E00`          |
-                | `#!bash fip-smarc-rzg2l_pmic.srec`        | `#!bash 1`                |`#!bash 00000100`        |`#!bash 00000`          |
+                | `#!bash bl2_bp_mmc-smarc-rzg2ul.srec`     | `#!bash 1`                |`#!bash 00000001`        |`#!bash 11E00`          |
+                | `#!bash fip-smarc-rzg2ul.srec`            | `#!bash 1`                |`#!bash 00000100`        |`#!bash 00000`          |
 
 === "RZ/G3S"
 
@@ -439,8 +439,8 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
                 |               File name                   | Partition to save to eMMC | Address to save to eMMC | Address to load to RAM |
                 |:-----------------------------------------:|:-------------------------:|:-----------------------:|:----------------------:|
-                | `#!bash bl2_bp_mmc-smarc-rzg2l_pmic.srec` | `#!bash 1`                |`#!bash 00000001`        |`#!bash a1e00`          |
-                | `#!bash fip-smarc-rzg2l_pmic.srec`        | `#!bash 1`                |`#!bash 00000300`        |`#!bash 00000`          |
+                | `#!bash bl2_bp_mmc-smarc-rzg3s.srec`      | `#!bash 1`                |`#!bash 00000001`        |`#!bash A1E00`          |
+                | `#!bash fip-smarc-rzg3s.srec`             | `#!bash 1`                |`#!bash 00000300`        |`#!bash 00000`          |
 
 ### Create a microSD card to boot Linux for eMMC boot
 === "RZ/G2L"
