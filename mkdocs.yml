@@ -73,8 +73,7 @@ extra:
   #   provider: mike
   analytics:
     provider: google
-    property: G-B7JGMHHT12
-    # https://renesas-rz.github.io/rz_linux_bsp_plus/
+    property: !ENV GOOGLE_ANALYTICS_KEY
 
 extra_css:
   - assets/stylesheets/extra.css
