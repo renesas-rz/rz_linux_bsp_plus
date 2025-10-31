@@ -12,7 +12,7 @@ Please obtain the necessary files from the following links according to the feat
 
         *Renesas' approval is required to obtain the security package. Please apply using the form at the link.*
 
-        [:octicons-download-16: Get Security package](https://www.renesas.com/en/secure/rz-mpu-security-package-linux-bsp-plus-secure-content){ .md-button .btn-round target=_blank}
+        [:octicons-download-16: Get Security package](https://www.renesas.com/document/sws/rzg2l-security-package-linux-bsp-plus-kernel-612-v20){ .md-button .btn-round target=_blank}
 
     * **Multi-OS package**
 
@@ -24,7 +24,11 @@ Please obtain the necessary files from the following links according to the feat
 
     * **Security package**
 
-        Security package for RZ/G2LC is expected to be available in 2025/Oct.
+        This package is to add Security functions such as Secure Boot, Trusted Execution Environment, Hardware Cryptographic IP, Secure Debug and Security Configurator to RZ MPU. Provided functions are different for each device. For more datails, please refer to the documentation included in the package.
+
+        *Renesas' approval is required to obtain the security package. Please apply using the form at the link.*
+
+        [:octicons-download-16: Get Security package](https://www.renesas.com/document/sws/rzg2l-security-package-linux-bsp-plus-kernel-612-v20){ .md-button .btn-round target=_blank}
 
     * **Multi-OS package**
 
@@ -34,7 +38,11 @@ Please obtain the necessary files from the following links according to the feat
 
     * **Security package**
 
-        Security package for RZ/G2UL is expected to be available in 2025/Oct.
+        This package is to add Security functions such as Secure Boot, Trusted Execution Environment, Hardware Cryptographic IP, Secure Debug and Security Configurator to RZ MPU. Provided functions are different for each device. For more datails, please refer to the documentation included in the package.
+
+        *Renesas' approval is required to obtain the security package. Please apply using the form at the link.*
+
+        [:octicons-download-16: Get Security package](https://www.renesas.com/document/sws/rzg2l-security-package-linux-bsp-plus-kernel-612-v20){ .md-button .btn-round target=_blank}
 
     * **Multi-OS package**
 
@@ -44,7 +52,11 @@ Please obtain the necessary files from the following links according to the feat
 
     * **Security package**
 
-        Security package for RZ/G3S is expected to be available in 2025/Oct.
+        This package is to add Security functions such as Secure Boot, Trusted Execution Environment, Hardware Cryptographic IP, Secure Debug and Security Configurator to RZ MPU. Provided functions are different for each device. For more datails, please refer to the documentation included in the package.
+
+        *Renesas' approval is required to obtain the security package. Please apply using the form at the link.*
+
+        [:octicons-download-16: Get Security package](https://www.renesas.com/document/sws/rzg3s-security-package-linux-bsp-plus-kernel-612-v10){ .md-button .btn-round target=_blank}
 
     * **Multi-OS package**
 
