@@ -32,7 +32,9 @@ Please obtain the necessary files from the following links according to the feat
 
     * **Multi-OS package**
 
-        Multi-OS package for RZ/G2LC is expected to be available in 2025/Nov.
+        This package is the software package consisting of RZ/G Flexible Software Package (FSP) as software package for Renesas MCU with Arm Cortex-M Core and OpenAMP as standardization API of framework for interprocessor communication for developing multi OS solution.
+
+        [:octicons-download-16: Get Multi-OS package](https://github.com/renesas-rz/meta-rz-multi-os){ .md-button .btn-round target=_blank}
 
 === "RZ/G2UL"
 
@@ -46,7 +48,9 @@ Please obtain the necessary files from the following links according to the feat
 
     * **Multi-OS package**
 
-        Multi-OS package for RZ/G2UL is expected to be available in 2025/Nov.
+        This package is the software package consisting of RZ/G Flexible Software Package (FSP) as software package for Renesas MCU with Arm Cortex-M Core and OpenAMP as standardization API of framework for interprocessor communication for developing multi OS solution.
+
+        [:octicons-download-16: Get Multi-OS package](https://github.com/renesas-rz/meta-rz-multi-os){ .md-button .btn-round target=_blank}
 
 === "RZ/G3S"
 
@@ -60,4 +64,7 @@ Please obtain the necessary files from the following links according to the feat
 
     * **Multi-OS package**
 
-        Multi-OS package for RZ/G3S is expected to be available in 2025/Nov.
+        This package is the software package consisting of RZ/G Flexible Software Package (FSP) as software package for Renesas MCU with Arm Cortex-M Core and OpenAMP as standardization API of framework for interprocessor communication for developing multi OS solution.
+
+        [:octicons-download-16: Get Multi-OS package](https://github.com/renesas-rz/meta-rz-multi-os){ .md-button .btn-round target=_blank}
+
