@@ -1,0 +1,13 @@
+header:
+  - Kernel/Yocto Version
+  - GStreamer Version
+  - User's Manual
+
+version:
+  - distro_version: Kernel 6.12, Yocto-5.0 (Scarthgap)
+    gstreamer_version: v1.22.12
+
+um:
+  - title: "RZ/G2L Group and RZ/V2L Group"
+    subtitle: "Linux Interface Specification GStreamer User's Manual: Software"
+    url: https://www.renesas.com/document/mas/rzg2l-group-and-rzv2l-group-linux-interface-specification-gstreamer-users-manual-software

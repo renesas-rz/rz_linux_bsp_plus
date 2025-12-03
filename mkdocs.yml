@@ -143,7 +143,9 @@ plugins:
           - assets/stylesheets/extra.css
   - table-reader
   # macros must be in the bottom one
-  - macros
+  - macros:
+      include_yaml:
+        - gst: docs/appendix/_tables/gstreamer_data.yml
 
 hooks:
   - mkdocs_event_hook.py

@@ -468,6 +468,7 @@ p:has(.btn-right) {
 
 .md-button {
   text-align: center;
+  background: white;
 }
 
 .btn-indent {
@@ -476,6 +477,10 @@ p:has(.btn-right) {
 
 .btn-small {
   font-size: 0.55rem !important;
+}
+
+.btn-no-bound:hover {
+  margin-right: 0 !important;
 }
 
 #back_to_getting_started_btn {
@@ -747,6 +752,17 @@ p.hash + .language-bash code>span::before {
   content: "# ";
 }
 
+p.wrap + .language-bash code {
+  text-wrap: pretty;
+  padding-left: 2.34em;
+  text-indent: -1.1764705882em;
+}
+
+p.diamond2.wrap + .language-bash code {
+  padding-left: 3.04em;
+  text-indent: -1.84em;
+}
+
 /* switch-icons */
 /* ============ */
 
@@ -803,4 +819,57 @@ p.hash + .language-bash code>span::before {
 
 a.md-source[target=_blank].footer-link::after {
   margin-top: 0.375em;
+}
+
+/* gstreamer */
+/* ========= */
+
+#gst-version {
+  tbody {
+    tr:nth-child(1):hover {
+      background-color: rgba(0, 0, 0, .055);
+      box-shadow: none;
+    }
+
+    td.dummy-cell {
+      height: 0;
+      font-size: 0;
+      margin: 0;
+      border: 0 !important;
+    }
+  }
+
+  tbody:hover {
+    tr {
+      box-shadow: none;
+    }
+
+    tr:nth-child(1) {
+      background-color: var(--md-typeset-table-color--light);
+
+      td {
+        box-shadow: 0 .05rem 0 var(--md-default-bg-color) inset;
+      }
+    }
+  }
+
+  tr:hover {
+    td {
+      box-shadow: 0 .05rem 0 var(--md-default-bg-color) inset;
+    }
+  }
+
+  .md-button {
+    width: max-content;
+  }
+}
+
+@media screen and (max-width:44.984375em) {
+  #gst-version .btn-subtext  {
+    font-size: 85% !important;
+  }
+
+  #gst-version .md-button  {
+    font-size: 85%;
+  }
 }
