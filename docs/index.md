@@ -21,3 +21,6 @@ A S/W package with latest LTS Kernel and Yocto support running on Renesas EVK.
 {% include "./history/_components/__front_matter.md" %}
 
 {% include "./getting_started/_components/__front_matter.md" %}
+
+[Get your target board now](RZG/evk/index.md) and [GET STARTED](RZG/getting_started/index.md). RZ/G<br>
+[Get your target board now](RZTN/evk/index.md) and [GET STARTED](RZTN/getting_started/index.md). RZ/T,N<br>

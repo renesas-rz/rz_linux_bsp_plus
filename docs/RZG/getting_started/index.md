@@ -1,4 +1,4 @@
-# Getting Started
+# Getting Started for RZ/G
 
 This page explains how to start-up the Renesas RZ Linux BSP Plus.
 

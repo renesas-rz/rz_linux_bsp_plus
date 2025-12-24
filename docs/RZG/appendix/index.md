@@ -1,4 +1,4 @@
-# Appendix
+# Appendix for RZ/G
 
 {% include "./_components/how_to_boot_from_emmc.md" %}
 

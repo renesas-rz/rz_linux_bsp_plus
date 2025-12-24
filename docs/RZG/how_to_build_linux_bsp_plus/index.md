@@ -1,4 +1,4 @@
-# How To Build Linux BSP Plus
+# How To Build Linux BSP Plus for RZ/G
 
 {% include "./_components/introduction.md" %}
 

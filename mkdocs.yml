@@ -9,9 +9,16 @@ repo_url: https://github.com/renesas-rz/rz_linux_bsp_plus
 nav:
   # - Guidelines: guidelines/index.md
   - Home: index.md
-  - Getting Started: getting_started/index.md
-  - How To Build Linux BSP Plus: how_to_build_linux_bsp_plus/index.md
-  - Appendix: appendix/index.md
+  - RZ/G Series:
+    #- RZ/G Top: RZG/index.md
+    - Getting Started: RZG/getting_started/index.md
+    - How To Build Linux BSP Plus: RZG/how_to_build_linux_bsp_plus/index.md
+    - Appendix: RZG/appendix/index.md
+  - RZ/T,N Series:
+    #- RZ/T,N Top: RZTN/index.md
+    - Getting Started: RZTN/getting_started/index.md
+    - How To Build Linux BSP Plus: RZTN/how_to_build_linux_bsp_plus/index.md
+    - Appendix: RZTN/appendix/index.md
 
 theme:
   name: material
@@ -119,10 +126,14 @@ plugins:
         - _*
         # - guidelines/_*/*
         - guidelines/*
-        - getting_started/_*/*
-        - how_to_build_linux_bsp_plus/_*/*
-        - appendix/_*/*
-        - evk/_*/*
+        - RZG/getting_started/_*/*
+        - RZG/how_to_build_linux_bsp_plus/_*/*
+        - RZG/appendix/_*/*
+        - RZG/evk/_*/*
+        - RZTN/getting_started/_*/*
+        - RZTN/how_to_build_linux_bsp_plus/_*/*
+        - RZTN/appendix/_*/*
+        - RZTN/evk/_*/*
         - history/_*/*
   - glightbox
   - include-markdown
@@ -145,7 +156,7 @@ plugins:
   # macros must be in the bottom one
   - macros:
       include_yaml:
-        - gst: docs/appendix/_tables/gstreamer_data.yml
+        - gst: docs/RZG/appendix/_tables/gstreamer_data.yml
 
 hooks:
   - mkdocs_event_hook.py
