@@ -55,3 +55,5 @@ Please obtain the necessary files from the following links according to the feat
         This package includes examples for using XDP which is a packet processing framework within the Linux kernel. XDP enables efficient and low-latency packet processing. For more datails, please refer to the documentation included in the package. This package is also compatible with Verified Linux Package v5.0.0. When using Linux BSP Plus, replace the package name in the document accordingly.
 
         [:octicons-download-16: Get XDP Package](https://www.renesas.com/document/swo/rzt2h-rzn2h-xdp-package-v5000-rtk0ef0177z02000zj-rz-xdp-v5000zip){ .md-button .btn-round target=_blank}
+
+[Back to the Getting Started >](../../RZTN/getting_started/#step-3-obtain-and-build-renesas-rz-linux-bsp-plus-source-code){ .md-button .md-button--primary .btn-right }

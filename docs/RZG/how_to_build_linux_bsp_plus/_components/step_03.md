@@ -68,3 +68,4 @@ Please obtain the necessary files from the following links according to the feat
 
         [:octicons-download-16: Get Multi-OS package](https://github.com/renesas-rz/meta-rz-multi-os){ .md-button .btn-round target=_blank}
 
+[Back to the Getting Started >](../../RZG/getting_started/#step-3-obtain-and-build-renesas-rz-linux-bsp-plus-source-code){ .md-button .md-button--primary .btn-right }
