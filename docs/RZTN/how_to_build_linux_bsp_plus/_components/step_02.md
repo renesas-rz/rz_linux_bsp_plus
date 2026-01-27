@@ -16,7 +16,7 @@ Please obtain the necessary files from the following links according to the feat
 
     * **Multi-OS package**
 
-        Multi-OS package for RZ/T2H is expected to be available in 2026/Jan.
+        Multi-OS package for RZ/T2H is expected to be available in 2026/Feb.
     
     * **Time-sensitive Network Package**
 
@@ -42,7 +42,7 @@ Please obtain the necessary files from the following links according to the feat
 
     * **Multi-OS package**
 
-        Multi-OS package for RZ/N2H is expected to be available in 2026/Jan.
+        Multi-OS package for RZ/N2H is expected to be available in 2026/Feb.
 
     * **Time-sensitive Network Package**
 
