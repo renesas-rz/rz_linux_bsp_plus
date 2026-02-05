@@ -16,8 +16,10 @@ Please obtain the necessary files from the following links according to the feat
 
     * **Multi-OS package**
 
-        Multi-OS package for RZ/T2H is expected to be available in 2026/Feb.
-    
+        This package is the software package consisting of RZ/T and RZ/N Flexible Software Package (FSP) as software package for Renesas MCU with Arm Cortex-R Core or and Cortex-A Core, and OpenAMP as standardization API of framework for interprocessor communication for developing multi OS solution.
+
+        [:octicons-download-16: Get Multi-OS package](https://www.renesas.com/document/swe/rzt-multi-os-package-v300){ .md-button .btn-round target=_blank}
+
     * **Time-sensitive Network Package**
 
         This package includes examples for using Time-sensitive Network which is a set of networking technologies designed to enable real-time communication over Ethernet. For more datails, please refer to the documentation included in the package. This package is also compatible with Verified Linux Package v5.0.0. When using Linux BSP Plus, replace the package name in the document accordingly.
@@ -42,7 +44,9 @@ Please obtain the necessary files from the following links according to the feat
 
     * **Multi-OS package**
 
-        Multi-OS package for RZ/N2H is expected to be available in 2026/Feb.
+        This package is the software package consisting of RZ/T and RZ/N Flexible Software Package (FSP) as software package for Renesas MCU with Arm Cortex-R Core or and Cortex-A Core, and OpenAMP as standardization API of framework for interprocessor communication for developing multi OS solution.
+
+        [:octicons-download-16: Get Multi-OS package](https://www.renesas.com/document/swe/rzn-multi-os-package-v300){ .md-button .btn-round target=_blank}
 
     * **Time-sensitive Network Package**
 
