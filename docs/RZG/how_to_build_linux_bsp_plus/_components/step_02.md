@@ -113,7 +113,7 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
 
 5.  Enable Graphics and Video Codec
 
-    The graphics package and the video codec package can be used at the same time, or just one of the packages can be used individually.
+    The Graphics package and the video codec package can be used at the same time, or just one of the packages can be used individually.
 
     !!! note
         You need to download Graphics and Video Codec packages for this step.
@@ -131,6 +131,8 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
             !!! note
                 If you want to enable the Graphics on RZ/G2L when building `#!bash core-image-weston`,
                 please copy the Graphics package to working directory and run the commands below.
+
+                If you prefer to use the OSS implementation instead of the Graphics package, please refer to the [Panfrost](../appendix/index.md#panfrost) section in the Appendix page.
 
                 If you build `#!bash core-image-minimal`, please ignore this step.
 

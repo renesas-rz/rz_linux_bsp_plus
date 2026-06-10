@@ -231,6 +231,14 @@
     text-align: center !important;
     /* border: 0.025rem solid !important; */
     border-color: var(--renesas-primary-color-fg-grey) !important;
+
+    a {
+      color: white;
+    }
+
+    a:hover {
+      color: var(--renesas-secondary-color-fg-yellow);
+    }
   }
 
   th::after {
@@ -756,6 +764,10 @@ p.wrap + .language-bash code {
   text-wrap: pretty;
   padding-left: 2.34em;
   text-indent: -1.1764705882em;
+}
+
+p.wrap + .language-console code {
+  text-wrap: pretty;
 }
 
 p.diamond2.wrap + .language-bash code {
