@@ -23,12 +23,14 @@ In this section, the steps to boot from eSD are described.
             |             |            | * `#!bash fip-smarc-rzg2l_pmic.srec`                            |
             |             |            | * `#!bash fip-smarc-rzg2l_pmic.bin`                             |
             +-------------+------------+-----------------------------------------------------------------+
+            |             |            | &nbsp;                                                          |
+            |             |            |                                                                 |
             | Primary #2  | Ext4       |     ./                                                          |
             |             |            |     ├── bin                                                     |
             |             |            |     ├── boot                                                    |
-            |             |            |     　  ├─ Image                                                |
-            |             |            |     　  ├─ Image-6.12.34-cip3-yocto-standard-gfd6f2e323a18      |
-            |             |            |       　└─ r9a07g044l2-smarc.dtb                                |
+            |             |            |     │   ├── Image                                               |
+            |             |            |     │   ├── Image-6.12.34-cip3-yocto-standard-gfd6f2e323a18     |
+            |             |            |     │   └── r9a07g044l2-smarc.dtb                               |
             |             |            |     ├── dev                                                     |
             |             |            |     ├── etc                                                     |
             |             |            |     ├── home                                                    |
@@ -44,13 +46,15 @@ In this section, the steps to boot from eSD are described.
             |             |            |     ├── tmp                                                     |
             |             |            |     ├── usr                                                     |
             |             |            |     └── var                                                     |
+            |             |            |                                                                 |
+            |             |            | &nbsp;                                                          |
             +-------------+------------+-----------------------------------------------------------------+
 
 === "RZ/G2LC"
     Prepare the micro SD card using the `#!bash wic` image file.
 
     Two files (`#!bash bl2_bp_esd-smarc-rzg2lc.bin` and `#!bash fip-smarc-rzg2lc.bin`) are used for boot from eSD.
-    
+
     - File and directory in the micro SD card
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
@@ -65,12 +69,14 @@ In this section, the steps to boot from eSD are described.
             |             |            | * `#!bash fip-smarc-rzg2lc.srec`                                |
             |             |            | * `#!bash fip-smarc-rzg2lc.bin`                                 |
             +-------------+------------+-----------------------------------------------------------------+
+            |             |            | &nbsp;                                                          |
+            |             |            |                                                                 |
             | Primary #2  | Ext4       |     ./                                                          |
             |             |            |     ├── bin                                                     |
             |             |            |     ├── boot                                                    |
-            |             |            |     　  ├─ Image                                                |
-            |             |            |     　  ├─ Image-6.12.34-cip3-yocto-standard-gb105f79b143c      |
-            |             |            |       　└─ r9a07g044c2-smarc.dtb                                |
+            |             |            |     │   ├── Image                                               |
+            |             |            |     │   ├── Image-6.12.34-cip3-yocto-standard-gb105f79b143c     |
+            |             |            |     │   └── r9a07g044c2-smarc.dtb                               |
             |             |            |     ├── dev                                                     |
             |             |            |     ├── etc                                                     |
             |             |            |     ├── home                                                    |
@@ -86,13 +92,15 @@ In this section, the steps to boot from eSD are described.
             |             |            |     ├── tmp                                                     |
             |             |            |     ├── usr                                                     |
             |             |            |     └── var                                                     |
+            |             |            |                                                                 |
+            |             |            | &nbsp;                                                          |
             +-------------+------------+-----------------------------------------------------------------+
 
 === "RZ/G2UL"
     Prepare the micro SD card using the `#!bash wic` image file.
 
     Two files (`#!bash bl2_bp_esd-smarc-rzg2ul.bin` and `#!bash fip-smarc-rzg2ul.bin`) are used for boot from eSD.
-    
+
     - File and directory in the micro SD card
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
@@ -107,12 +115,14 @@ In this section, the steps to boot from eSD are described.
             |             |            | * `#!bash fip-smarc-rzg2ul.srec`                                |
             |             |            | * `#!bash fip-smarc-rzg2ul.bin`                                 |
             +-------------+------------+-----------------------------------------------------------------+
+            |             |            | &nbsp;                                                          |
+            |             |            |                                                                 |
             | Primary #2  | Ext4       |     ./                                                          |
             |             |            |     ├── bin                                                     |
             |             |            |     ├── boot                                                    |
-            |             |            |     　  ├─ Image                                                |
-            |             |            |     　  ├─ Image-6.12.34-cip3-yocto-standard-gfd5929f36c66      |
-            |             |            |       　└─ r9a07g043u11-smarc.dtb                               |
+            |             |            |     │   ├── Image                                               |
+            |             |            |     │   ├── Image-6.12.34-cip3-yocto-standard-gfd5929f36c66     |
+            |             |            |     │   └── r9a07g043u11-smarc.dtb                              |
             |             |            |     ├── dev                                                     |
             |             |            |     ├── etc                                                     |
             |             |            |     ├── home                                                    |
@@ -128,13 +138,15 @@ In this section, the steps to boot from eSD are described.
             |             |            |     ├── tmp                                                     |
             |             |            |     ├── usr                                                     |
             |             |            |     └── var                                                     |
+            |             |            |                                                                 |
+            |             |            | &nbsp;                                                          |
             +-------------+------------+-----------------------------------------------------------------+
 
 === "RZ/G3S"
     Prepare the micro SD card using the `#!bash wic` image file.
 
     Two files (`#!bash bl2_bp_esd-smarc-rzg3s.bin` and `#!bash fip-smarc-rzg3s.bin`) are used for boot from eSD.
-    
+
     - File and directory in the micro SD card
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
@@ -149,12 +161,14 @@ In this section, the steps to boot from eSD are described.
             |             |            | * `#!bash fip-smarc-rzg3s.srec`                                 |
             |             |            | * `#!bash fip-smarc-rzg3s.bin`                                  |
             +-------------+------------+-----------------------------------------------------------------+
+            |             |            | &nbsp;                                                          |
+            |             |            |                                                                 |
             | Primary #2  | Ext4       |     ./                                                          |
             |             |            |     ├── bin                                                     |
             |             |            |     ├── boot                                                    |
-            |             |            |     　  ├─ Image                                                |
-            |             |            |     　  ├─ Image-6.12.34-cip3-yocto-standard-gfd5929f36c66      |
-            |             |            |       　└─ r9a08g045s33-smarc.dtb                               |
+            |             |            |     │   ├── Image                                               |
+            |             |            |     │   ├── Image-6.12.34-cip3-yocto-standard-gfd5929f36c66     |
+            |             |            |     │   └── r9a08g045s33-smarc.dtb                              |
             |             |            |     ├── dev                                                     |
             |             |            |     ├── etc                                                     |
             |             |            |     ├── home                                                    |
@@ -170,6 +184,8 @@ In this section, the steps to boot from eSD are described.
             |             |            |     ├── tmp                                                     |
             |             |            |     ├── usr                                                     |
             |             |            |     └── var                                                     |
+            |             |            |                                                                 |
+            |             |            | &nbsp;                                                          |
             +-------------+------------+-----------------------------------------------------------------+
 
 ### Set SMARC EVK board for eSD boot
@@ -180,7 +196,7 @@ In this section, the steps to boot from eSD are described.
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](images/smarc-carrier-board-SW11.png){ align=left .switch-icon }
+        ![](./../getting_started/images/smarc-carrier/SW11.png){ align=left .switch-icon }
 
         |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
         |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -190,7 +206,7 @@ In this section, the steps to boot from eSD are described.
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](images/smarc-rzg2l-board-SW1.png){ align=left .switch-icon }
+        ![](./../getting_started/images/smarc-rzg2l/SW1.png){ align=left .switch-icon }
 
         |      SW1-1     |      SW1-2     |
         |:--------------:|:--------------:|
@@ -206,7 +222,7 @@ In this section, the steps to boot from eSD are described.
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](images/smarc-carrier-board-SW11.png){ align=left .switch-icon }
+        ![](./../getting_started/images/smarc-carrier/SW11.png){ align=left .switch-icon }
 
         |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
         |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -216,11 +232,11 @@ In this section, the steps to boot from eSD are described.
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](images/smarc-rzg2lc-board-SW1.png){ align=left .switch-icon }
+        ![](./../getting_started/images/smarc-rzg2lc/SW1.png){ align=left .switch-icon }
 
-        |      SW1-1     |      SW1-2     |
-        |:--------------:|:--------------:|
-        | ON {: .green } | ON {: .green } |
+        |      SW1-1     |      SW1-2     |      SW1-3     |      SW1-4     |      SW1-5     |      SW1-6     |
+        |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
+        | ON {: .green } | ON {: .green } | ON {: .green } |  OFF {: .red}  | ON {: .green } | ON {: .green } |
 
     Please insert the micro SD card into the SOM module slot.
 
@@ -232,7 +248,7 @@ In this section, the steps to boot from eSD are described.
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](images/smarc-carrier-board-SW11.png){ align=left .switch-icon }
+        ![](./../getting_started/images/smarc-carrier/SW11.png){ align=left .switch-icon }
 
         |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
         |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -242,11 +258,11 @@ In this section, the steps to boot from eSD are described.
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](images/smarc-rzg2ul-board-SW1.png){ align=left .switch-icon }
+        ![](./../getting_started/images/smarc-rzg2ul/SW1.png){ align=left .switch-icon }
 
-        |      SW1-1     |      SW1-2     |
-        |:--------------:|:--------------:|
-        | ON {: .green } | ON {: .green } |
+        |      SW1-1     |      SW1-2     |      SW1-3     |
+        |:--------------:|:--------------:|:--------------:|
+        | ON {: .green } | ON {: .green } | ON {: .green } |
 
     Please insert the micro SD card into the SOM module slot.
 
@@ -258,7 +274,7 @@ In this section, the steps to boot from eSD are described.
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](images/smarc-rzg3s-board-SWMODE_eSD.JPG){ align=left .switch-icon }
+        ![](./../getting_started/images/smarc-carrier-II/SWMODE_eSD.JPG){ align=left .switch-icon }
 
         |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
         |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -268,7 +284,7 @@ In this section, the steps to boot from eSD are described.
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](images/smarc-rzg3s-board-SWCONFIG_uSD0.JPG){ align=left .switch-icon }
+        ![](./../getting_started/images/smarc-rzg3s/SWCONFIG_uSD0.JPG){ align=left .switch-icon }
 
         |  SW_CONFIG[1]  |  SW_CONFIG[2]  |  SW_CONFIG[3]  |  SW_CONFIG[4]  |  SW_CONFIG[5]  |  SW_CONFIG[6]  |
         |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|

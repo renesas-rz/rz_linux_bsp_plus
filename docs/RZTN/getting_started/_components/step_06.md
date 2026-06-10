@@ -12,12 +12,11 @@ In this case use **xSPI boot** and SD card.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            ![](images/rzt2h-board-CN77_SD.png){ align=left .switch-icon }
+            ![](images/evk-rzt2h/CN77_SD.png){ align=left .switch-icon }
 
     * SW14
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
 
             |     SW14-1     |     SW14-2     |     SW14-3     |     SW14-4     |     SW14-5     |     SW14-6     |     SW14-7     |     SW14-8     |
             |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
@@ -35,12 +34,11 @@ In this case use **xSPI boot** and SD card.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            ![](images/rzn2h-board-JP23_eMMC.png){ align=left .switch-icon }
+            ![](images/evk-rzn2h/JP23_eMMC.png){ align=left .switch-icon }
 
     * DSW3
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
 
             |     DSW3-1     |     DSW3-2     |     DSW3-3     |     DSW3-4     |     DSW3-5     |     DSW3-6     |     DSW3-7     |     DSW3-8     |
             |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
@@ -52,20 +50,9 @@ In this case use **xSPI boot** and SD card.
 
 ### 2. Turn on EVK and start Linux BSP Plus
 
-=== "RZ/T2H"
+1.  Insert the bootable SD card created at [Step 4](#step-4-deploy-renesas-rz-linux-bsp-plus) into the microSD card slot on board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
+2.  Connect a USB cable to the connector for power supply.
+3.  Press and hold power button for 1 second to turn on the EVK.
 
-    1.  Insert the bootable SD card created at [Step 4](#step-4-build-renesas-rz-linux-bsp-plus-source-code) into the microSD card slot on board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
-    2.  Connect a USB cable to the connector for power supply.
-    3.  Press and hold power button for 1 second to turn on the EVK.
-
-        !!! note
-            Press and hold the button for 2 seconds when you turn off the EVK.
-
-=== "RZ/N2H"
-
-    1.  Insert the bootable SD card created at [Step 4](#step-4-build-renesas-rz-linux-bsp-plus-source-code) into the microSD card slot on board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
-    2.  Connect a USB cable to the connector for power supply.
-    3.  Press and hold power button for 1 second to turn on the EVK.
-
-        !!! note
-            Press and hold the button for 2 seconds when you turn off the EVK.
+    !!! note
+        Press and hold the button for 2 seconds when you turn off the EVK.

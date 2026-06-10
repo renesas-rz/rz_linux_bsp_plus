@@ -177,15 +177,25 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
             ```
             {: .dollar }
 
-        \* RZ/G2LC does not support Video Codecs package.
+        !!! note
+
+            RZ/G2LC does not support Video Codecs package.
 
     === "RZ/G2UL"
 
-        \* RZ/G2UL does not support Graphics and Video Codecs packages.
+        !!! note
+
+            RZ/G2UL does not support Graphics and Video Codecs packages.
+
+            Please skip this step.
 
     === "RZ/G3S"
 
-        \* RZ/G3S does not support Graphics and Video Codecs packages.
+        !!! note
+
+            RZ/G3S does not support Graphics and Video Codecs packages.
+
+            Please skip this step.
 
 6.  Initialize build environment
 
@@ -229,11 +239,25 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
             ```
             {: .dollar }
 
+        !!! note
+
+            RZ/G2LC does not support Video Codecs package.
+
     === "RZ/G2UL"
-        Not Applicable
+
+        !!! note
+
+            RZ/G2UL does not support Graphics and Video Codecs packages.
+
+            Please skip this step.
 
     === "RZ/G3S"
-        Not Applicable
+
+        !!! note
+
+            RZ/G3S does not support Graphics and Video Codecs packages.
+
+            Please skip this step.
 
 8.  Enable `#!bash mke2fs` (Make Extended Filesystem) command sets
 
@@ -243,13 +267,11 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
     !!! danger "Caution"
         If eMMC boot is required, this step is mandatory.
 
-    === "Yocto 5.0 (Scarthgap)"
-
-        ```bash
-        cd ${WORK}/build
-        echo 'IMAGE_INSTALL:append = " e2fsprogs-mke2fs"'>> conf/local.conf
-        ```
-        {: .dollar }
+    ```bash
+    cd ${WORK}/build
+    echo 'IMAGE_INSTALL:append = " e2fsprogs-mke2fs"'>> conf/local.conf
+    ```
+    {: .dollar }
 
 9.  Build images
 
@@ -373,14 +395,9 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
 
         ```bash
         cd ${WORK}/build
-        MACHINE=${BOARD} bitbake <image name>
+        MACHINE=${BOARD} bitbake core-image-minimal
         ```
         {: .dollar }
-
-        !!! note
-            Available build options (`#!bash <image name>`) are:
-
-            * `#!bash core-image-minimal`
 
         !!! note
             After building images, you can find them in the following directories.
@@ -429,14 +446,9 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
 
         ```bash
         cd ${WORK}/build
-        MACHINE=${BOARD} bitbake <image name>
+        MACHINE=${BOARD} bitbake core-image-minimal
         ```
         {: .dollar }
-
-        !!! note
-            Available build options (`#!bash <image name>`) are:
-
-            * `#!bash core-image-minimal`
 
         !!! note
             After building images, you can find them in the following directories.

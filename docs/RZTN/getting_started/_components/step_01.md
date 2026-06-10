@@ -2,11 +2,11 @@
 
 Click the button below to get the board.
 
-[Board<br><span class="btn-subtext">Get the board for RZ MPUs.</span>](../evk/index.md?src=getting_started){ .md-button .md-button--primary .btn-indent }
+[Board<br><span class="btn-subtext">Get the board for RZ MPUs.</span>](./../../evk/index.md#rztn-series?src=getting_started&evk=rztn){ .md-button .md-button--primary .btn-indent }
 
 === "RZ/T2H"
 
-    ![](../evk/images/rtk9rzt2h0s00000bj-angle.jpg){ align=right width=220 style=max-width:35%; }
+    ![](./../../evk/images/rtk9rzt2h0s00000bj-angle.jpg){ align=right width=220 style=max-width:35%; }
 
     The RZ/T2H Evaluation Board Kit (EVK) is the ideal board kit for RZ/T2H evaluation.
 
@@ -23,7 +23,7 @@ Click the button below to get the board.
 
 === "RZ/N2H"
 
-    ![](../evk/images/rtk9rzn2h0s00000bj-angle.jpg){ align=right width=220 style=max-width:35%; }
+    ![](./../../evk/images/rtk9rzn2h0s00000bj-angle.jpg){ align=right width=220 style=max-width:35%; }
 
     The RZ/N2H Evaluation Board Kit (EVK) is the ideal board kit for RZ/N2H evaluation.
 

@@ -12,7 +12,7 @@ In this case use **QSPI boot** and SD card.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            ![](images/smarc-rzg2l-board-SW1_eMMC.png){ align=left .switch-icon }
+            ![](images/smarc-rzg2l/SW1_eMMC.png){ align=left .switch-icon }
 
             |      SW1-1     |      SW1-2     |
             |:--------------:|:--------------:|
@@ -22,7 +22,7 @@ In this case use **QSPI boot** and SD card.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            ![](images/smarc-carrier-board-SW11_QSPI.png){ align=left .switch-icon }
+            ![](images/smarc-carrier/SW11_QSPI.png){ align=left .switch-icon }
 
             |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
             |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -40,7 +40,7 @@ In this case use **QSPI boot** and SD card.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            ![](images/smarc-rzg2lc-board-SW1_eMMC.JPG){ align=left .switch-icon }
+            ![](images/smarc-rzg2lc/SW1_eMMC.JPG){ align=left .switch-icon }
 
             |      SW1-1     |      SW1-2     |      SW1-3     |      SW1-4     |      SW1-5     |      SW1-6     |
             |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
@@ -50,7 +50,7 @@ In this case use **QSPI boot** and SD card.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            ![](images/smarc-carrier-board-SW11_QSPI.png){ align=left .switch-icon }
+            ![](images/smarc-carrier/SW11_QSPI.png){ align=left .switch-icon }
 
             |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
             |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -68,7 +68,7 @@ In this case use **QSPI boot** and SD card.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            ![](images/smarc-rzg2ul-board-SW1_eMMC.JPG){ align=left .switch-icon }
+            ![](images/smarc-rzg2ul/SW1_eMMC.JPG){ align=left .switch-icon }
 
             |      SW1-1     |      SW1-2     |      SW1-3     |
             |:--------------:|:--------------:|:--------------:|
@@ -78,7 +78,7 @@ In this case use **QSPI boot** and SD card.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            ![](images/smarc-carrier-board-SW11_QSPI.png){ align=left .switch-icon }
+            ![](images/smarc-carrier/SW11_QSPI.png){ align=left .switch-icon }
 
             |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
             |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -96,7 +96,7 @@ In this case use **QSPI boot** and SD card.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            ![](images/smarc-rzg3s-board-SWCONFIG_eMMC.JPG){ align=left .switch-icon }
+            ![](images/smarc-rzg3s/SWCONFIG_eMMC.JPG){ align=left .switch-icon }
 
             |  SW_CONFIG[1]  |  SW_CONFIG[2]  |  SW_CONFIG[3]  |  SW_CONFIG[4]  |  SW_CONFIG[5]  |  SW_CONFIG[6]  |
             |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
@@ -106,7 +106,7 @@ In this case use **QSPI boot** and SD card.
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            ![](images/smarc-rzg3s-board-SWMODE_QSPI.JPG){ align=left .switch-icon }
+            ![](images/smarc-carrier-II/SWMODE_QSPI.JPG){ align=left .switch-icon }
 
             |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
             |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -118,38 +118,9 @@ In this case use **QSPI boot** and SD card.
 
 ### 2. Turn on EVK and start Linux BSP Plus
 
-=== "RZ/G2L"
+1.  Insert the bootable SD card created at [Step 4](#step-4-deploy-renesas-rz-linux-bsp-plus) into the microSD card slot on SMARC module board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
+2.  Connect a USB cable to the connector for power supply.
+3.  Press and hold power button for 1 second to turn on the EVK.
 
-    1.  Insert the bootable SD card created at [Step 4](#step-4-build-renesas-rz-linux-bsp-plus-source-code) into the microSD card slot on SMARC module board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
-    2.  Connect a USB cable to the connector for power supply.
-    3.  Press and hold power button for 1 second to turn on the EVK.
-
-        !!! note
-            Press and hold the button for 2 seconds when you turn off the EVK.
-
-=== "RZ/G2LC"
-
-    1.  Insert the bootable SD card created at [Step 4](#step-4-build-renesas-rz-linux-bsp-plus-source-code) into the microSD card slot on SMARC module board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
-    2.  Connect a USB cable to the connector for power supply.
-    3.  Press and hold power button for 1 second to turn on the EVK.
-
-        !!! note
-            Press and hold the button for 2 seconds when you turn off the EVK.
-
-=== "RZ/G2UL"
-
-    1.  Insert the bootable SD card created at [Step 4](#step-4-build-renesas-rz-linux-bsp-plus-source-code) into the microSD card slot on SMARC module board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
-    2.  Connect a USB cable to the connector for power supply.
-    3.  Press and hold power button for 1 second to turn on the EVK.
-
-        !!! note
-            Press and hold the button for 2 seconds when you turn off the EVK.
-
-=== "RZ/G3S"
-
-    1.  Insert the bootable SD card created at [Step 4](#step-4-build-renesas-rz-linux-bsp-plus-source-code) into the microSD card slot on SMARC module board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
-    2.  Connect a USB cable to the connector for power supply.
-    3.  Press and hold power button for 1 second to turn on the EVK.
-
-        !!! note
-            Press and hold the button for 2 seconds when you turn off the EVK.
+    !!! note
+        Press and hold the button for 2 seconds when you turn off the EVK.

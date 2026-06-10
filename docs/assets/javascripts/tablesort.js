@@ -13,10 +13,4 @@ document$.subscribe(function() {
       new Tablesort(table)
     }
   })
-
-  // back btn @ download page
-  if (window.location.href.indexOf("?src=getting_started") > -1) {
-    var btn = document.getElementById("back_to_getting_started_btn");
-    btn.style.display = "block";
-  }
 })

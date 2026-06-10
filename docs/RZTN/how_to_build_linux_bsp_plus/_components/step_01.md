@@ -83,17 +83,15 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
     ```
     {: .dollar }
 
-6.  Install ethtool command
+6.  Install `#!bash ethtool` command
 
-    "ethtool" command is a command for configuring network interfaces. If you want to install the ethtool command on Linux, modify local.conf by the following instruction.
+    `#!bash ethtool` command is a command for configuring network interfaces. If you want to install the `#!bash ethtool` command on Linux, modify local.conf by the following instruction.
 
-    === "Yocto 5.0 (Scarthgap)"
-
-        ```bash
-        cd ${WORK}/build
-        echo 'IMAGE_INSTALL:append = " ethtool"' >> conf/local.conf
-        ```
-        {: .dollar }
+    ```bash
+    cd ${WORK}/build
+    echo 'IMAGE_INSTALL:append = " ethtool"' >> conf/local.conf
+    ```
+    {: .dollar }
 
 7.  Build images
 
@@ -128,7 +126,7 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
                 |        |                  | * `#!bash bl2_bp_xspi0-rzt2h-dev.srec`                        |
                 |        |                  | * `#!bash fip-rzt2h-dev.srec`                                 |
                 |        +------------------+---------------------------------------------------------------+
-                |        | Flash Writer     | * `#!bash HDR_NM`                                             |
+                |        | Flash Writer     | * `#!bash HDR NM`                                             |
                 |        |                  | * `#!bash Flash_Programmer_SCIF_CR52_RZT2H_EVK.mot`           |
                 |        +------------------+---------------------------------------------------------------+
                 |        | SD image (wic)   | * `#!bash core-image-minimal-rzt2h-dev.rootfs.wic.gz`         |
@@ -180,7 +178,7 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
                 |        |                  | * `#!bash bl2_bp_xspi0-rzn2h-dev.srec`                        |
                 |        |                  | * `#!bash fip-rzn2h-dev.srec`                                 |
                 |        +------------------+---------------------------------------------------------------+
-                |        | Flash Writer     | * `#!bash HDR_NM`                                             |
+                |        | Flash Writer     | * `#!bash HDR NM`                                             |
                 |        |                  | * `#!bash Flash_Programmer_SCIF_CR52_RZT2H_EVK.mot`           |
                 |        +------------------+---------------------------------------------------------------+
                 |        | SD image (wic)   | * `#!bash core-image-minimal-rzn2h-dev.rootfs.wic.gz`         |

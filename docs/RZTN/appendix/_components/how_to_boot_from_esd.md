@@ -27,12 +27,14 @@ This section explains how to boot Linux from eSD mode.
             |             |            | * `#!bash fip-rzt2h-dev.bin`                                    |
             |             |            | * `#!bash fip-rzt2h-dev.srec`                                   |
             +-------------+------------+-----------------------------------------------------------------+
+            |             |            | &nbsp;                                                          |
+            |             |            |                                                                 |
             | Primary #2  | Ext4       |     ./                                                          |
             |             |            |     ├── bin                                                     |
             |             |            |     ├── boot                                                    |
-            |             |            |     　  ├─ Image                                                |
-            |             |            |     　  ├─ Image-6.12.43-cip7-yocto-standard-ga91d362c6626      |
-            |             |            |       　└─ r9a09g077m44-dev.dtb                                 |
+            |             |            |     │   ├── Image                                               |
+            |             |            |     │   ├── Image-6.12.43-cip7-yocto-standard-ga91d362c6626     |
+            |             |            |     │   └── r9a09g077m44-dev.dtb                                |
             |             |            |     ├── dev                                                     |
             |             |            |     ├── etc                                                     |
             |             |            |     ├── home                                                    |
@@ -48,6 +50,8 @@ This section explains how to boot Linux from eSD mode.
             |             |            |     ├── tmp                                                     |
             |             |            |     ├── usr                                                     |
             |             |            |     └── var                                                     |
+            |             |            |                                                                 |
+            |             |            | &nbsp;                                                          |
             +-------------+------------+-----------------------------------------------------------------+
 
 === "RZ/N2H"
@@ -73,12 +77,14 @@ This section explains how to boot Linux from eSD mode.
             |             |            | * `#!bash fip-rzn2h-dev.bin`                                    |
             |             |            | * `#!bash fip-rzn2h-dev.srec`                                   |
             +-------------+------------+-----------------------------------------------------------------+
+            |             |            | &nbsp;                                                          |
+            |             |            |                                                                 |
             | Primary #2  | Ext4       |     ./                                                          |
             |             |            |     ├── bin                                                     |
             |             |            |     ├── boot                                                    |
-            |             |            |     　  ├─ Image                                                |
-            |             |            |     　  ├─ Image-6.12.43-cip7-yocto-standard-ga91d362c6626      |
-            |             |            |       　└─ r9a09g087m44-dev.dtb                                 |
+            |             |            |     │   ├── Image                                               |
+            |             |            |     │   ├── Image-6.12.43-cip7-yocto-standard-ga91d362c6626     |
+            |             |            |     │   └── r9a09g087m44-dev.dtb                                |
             |             |            |     ├── dev                                                     |
             |             |            |     ├── etc                                                     |
             |             |            |     ├── home                                                    |
@@ -94,6 +100,8 @@ This section explains how to boot Linux from eSD mode.
             |             |            |     ├── tmp                                                     |
             |             |            |     ├── usr                                                     |
             |             |            |     └── var                                                     |
+            |             |            |                                                                 |
+            |             |            | &nbsp;                                                          |
             +-------------+------------+-----------------------------------------------------------------+
 
 ### Setting the U-boot and boot with eSD boot mode
@@ -104,16 +112,9 @@ This section explains how to boot Linux from eSD mode.
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-
         |     SW14-1     |     SW14-2     |     SW14-3     |     SW14-4     |     SW14-5     |     SW14-6     |     SW14-7     |     SW14-8     |
         |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
         |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  |
-
-    Then, change CN78 on the module to select micro SD card slot.
-
-    !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
-        ![](images/rzt2h-board-CN78_eMMC.png){ align=left .switch-icon }
 
     Please insert the micro SD card into the slot.
 
@@ -125,16 +126,9 @@ This section explains how to boot Linux from eSD mode.
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-
         |     DSW3-1     |     DSW3-2     |     DSW3-3     |     DSW3-4     |     DSW3-5     |     DSW3-6     |     DSW3-7     |     DSW3-8     |
         |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
         |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  |
-
-    Then, change JP23 on the module to select micro SD card slot.
-
-    !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
-        ![](images/rzn2h-board-JP23_eMMC.png){ align=left .switch-icon }
 
     Please insert the micro SD card into the slot.
 
@@ -142,11 +136,12 @@ This section explains how to boot Linux from eSD mode.
 
 ### Power on and boot
 
+Then, turn ON the power switch, and Linux will be booted from eSD.
+
 === "RZ/T2H"
 
-    After Turn ON the power switch (SW16) and RESET button is pressed, Linux will be booted from eSD.
-
+    * Power switch: SW16
 
 === "RZ/N2H"
 
-    After Turn ON the power switch (SW1) and RESET button is pressed, Linux will be booted from eSD.
+    * Power switch: SW1

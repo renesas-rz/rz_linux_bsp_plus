@@ -2,11 +2,11 @@
 
 Click the button below to get the board.
 
-[Board<br><span class="btn-subtext">Get the board for RZ MPUs.</span>](../evk/index.md?src=getting_started){ .md-button .md-button--primary .btn-indent }
+[Board<br><span class="btn-subtext">Get the board for RZ MPUs.</span>](./../../evk/index.md#rzg-series?src=getting_started&evk=rzg){ .md-button .md-button--primary .btn-indent }
 
 === "RZ/G2L"
 
-    ![](../evk/images/rtk9744l23s01000be-rzg2l-evaluation-board-kit_0.jpg){ align=right width=220 style=max-width:35%; }
+    ![](./../../evk/images/rtk9744l23s01000be-rzg2l-evaluation-board-kit_0.jpg){ align=right width=220 style=max-width:35%; }
 
     The RZ/G2L Evaluation Board Kit (EVK) is the ideal board kit for RZ/G2L evaluation.
 
@@ -21,7 +21,7 @@ Click the button below to get the board.
 
 === "RZ/G2LC"
 
-    ![](../evk/images/rtk9744c22s01000be-rzg2lc-evaluation-board-kit_0.jpg){ align=right width=220 style=max-width:35%; }
+    ![](./../../evk/images/rtk9744c22s01000be-rzg2lc-evaluation-board-kit_0.jpg){ align=right width=220 style=max-width:35%; }
 
     The RZ/G2LC Evaluation Board Kit (EVK) is the ideal board kit for RZ/G2LC evaluation.
 
@@ -36,7 +36,7 @@ Click the button below to get the board.
 
 === "RZ/G2UL"
 
-    ![](../evk/images/RZG2ULEvaluationBoardKit.png){ align=right width=220 style=max-width:35%; }
+    ![](./../../evk/images/RZG2ULEvaluationBoardKit.png){ align=right width=220 style=max-width:35%; }
 
     The RZ/G2UL Evaluation Board Kit (EVK) is the ideal board kit for RZ/G2UL evaluation.
 
@@ -51,7 +51,7 @@ Click the button below to get the board.
 
 === "RZ/G3S"
 
-    ![](../evk/images/rzg3s-smarc-evaluation-board-kit.png){ align=right width=220 style=max-width:35%; }
+    ![](./../../evk/images/rzg3s-smarc-evaluation-board-kit.png){ align=right width=220 style=max-width:35%; }
 
     The RZ/G3S Evaluation Board Kit (EVK) is the ideal board kit for RZ/G3S evaluation.
 

@@ -456,6 +456,87 @@
   border-color: var(--renesas-secondary-color-bg-yellow) !important;
 }
 
+.btn-green {
+  background-color: var(--renesas-secondary-color-fg-green) !important;
+  border-color: var(--renesas-secondary-color-fg-green) !important;
+}
+
+.btn-green:hover {
+  background-color: var(--renesas-secondary-color-bg-green) !important;
+  border-color: var(--renesas-secondary-color-bg-green) !important;
+  color: var(--renesas-secondary-color-fg-black) !important;
+}
+
+.btn-orange {
+  background-color: var(--renesas-secondary-color-fg-red-orange) !important;
+  border-color: var(--renesas-secondary-color-fg-red-orange) !important;
+}
+
+.btn-orange:hover {
+  background-color: var(--renesas-secondary-color-bg-red-orange) !important;
+  border-color: var(--renesas-secondary-color-bg-red-orange) !important;
+  color: var(--renesas-secondary-color-fg-black) !important;
+}
+
+.btn-violet {
+  background-color: var(--renesas-secondary-color-fg-violet) !important;
+  border-color: var(--renesas-secondary-color-fg-violet) !important;
+}
+
+.btn-violet:hover {
+  background-color: var(--renesas-secondary-color-bg-violet) !important;
+  border-color: var(--renesas-secondary-color-bg-violet) !important;
+  color: var(--renesas-secondary-color-fg-black) !important;
+}
+
+.btn-disabled {
+  position: relative;
+  cursor: progress !important;
+
+  min-height: 5em !important;
+  padding-bottom: 1.775em !important;
+
+  &:after {
+    content: "coming soon";
+    font-size: .55rem !important;
+    font-weight: normal;
+    font-style: italic;
+    height: inherit;
+    bottom: 1.575em;
+    display: block;
+    position: absolute;
+    color: var(--renesas-secondary-color-fg-red) !important;
+    background-color: white;
+    width: calc(100% - 5.75em);
+    opacity: 1;
+    border-radius: 0.12em;
+    box-shadow: 0 0 .02735em .0275em var(--renesas-secondary-color-bg-red) !important;
+  }
+}
+
+.btn-disabled:hover {
+  &:after {
+    color: white !important;
+    background-color: var(--renesas-secondary-color-fg-red) !important;
+  }
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.39em;
+}
+
+.btn-group .md-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: auto;
+  margin: 0;
+  min-width: 11rem;
+}
+
 .btn-round {
   border-radius: 50rem !important;
 }
@@ -491,8 +572,8 @@ p:has(.btn-right) {
   margin-right: 0 !important;
 }
 
-#back_to_getting_started_btn {
-  display: none;
+.back_to_getting_started_btn {
+  display: none !important;
 }
 
 /* navigations right top */
@@ -527,6 +608,12 @@ p:has(.btn-right) {
   a[target=_blank]:has(img)::after {
     top: 0.4rem;
     right: 0.7rem;
+  }
+
+  a[target=_blank]:has(img):hover {
+    &::after {
+      color: white;
+    }
   }
 }
 

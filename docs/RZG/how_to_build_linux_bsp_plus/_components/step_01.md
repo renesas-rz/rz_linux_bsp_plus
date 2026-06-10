@@ -20,15 +20,24 @@ please download from [Renesas.com](https://www.renesas.com/){: target=_blank } w
 
     [:octicons-download-16: Get Graphics package](https://www.renesas.com/document/swo/rz-graphics-library-package-v5126-rtk0ef0045z14001zj-5126enzip){ .md-button .btn-round target=_blank }
 
-    \* RZ/G2LC does not support Video Codecs package.
+    !!! note
+
+        RZ/G2LC does not support Video Codecs package.
 
     Once downloaded, please check the Release Note included inside each package.
 
 === "RZ/G2UL"
 
-    \* RZ/G2UL does not support Graphics and Video Codecs packages. Please skip this step.
+    !!! note
+
+        RZ/G2UL does not support Graphics and Video Codecs packages.
+
+        Please skip this step.
 
 === "RZ/G3S"
 
-    \* RZ/G3S does not support Graphics and Video Codecs packages. Please skip this step.
+    !!! note
 
+        RZ/G3S does not support Graphics and Video Codecs packages.
+
+        Please skip this step.

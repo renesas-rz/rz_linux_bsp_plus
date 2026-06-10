@@ -6,13 +6,13 @@ Please setup following below diagram.
 
 === "RZ/T2H"
 
-    ![](images/hardware-requirements_rzt2h_01.png)
-    ![](images/hardware-requirements_rzt2h_02.png)
+    ![](images/evk-rztn/hardware-requirements_01.png)
+    ![](images/evk-rztn/hardware-requirements_02.png)
 
 === "RZ/N2H"
 
-    ![](images/hardware-requirements_rzt2h_01.png)
-    ![](images/hardware-requirements_rzt2h_02.png)
+    ![](images/evk-rztn/hardware-requirements_01.png)
+    ![](images/evk-rztn/hardware-requirements_02.png)
 
 ### 2. EVK's DIP switch
 
@@ -28,13 +28,13 @@ Please setup following below diagram.
 
             ---
 
-            ![](images/rzt2h-board-CN77_SD.png)
+            ![](images/evk-rzt2h/CN77_SD.png)
 
         - **eMMC(CN78)**
 
             ---
 
-            ![](images/rzt2h-board-CN78_eMMC.png)
+            ![](images/evk-rzt2h/CN78_eMMC.png)
 
         </div>
 
@@ -48,7 +48,6 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-
                 |     SW14-1     |     SW14-2     |     SW14-3     |     SW14-4     |     SW14-5     |     SW14-6     |     SW14-7     |     SW14-8     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
                 |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } | ON {: .green } |  OFF {: .red}  |
@@ -58,7 +57,6 @@ Please setup following below diagram.
             ---
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
 
                 |     SW14-1     |     SW14-2     |     SW14-3     |     SW14-4     |     SW14-5     |     SW14-6     |     SW14-7     |     SW14-8     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
@@ -70,7 +68,6 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-
                 |     SW14-1     |     SW14-2     |     SW14-3     |     SW14-4     |     SW14-5     |     SW14-6     |     SW14-7     |     SW14-8     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
                 | ON {: .green } | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } | ON {: .green } |  OFF {: .red}  |
@@ -80,7 +77,6 @@ Please setup following below diagram.
             ---
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
 
                 |     SW14-1     |     SW14-2     |     SW14-3     |     SW14-4     |     SW14-5     |     SW14-6     |     SW14-7     |     SW14-8     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
@@ -100,7 +96,7 @@ Please setup following below diagram.
 
             ---
 
-            ![](images/rzn2h-board-JP23_eMMC.png)
+            ![](images/evk-rzn2h/JP23_eMMC.png)
 
         </div>
 
@@ -158,8 +154,9 @@ Please setup following below diagram.
 
 Connect the board to the programing PC by using the USB serial cable.
 
-=== "RZ/T2H"
-    1. To set the board to SCIF Download mode, set the SW14 as below.
+1. To set the board to SCIF Download mode, set the SW14 as below.
+
+    === "RZ/T2H"
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
@@ -167,88 +164,58 @@ Connect the board to the programing PC by using the USB serial cable.
             |     SW14-1     |     SW14-2     |     SW14-3     |     SW14-4     |     SW14-5     |     SW14-6     |     SW14-7     |     SW14-8     |
             |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
             |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } | ON {: .green } |  OFF {: .red}  |
- 
-    2. Turn ON the power switch (SW16) to supply the power.
- 
-    3. Bring up **TeraTerm** and select the **File** > **New Connection** to set the connection on the software.
 
-        ![](./images/Open-Connection.png)
+    === "RZ/N2H"
 
-    4. Select the **Setup** > **Serial port** to set the settings about serial communication protocol on **TeraTerm**.
+    !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        Set the settings for the serial communication in **TeraTerm** as below:
+        |     DSW3-1     |     DSW3-2     |     DSW3-3     |     DSW3-4     |     DSW3-5     |     DSW3-6     |     DSW3-7     |     DSW3-8     |
+        |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
+        |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  |
 
-        !!! content-wrapper no-indent table-no-sort table-no-hover ""
+2. Turn ON the power switch to supply the power.
 
-            |   Variable   |        Value          |
-            |:------------:|:----------------------|
-            | Baud rate    | `#!bash 115200` bps   |
-            | Data         |`#!bash 8 bit`         |
-            | Parity       | `#!bash none`         |
-            | Stop         | `#!bash 1 bit`        |
-            | Flow control | `#!bash none`         |
+    === "RZ/T2H"
 
-        ![](./images/Serialport-Settings.png)
+        * Power switch: SW16
 
-    5. Select the **Setup** > **Terminal** to set the new-line code.
+    === "RZ/N2H"
 
-        !!! content-wrapper no-indent table-no-sort table-no-hover ""
+        * Power switch: SW1
 
-            |   Variable   |             Value              |
-            |:------------:|:-------------------------------|
-            | New-line     | `#!bash CR` or `#!bash AUTO`   |
+3. Bring up **TeraTerm** and select the **File** > **New Connection** to set the connection on the software.
 
-        ![](./images/Terminal-Settings.png)
+    ![](./../../getting_started/images/Open-Connection.png)
 
-    6. After finishing all settings, when the reset button is pressed, the message below will be displayed on the terminal.
+4. Select the **Setup** > **Serial port** to set the settings about serial communication protocol on **TeraTerm**.
 
-        ![](./images/SCIF-Mode.svg)
+    Set the settings for the serial communication in **TeraTerm** as below:
 
-=== "RZ/N2H"
-    1. To set the board to SCIF Download mode, set the DSW3 as below.
+    !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        !!! content-wrapper no-indent table-no-sort table-no-hover ""
+        |   Variable   |        Value          |
+        |:------------:|:----------------------|
+        | Baud rate    | `#!bash 115200` bps   |
+        | Data         | `#!bash 8 bit`        |
+        | Parity       | `#!bash none`         |
+        | Stop         | `#!bash 1 bit`        |
+        | Flow control | `#!bash none`         |
 
+    ![](./../../getting_started/images/Serialport-Settings.png)
 
-            |     DSW3-1     |     DSW3-2     |     DSW3-3     |     DSW3-4     |     DSW3-5     |     DSW3-6     |     DSW3-7     |     DSW3-8     |
-            |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
-            |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  |
- 
-    2. Turn ON the power switch (SW1) to supply the power.
- 
-    3. Bring up **TeraTerm** and select the **File** > **New Connection** to set the connection on the software.
+5. Select the **Setup** > **Terminal** to set the new-line code.
 
-        ![](./images/Open-Connection.png)
+    !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-    4. Select the **Setup** > **Serial port** to set the settings about serial communication protocol on **TeraTerm**.
+        |   Variable   |             Value              |
+        |:------------:|:-------------------------------|
+        | New-line     | `#!bash CR` or `#!bash AUTO`   |
 
-        Set the settings for the serial communication in **TeraTerm** as below:
+    ![](./../../getting_started/images/Terminal-Settings.png)
 
-        !!! content-wrapper no-indent table-no-sort table-no-hover ""
+6. After finishing all settings, when the reset button is pressed, the message below will be displayed on the terminal.
 
-            |   Variable   |        Value          |
-            |:------------:|:----------------------|
-            | Baud rate    | `#!bash 115200` bps   |
-            | Data         |`#!bash 8 bit`         |
-            | Parity       | `#!bash none`         |
-            | Stop         | `#!bash 1 bit`        |
-            | Flow control | `#!bash none`         |
-
-        ![](./images/Serialport-Settings.png)
-
-    5. Select the **Setup** > **Terminal** to set the new-line code.
-
-        !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
-            |   Variable   |             Value              |
-            |:------------:|:-------------------------------|
-            | New-line     | `#!bash CR` or `#!bash AUTO`   |
-
-        ![](./images/Terminal-Settings.png)
-
-    6. After finishing all settings, when the reset button is pressed, the message below will be displayed on the terminal.
-
-        ![](./images/SCIF-Mode.svg)
+    ![](./../../getting_started/images/SCIF-Mode.svg)
 
 ### 4. Download Flash Writer to RAM
 
@@ -262,60 +229,51 @@ Turn on the power of the board. The messages below are shown on the terminal.
 
 Send an image of `#!bash Flash Writer` using the terminal software after the message **please send !** is shown.
 
+`#!bash Flash Writer` image file is:
+
 === "RZ/T2H"
 
-    `#!bash Flash Writer` image file is:
-
-    * `#!bash HDR_NM(firstly send)`
-    * `#!bash Flash_Programmer_SCIF_CR52_RZT2H_EVK.mot(secondary send)`
-
-    Below is a sample procedure with **TeraTerm**.
-
-    1. Open a **Send file** dialog by selecting **File** > **Send file** menu.
-
-        ![](./images/SCIF-Mode.svg)
-
-        ![](./images/Send-File.png)
-
-    2. Select the image to be send and click **Open** button in the Tera Term: Send file dialog box.
-
-    3. The image will be sent to the board via serial connection.
-
-        ![](./images/Send-Flashwriter.png)
-
-    4. After successfully downloading the binary, `#!bash Flash Writer` starts automatically and shows a message like below on the terminal.
-
-        ``` console
-        SCI Download mode (Normal SCI boot)
-        -- Load Program to RAM ---------------
-        -- Start Boot Program on RAM ---------
-
-        Flash Programmer V1.06 (RZT2H)(CR52)
-        ```
-    When the transfer is complete, please transfer the file of "Flash_Programmer_SCIF_CR52_RZT2N_EVK.mot" using the same procedure within 30 seconds. If not completed within 10 seconds, please restart the transfer from the "HDR NM" file.
+    * `#!bash HDR NM` (firstly send)
+    * `#!bash Flash_Programmer_SCIF_CR52_RZT2H_EVK.mot` (secondary send)
 
 === "RZ/N2H"
 
-    `#!bash Flash Writer` image file is:
+    * `#!bash HDR NM` (firstly send)
+    * `#!bash Flash_Programmer_SCIF_CR52_RZT2H_EVK.mot` (secondary send)
 
-    * `#!bash HDR_NM(firstly send)`
-    * `#!bash Flash_Programmer_SCIF_CR52_RZT2H_EVK.mot(secondary send)`
+Below is a sample procedure with **TeraTerm**.
 
-    Below is a sample procedure with **TeraTerm**.
+1. Open a **Send file** dialog by selecting **File** > **Send file** menu.
 
-    1. Open a **Send file** dialog by selecting **File** > **Send file** menu.
+    ![](./../../getting_started/images/SCIF-Mode.svg)
 
-        ![](./images/SCIF-Mode.svg)
+    ![](./../../getting_started/images/Send-File.png)
 
-        ![](./images/Send-File.png)
+2. Select the image to be send and click **Open** button in the Tera Term: Send file dialog box.
 
-    2. Select the image to be send and click **Open** button in the Tera Term: Send file dialog box.
+3. The image will be sent to the board via serial connection.
 
-    3. The image will be sent to the board via serial connection.
+    ![](./../../getting_started/images/Send-Flashwriter_NM.png)
 
-        ![](./images/Send-Flashwriter.png)
+    === "RZ/T2H"
 
-    4. After successfully downloading the binary, `#!bash Flash Writer` starts automatically and shows a message like below on the terminal.
+        !!! danger "Caution"
+
+            When the transfer is complete, please transfer the file of `Flash_Programmer_SCIF_CR52_RZT2H_EVK.mot` using the same procedure within 30 seconds.
+
+            If not completed within 10 seconds, please restart the transfer from the `HDR NM` file.
+
+    === "RZ/N2H"
+
+        !!! danger "Caution"
+
+            When the transfer is complete, please transfer the file of `Flash_Programmer_SCIF_CR52_RZT2H_EVK.mot` using the same procedure within 30 seconds.
+
+            If not completed within 10 seconds, please restart the transfer from the `HDR NM` file.
+
+4. After successfully downloading the binary, `#!bash Flash Writer` starts automatically and shows a message like below on the terminal.
+
+    === "RZ/T2H"
 
         ``` console
         SCI Download mode (Normal SCI boot)
@@ -324,7 +282,16 @@ Send an image of `#!bash Flash Writer` using the terminal software after the mes
 
         Flash Programmer V1.06 (RZT2H)(CR52)
         ```
-    When the transfer is complete, please transfer the file of "Flash_Programmer_SCIF_CR52_RZT2N_EVK.mot" using the same procedure within 30 seconds. If not completed within 10 seconds, please restart the transfer from the "HDR NM" file.
+
+    === "RZ/N2H"
+
+        ``` console
+        SCI Download mode (Normal SCI boot)
+        -- Load Program to RAM ---------------
+        -- Start Boot Program on RAM ---------
+
+        Flash Programmer V1.06 (RZT2H)(CR52)
+        ```
 
 ### 5. Write the Bootloader
 

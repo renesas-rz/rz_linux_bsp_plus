@@ -4,7 +4,7 @@ In this section, the steps to boot from eMMC are described.
 
 ### Writing Bootloader for eMMC Boot
 
-For the boot operation, `#!bash EXT_CSD` register of eMMC need to be modified and two boot loader files need to be written to the target board. Modifying register address and value information are described in the following table. 
+For the boot operation, `#!bash EXT_CSD` register of eMMC need to be modified and two boot loader files need to be written to the target board. Modifying register address and value information are described in the following table.
 
 After booting the Flash Programmer,Then, `#!bash EMMCW` command of Flash Programmer is used to write boot loader binary files. This command receives binary data from the serial port and writes the data to a specified address of the eMMC with information where the data should be loaded on the address of the main memory.
 
@@ -135,22 +135,23 @@ Please create a microSD card (see [Step 4: Deploy Renesas RZ Linux BSP Plus](../
 
 === "RZ/T2H"
 
-    Set the CN78 to eMMC mode.
-
-    !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
-        ![](images/rzt2h-board-CN78_eMMC.png){ align=left .switch-icon }
-
     To set the board to eMMC Boot mode, set the SW14 as below:
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
 
         |     SW14-1     |     SW14-2     |     SW14-3     |     SW14-4     |     SW14-5     |     SW14-6     |     SW14-7     |     SW14-8     |
         |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
         | ON {: .green } | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } | ON {: .green } |  OFF {: .red}  |
 
-    Reset the board and interrupt the boot process by pressing the Enter key.
+    Then, change CN78 on the module as follow.
+
+    !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+        ![](./../getting_started/images/evk-rzt2h/CN78_eMMC.png){ align=left .switch-icon }
+
+        {% include "./../_tables/cn78-emmc.html" %}
+
+    Reset the board and interrupt the boot process by pressing the ++enter++ key.
 
     ``` console
     U-Boot 2024.07 (Jul 01 2024 - 18:07:18 +0000)
@@ -171,22 +172,23 @@ Please create a microSD card (see [Step 4: Deploy Renesas RZ Linux BSP Plus](../
 
 === "RZ/N2H"
 
-    Set the JP23 to eMMC mode.
-
-    !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
-        ![](images/rzn2h-board-JP23_eMMC.png){ align=left .switch-icon }
-
     To set the board to eMMC Boot mode, set the DSW3 as below:
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
 
         |     DSW3-1     |     DSW3-2     |     DSW3-3     |     DSW3-4     |     DSW3-5     |     DSW3-6     |     DSW3-7     |     DSW3-8     |
         |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
         | ON {: .green } | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } | ON {: .green } |  OFF {: .red}  |
 
-    Reset the board and interrupt the boot process by pressing the Enter key.
+    Then, change JP23 on the module as follow.
+
+    !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+        ![](./../getting_started/images/evk-rzn2h/JP23_eMMC.png){ align=left .switch-icon }
+
+        {% include "./../_tables/jp23-emmc.html" %}
+
+    Reset the board and interrupt the boot process by pressing the ++enter++ key.
 
     ``` console
     U-Boot 2024.07 (Jul 01 2024 - 18:07:18 +0000)
@@ -204,3 +206,13 @@ Please create a microSD card (see [Step 4: Deploy Renesas RZ Linux BSP Plus](../
     Hit any key to stop autoboot: 0
     =>
     ```
+
+And update environment variables as follow.
+
+```bash
+env default -a
+setenv bootcmd 'run emmcload; run bootimage'
+saveenv
+boot
+```
+{: .diamond2 }

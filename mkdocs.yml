@@ -10,12 +10,12 @@ nav:
   # - Guidelines: guidelines/index.md
   - Home: index.md
   - RZ/G Series:
-    #- RZ/G Top: RZG/index.md
+    - RZG/index.md
     - Getting Started: RZG/getting_started/index.md
     - How To Build Linux BSP Plus: RZG/how_to_build_linux_bsp_plus/index.md
     - Appendix: RZG/appendix/index.md
   - RZ/T,N Series:
-    #- RZ/T,N Top: RZTN/index.md
+    - RZTN/index.md
     - Getting Started: RZTN/getting_started/index.md
     - How To Build Linux BSP Plus: RZTN/how_to_build_linux_bsp_plus/index.md
     - Appendix: RZTN/appendix/index.md
@@ -30,9 +30,12 @@ theme:
     - content.code.copy
     - content.code.select
     - content.tabs.link
+    - navigation.indexes
     - navigation.instant
+    # - navigation.instant.preview
     - navigation.instant.progress
     - navigation.prune
+    - navigation.sections
     - navigation.top
     - navigation.tracking
     - search.highlight
@@ -49,11 +52,16 @@ theme:
         image: assets/images/Explore_more_RZ_Linux_Solutions.png
         new_tab: true
         mobile_text_link: false
+      - name: Get the Board
+        url: evk/
+        image: assets/images/Get_the_Board.png
+        new_tab: false
+        mobile_text_link: true
     no_title: true
   palette:
     primary: custom
 
-copyright: '&copy;2025 Renesas Electronics Corporation.'
+copyright: '&copy;2025, 2026 Renesas Electronics Corporation.'
 
 extra:
   # announcements will be over-written from docs/_announcements/announcements.md (markdown)
@@ -88,12 +96,14 @@ extra_css:
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - assets/javascripts/tablesort.js
+  - assets/javascripts/evk.js
 
 markdown_extensions:
   - admonition
   - attr_list
   - footnotes
-  - markdown_grid_tables
+  - markdown_grid_tables:
+      hard_linebreaks: false
   - md_in_html
   - pymdownx.caret
   - pymdownx.critic
@@ -126,15 +136,10 @@ plugins:
         - _*
         # - guidelines/_*/*
         - guidelines/*
-        - RZG/getting_started/_*/*
-        - RZG/how_to_build_linux_bsp_plus/_*/*
-        - RZG/appendix/_*/*
-        - RZG/evk/_*/*
-        - RZTN/getting_started/_*/*
-        - RZTN/how_to_build_linux_bsp_plus/_*/*
-        - RZTN/appendix/_*/*
-        - RZTN/evk/_*/*
+        - evk/_*/*
+        - RZ*/*/_*/*
         - history/_*/*
+        - getting_started/_*/*
   - glightbox
   - include-markdown
   # - mkdocs-video

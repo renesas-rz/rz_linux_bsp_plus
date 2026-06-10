@@ -16,7 +16,7 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](images/smarc-rzg2l-board-SW1_eMMC.png){ align=left .switch-icon }
+        ![](./../getting_started/images/smarc-rzg2l/SW1_eMMC.png){ align=left .switch-icon }
 
         |      SW1-1     |      SW1-2     |
         |:--------------:|:--------------:|
@@ -124,7 +124,7 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](images/smarc-rzg2lc-board-SW1_eMMC.JPG){ align=left .switch-icon }
+        ![](./../getting_started/images/smarc-rzg2lc/SW1_eMMC.JPG){ align=left .switch-icon }
 
         |      SW1-1     |      SW1-2     |      SW1-3     |      SW1-4     |      SW1-5     |      SW1-6     |
         |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
@@ -232,7 +232,7 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](images/smarc-rzg2ul-board-SW1_eMMC.JPG){ align=left .switch-icon }
+        ![](./../getting_started/images/smarc-rzg2ul/SW1_eMMC.JPG){ align=left .switch-icon }
 
         |      SW1-1     |      SW1-2     |      SW1-3     |
         |:--------------:|:--------------:|:--------------:|
@@ -340,7 +340,7 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](images/smarc-rzg3s-board-SWCONFIG_eMMC.JPG){ align=left .switch-icon }
+        ![](./../getting_started/images/smarc-rzg3s/SWCONFIG_eMMC.JPG){ align=left .switch-icon }
 
         |  SW_CONFIG[1]  |  SW_CONFIG[2]  |  SW_CONFIG[3]  |  SW_CONFIG[4]  |  SW_CONFIG[5]  |  SW_CONFIG[6]  |
         |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
@@ -443,13 +443,14 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
                 | `#!bash fip-smarc-rzg3s.srec`             | `#!bash 1`                |`#!bash 00000300`        |`#!bash 00000`          |
 
 ### Create a microSD card to boot Linux for eMMC boot
+
+Please create a microSD card (see [Step 4: Deploy Renesas RZ Linux BSP Plus](../getting_started/index.md#step-4-deploy-renesas-rz-linux-bsp-plus)).
+
+After that, please return to the following instructions before unmounting the micro SD card.
+
+Copy the kernel image, device tree file, and rootfs to the second partition of the microSD card.
+
 === "RZ/G2L"
-
-    Please create a microSD card (see [Step 4: Deploy Renesas RZ Linux BSP Plus](../getting_started/index.md#step-4-deploy-renesas-rz-linux-bsp-plus)).
-
-    After that, please return to the following instructions before unmounting the micro SD card.
-
-    Copy the kernel image, device tree file, and rootfs to the second partition of the microSD card.
 
     !!! note
         Where `#!bash <image name>` is one of the following:
@@ -459,9 +460,9 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
     ```bash
     cd /media/user/rootfs/root/
-    sudo cp ${WORK}/build/tmp/deploy/images/smarc-rzg2l/Image-smarc-rzg2l.bin ./
-    sudo cp ${WORK}/build/tmp/deploy/images/smarc-rzg2l/r9a07g044l2-smarc.dtb ./
-    sudo cp ${WORK}/build/tmp/deploy/images/smarc-rzg2l/<image name>-smarc-rzg2l.rootfs.tar.bz2 ./
+    sudo cp ${WORK}/build/tmp/deploy/./../getting_started/images/smarc-rzg2l/Image-smarc-rzg2l.bin ./
+    sudo cp ${WORK}/build/tmp/deploy/./../getting_started/images/smarc-rzg2l/r9a07g044l2-smarc.dtb ./
+    sudo cp ${WORK}/build/tmp/deploy/./../getting_started/images/smarc-rzg2l/<image name>-smarc-rzg2l.rootfs.tar.bz2 ./
     cd ${WORK}
     sudo umount /media/user/rootfs
     ```
@@ -469,12 +470,6 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
 === "RZ/G2LC"
 
-    Please create a microSD card (see [Step 4: Deploy Renesas RZ Linux BSP Plus](../getting_started/index.md#step-4-deploy-renesas-rz-linux-bsp-plus)).
-
-    After that, please return to the following instructions before unmounting the micro SD card.
-
-    Copy the kernel image, device tree file, and rootfs to the second partition of the microSD card.
-
     !!! note
         Where `#!bash <image name>` is one of the following:
 
@@ -483,9 +478,9 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
     ```bash
     cd /media/user/rootfs/root/
-    sudo cp ${WORK}/build/tmp/deploy/images/smarc-rzg2lc/Image-smarc-rzg2lc.bin ./
-    sudo cp ${WORK}/build/tmp/deploy/images/smarc-rzg2lc/r9a07g044c2-smarc.dtb ./
-    sudo cp ${WORK}/build/tmp/deploy/images/smarc-rzg2lc/<image name>-smarc-rzg2lc.rootfs.tar.bz2 ./
+    sudo cp ${WORK}/build/tmp/deploy/./../getting_started/images/smarc-rzg2lc/Image-smarc-rzg2lc.bin ./
+    sudo cp ${WORK}/build/tmp/deploy/./../getting_started/images/smarc-rzg2lc/r9a07g044c2-smarc.dtb ./
+    sudo cp ${WORK}/build/tmp/deploy/./../getting_started/images/smarc-rzg2lc/<image name>-smarc-rzg2lc.rootfs.tar.bz2 ./
     cd ${WORK}
     sudo umount /media/user/rootfs
     ```
@@ -493,12 +488,6 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
 === "RZ/G2UL"
 
-    Please create a microSD card (see [Step 4: Deploy Renesas RZ Linux BSP Plus](../getting_started/index.md#step-4-deploy-renesas-rz-linux-bsp-plus)).
-
-    After that, please return to the following instructions before unmounting the micro SD card.
-
-    Copy the kernel image, device tree file, and rootfs to the second partition of the microSD card.
-
     !!! note
         Where `#!bash <image name>` is one of the following:
 
@@ -506,9 +495,9 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
     ```bash
     cd /media/user/rootfs/root/
-    sudo cp ${WORK}/build/tmp/deploy/images/smarc-rzg2ul/Image-smarc-rzg2ul.bin ./
-    sudo cp ${WORK}/build/tmp/deploy/images/smarc-rzg2ul/r9a07g043u11-smarc.dtb ./
-    sudo cp ${WORK}/build/tmp/deploy/images/smarc-rzg2ul/<image name>-smarc-rzg2ul.rootfs.tar.bz2 ./
+    sudo cp ${WORK}/build/tmp/deploy/./../getting_started/images/smarc-rzg2ul/Image-smarc-rzg2ul.bin ./
+    sudo cp ${WORK}/build/tmp/deploy/./../getting_started/images/smarc-rzg2ul/r9a07g043u11-smarc.dtb ./
+    sudo cp ${WORK}/build/tmp/deploy/./../getting_started/images/smarc-rzg2ul/<image name>-smarc-rzg2ul.rootfs.tar.bz2 ./
     cd ${WORK}
     sudo umount /media/user/rootfs
     ```
@@ -516,12 +505,6 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
 === "RZ/G3S"
 
-    Please create a microSD card (see [Step 4: Deploy Renesas RZ Linux BSP Plus](../getting_started/index.md#step-4-deploy-renesas-rz-linux-bsp-plus)).
-
-    After that, please return to the following instructions before unmounting the micro SD card.
-
-    Copy the kernel image, device tree file, and rootfs to the second partition of the microSD card.
-
     !!! note
         Where `#!bash <image name>` is one of the following:
 
@@ -529,7 +512,7 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
     ```bash
     cd /media/user/rootfs/root/
-    sudo cp ${WORK}/build/tmp/deploy/images/smarc-rzg3s/<image name>-smarc-rzg3s.rootfs.tar.bz2 ./
+    sudo cp ${WORK}/build/tmp/deploy/./../getting_started/images/smarc-rzg3s/<image name>-smarc-rzg3s.rootfs.tar.bz2 ./
     cd ${WORK}
     sudo umount /media/user/rootfs
     ```
@@ -543,7 +526,7 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](images/smarc-carrier-board-SW11_eMMC.png){ align=left .switch-icon }
+        ![](./../getting_started/images/smarc-carrier/SW11_eMMC.png){ align=left .switch-icon }
 
         |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
         |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -630,7 +613,7 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](images/smarc-carrier-board-SW11_eMMC.png){ align=left .switch-icon }
+        ![](./../getting_started/images/smarc-carrier/SW11_eMMC.png){ align=left .switch-icon }
 
         |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
         |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -717,7 +700,7 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](images/smarc-carrier-board-SW11_eMMC.png){ align=left .switch-icon }
+        ![](./../getting_started/images/smarc-carrier/SW11_eMMC.png){ align=left .switch-icon }
 
         |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
         |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -803,13 +786,11 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 
     !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](images/smarc-rzg3s-board-SWMODE_eMMC.JPG){ align=left .switch-icon }
+        ![](./../getting_started/images/smarc-carrier-II/SWMODE_eMMC.JPG){ align=left .switch-icon }
 
         |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
         |:--------------:|:--------------:|:--------------:|:--------------:|
         | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } |
-
-
 
     Turn on the board by pressing the reset button. After Linux boots, please log in as root and create partitions on the eMMC by running the following commands.
 
@@ -884,6 +865,7 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
 ### Setting U-boot for eMMC boot
 
 === "RZ/G2L"
+
     Reset the board by pressing the reset button and interrupt the boot process by pressing the Enter key.
 
     ``` console
@@ -924,6 +906,7 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
     Please reset the board again for eMMC boot.
 
 === "RZ/G2LC"
+
     Reset the board by pressing the reset button and interrupt the boot process by pressing the Enter key.
 
     ``` console
@@ -964,6 +947,7 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
     Please reset the board again for eMMC boot.
 
 === "RZ/G2UL"
+
     Reset the board by pressing the reset button and interrupt the boot process by pressing the Enter key.
 
     ``` console
@@ -1004,11 +988,12 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
     Please reset the board again for eMMC boot.
 
 === "RZ/G3S"
+
     Reset the board by pressing the reset button and interrupt the boot process by pressing the Enter key.
 
     ``` console
     U-Boot 2024.07 (Sep 12 2025 - 16:08:34 +0000)
-    
+
     CPU:   Renesas Electronics CPU rev 1.0
     Model: smarc-rzg3s
     DRAM:  896 MiB
@@ -1021,7 +1006,7 @@ Then, `#!bash EM_W` command of Flash Writer is used to write boot loader binary 
     Net:
     Error: ethernet@11c30000 No valid MAC address found.
     No ethernet found.
-    
+
     Hit any key to stop autoboot:  0
     =>
     ```

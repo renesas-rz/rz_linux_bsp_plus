@@ -6,19 +6,19 @@ Please setup following below diagram.
 
 === "RZ/G2L"
 
-    ![](images/hardware-requirements_rzg2l.png)
+    ![](images/smarc-carrier/hardware-requirements.png)
 
 === "RZ/G2LC"
 
-    ![](images/hardware-requirements_rzg2l.png)
+    ![](images/smarc-carrier/hardware-requirements.png)
 
 === "RZ/G2UL"
 
-    ![](images/hardware-requirements_rzg2l.png)
+    ![](images/smarc-carrier/hardware-requirements.png)
 
 === "RZ/G3S"
 
-    ![](images/hardware-requirements_rzg3s.png)
+    ![](images/smarc-carrier-II/hardware-requirements.png)
 
 ### 2. EVK's DIP switch
 
@@ -36,7 +36,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-rzg2l-board-SW1.png){ align=left .switch-icon }
+                ![](images/smarc-rzg2l/SW1.png){ align=left .switch-icon }
 
                 |      SW1-1     |      SW1-2     |
                 |:--------------:|:--------------:|
@@ -48,7 +48,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-rzg2l-board-SW1_eMMC.png){ align=left .switch-icon }
+                ![](images/smarc-rzg2l/SW1_eMMC.png){ align=left .switch-icon }
 
                 |      SW1-1     |      SW1-2     |
                 |:--------------:|:--------------:|
@@ -66,7 +66,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-carrier-board-SW11_SCIF.png){ align=left .switch-icon }
+                ![](images/smarc-carrier/SW11_SCIF.png){ align=left .switch-icon }
 
                 |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -78,7 +78,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-carrier-board-SW11_QSPI.png){ align=left .switch-icon }
+                ![](images/smarc-carrier/SW11_QSPI.png){ align=left .switch-icon }
 
                 |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -90,7 +90,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-carrier-board-SW11_eMMC.png){ align=left .switch-icon }
+                ![](images/smarc-carrier/SW11_eMMC.png){ align=left .switch-icon }
 
                 |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -102,7 +102,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-carrier-board-SW11.png){ align=left .switch-icon }
+                ![](images/smarc-carrier/SW11.png){ align=left .switch-icon }
 
                 |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -127,7 +127,7 @@ Please setup following below diagram.
 
     * SW1
 
-        <div class="grid cards" markdown>
+        <div class="grid cards cards-fullwidth" markdown>
 
         - **SD Card**
 
@@ -135,7 +135,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-rzg2lc-board-SW1.png){ align=left .switch-icon }
+                ![](images/smarc-rzg2lc/SW1.png){ align=left .switch-icon }
 
                 |      SW1-1     |      SW1-2     |      SW1-3     |      SW1-4     |      SW1-5     |      SW1-6     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
@@ -147,7 +147,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-rzg2lc-board-SW1_eMMC.JPG){ align=left .switch-icon }
+                ![](images/smarc-rzg2lc/SW1_eMMC.JPG){ align=left .switch-icon }
 
                 |      SW1-1     |      SW1-2     |      SW1-3     |      SW1-4     |      SW1-5     |      SW1-6     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
@@ -165,7 +165,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-carrier-board-SW11_SCIF.png){ align=left .switch-icon }
+                ![](images/smarc-carrier/SW11_SCIF.png){ align=left .switch-icon }
 
                 |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -177,7 +177,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-carrier-board-SW11_QSPI.png){ align=left .switch-icon }
+                ![](images/smarc-carrier/SW11_QSPI.png){ align=left .switch-icon }
 
                 |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -189,7 +189,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-carrier-board-SW11_eMMC.png){ align=left .switch-icon }
+                ![](images/smarc-carrier/SW11_eMMC.png){ align=left .switch-icon }
 
                 |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -201,7 +201,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-carrier-board-SW11.png){ align=left .switch-icon }
+                ![](images/smarc-carrier/SW11.png){ align=left .switch-icon }
 
                 |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -234,7 +234,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-rzg2ul-board-SW1.png){ align=left .switch-icon }
+                ![](images/smarc-rzg2ul/SW1.png){ align=left .switch-icon }
 
                 |      SW1-1     |      SW1-2     |      SW1-3     |
                 |:--------------:|:--------------:|:--------------:|
@@ -246,7 +246,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-rzg2ul-board-SW1_eMMC.JPG){ align=left .switch-icon }
+                ![](images/smarc-rzg2ul/SW1_eMMC.JPG){ align=left .switch-icon }
 
                 |      SW1-1     |      SW1-2     |      SW1-3     |
                 |:--------------:|:--------------:|:--------------:|
@@ -264,7 +264,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-carrier-board-SW11_SCIF.png){ align=left .switch-icon }
+                ![](images/smarc-carrier/SW11_SCIF.png){ align=left .switch-icon }
 
                 |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -276,7 +276,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-carrier-board-SW11_QSPI.png){ align=left .switch-icon }
+                ![](images/smarc-carrier/SW11_QSPI.png){ align=left .switch-icon }
 
                 |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -288,7 +288,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-carrier-board-SW11_eMMC.png){ align=left .switch-icon }
+                ![](images/smarc-carrier/SW11_eMMC.png){ align=left .switch-icon }
 
                 |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -300,7 +300,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-carrier-board-SW11.png){ align=left .switch-icon }
+                ![](images/smarc-carrier/SW11.png){ align=left .switch-icon }
 
                 |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -325,7 +325,7 @@ Please setup following below diagram.
 
     * SW_CONFIG
 
-        <div class="grid cards" markdown>
+        <div class="grid cards cards-fullwidth" markdown>
 
         - **SD Card**
 
@@ -333,7 +333,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-rzg3s-board-SWCONFIG_uSD0.JPG){ align=left .switch-icon }
+                ![](images/smarc-rzg3s/SWCONFIG_uSD0.JPG){ align=left .switch-icon }
 
                 |  SW_CONFIG[1]  |  SW_CONFIG[2]  |  SW_CONFIG[3]  |  SW_CONFIG[4]  |  SW_CONFIG[5]  |  SW_CONFIG[6]  |
                 |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
@@ -345,7 +345,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-rzg3s-board-SWCONFIG_eMMC.JPG){ align=left .switch-icon }
+                ![](images/smarc-rzg3s/SWCONFIG_eMMC.JPG){ align=left .switch-icon }
 
                 |  SW_CONFIG[1]  |  SW_CONFIG[2]  |  SW_CONFIG[3]  |  SW_CONFIG[4]  |  SW_CONFIG[5]  |  SW_CONFIG[6]  |
                 |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
@@ -363,7 +363,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-rzg3s-board-SWMODE_SCIF.JPG){ align=left .switch-icon }
+                ![](images/smarc-carrier-II/SWMODE_SCIF.JPG){ align=left .switch-icon }
 
                 |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -375,7 +375,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-rzg3s-board-SWMODE_QSPI.JPG){ align=left .switch-icon }
+                ![](images/smarc-carrier-II/SWMODE_QSPI.JPG){ align=left .switch-icon }
 
                 |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -387,7 +387,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-rzg3s-board-SWMODE_eMMC.JPG){ align=left .switch-icon }
+                ![](images/smarc-carrier-II/SWMODE_eMMC.JPG){ align=left .switch-icon }
 
                 |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -399,7 +399,7 @@ Please setup following below diagram.
 
             !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-                ![](images/smarc-rzg3s-board-SWMODE_eSD.JPG){ align=left .switch-icon }
+                ![](images/smarc-carrier-II/SWMODE_eSD.JPG){ align=left .switch-icon }
 
                 |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
                 |:--------------:|:--------------:|:--------------:|:--------------:|
@@ -411,215 +411,117 @@ Please setup following below diagram.
 
 Connect the board to the programing PC by using the USB serial cable.
 
-=== "RZ/G2L"
-    1. To set the board to SCIF Download mode, set the SW11 as below.
+1. To set the board to SCIF Download mode, set the SW11 as below.
+
+    === "RZ/G2L"
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            ![](images/smarc-carrier-board-SW11_SCIF.png){ align=left .switch-icon }
-
-            |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
-            |:--------------:|:--------------:|:--------------:|:--------------:|
-            |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  | ON {: .green } |
- 
-    2. Press the power button to turn on the power.
-        * When turning on the power, press and hold the power button for 1 second.
-        * When turn off the power, press and hold the power button for 2 seconds
- 
-        ![](./images/RZG2L_EVK_POWER.png)
-
-    3. Bring up **TeraTerm** and select the **File** > **New Connection** to set the connection on the software.
-
-        ![](./images/Open-Connection.png)
-
-    4. Select the **Setup** > **Serial port** to set the settings about serial communication protocol on **TeraTerm**.
-
-        Set the settings for the serial communication in **TeraTerm** as below:
-
-        !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
-            |   Variable   |        Value          |
-            |:------------:|:----------------------|
-            | Baud rate    | `#!bash 115200` bps   |
-            | Data         |`#!bash 8 bit`         |
-            | Parity       | `#!bash none`         |
-            | Stop         | `#!bash 1 bit`        |
-            | Flow control | `#!bash none`         |
-
-        ![](./images/Serialport-Settings.png)
-
-    5. Select the **Setup** > **Terminal** to set the new-line code.
-
-        !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
-            |   Variable   |             Value              |
-            |:------------:|:-------------------------------|
-            | New-line     | `#!bash CR` or `#!bash AUTO`   |
-
-        ![](./images/Terminal-Settings.png)
-
-    6. After finishing all settings, when the reset button is pressed, the message below will be displayed on the terminal.
-
-        ![](./images/RZG2L_EVK_RESET.png)
-
-        ![](./images/SCIF-Mode.svg)
-
-=== "RZ/G2LC"
-    1. To set the board to SCIF Download mode, set the SW11 as below.
-
-        !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
-            ![](images/smarc-carrier-board-SW11_SCIF.png){ align=left .switch-icon }
+            ![](images/smarc-carrier/SW11_SCIF.png){ align=left .switch-icon }
 
             |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
             |:--------------:|:--------------:|:--------------:|:--------------:|
             |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  | ON {: .green } |
 
-    2. Press the power button to turn on the power.
-        * When turning on the power, press and hold the power button for 1 second.
-        * When turn off the power, press and hold the power button for 2 seconds
-
-        ![](./images/RZG2L_EVK_POWER.png)
-
-    3. Bring up **TeraTerm** and select the **File** > **New Connection** to set the connection on the software.
-
-        ![](./images/Open-Connection.png)
-
-    4. Select the **Setup** > **Serial port** to set the settings about serial communication protocol on **TeraTerm**.
-
-        Set the settings for the serial communication in **TeraTerm** as below:
+    === "RZ/G2LC"
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            |   Variable   |        Value          |
-            |:------------:|:----------------------|
-            | Baud rate    | `#!bash 115200` bps   |
-            | Data         |`#!bash 8 bit`         |
-            | Parity       | `#!bash none`         |
-            | Stop         | `#!bash 1 bit`        |
-            | Flow control | `#!bash none`         |
-
-        ![](./images/Serialport-Settings.png)
-
-    5. Select the **Setup** > **Terminal** to set the new-line code.
-
-        !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
-            |   Variable   |             Value              |
-            |:------------:|:-------------------------------|
-            | New-line     | `#!bash CR` or `#!bash AUTO`   |
-
-        ![](./images/Terminal-Settings.png)
-
-    6. After finishing all settings, when the reset button is pressed, the message below will be displayed on the terminal.
-
-        ![](./images/RZG2L_EVK_RESET.png)
-
-        ![](./images/SCIF-Mode.svg)
-
-=== "RZ/G2UL"
-    1. To set the board to SCIF Download mode, set the SW11 as below.
-
-        !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
-            ![](images/smarc-carrier-board-SW11_SCIF.png){ align=left .switch-icon }
+            ![](images/smarc-carrier/SW11_SCIF.png){ align=left .switch-icon }
 
             |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
             |:--------------:|:--------------:|:--------------:|:--------------:|
             |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  | ON {: .green } |
 
-    2. Press the power button to turn on the power.
-        * When turning on the power, press and hold the power button for 1 second.
-        * When turn off the power, press and hold the power button for 2 seconds
-
-        ![](./images/RZG2L_EVK_POWER.png)
-
-    3. Bring up **TeraTerm** and select the **File** > **New Connection** to set the connection on the software.
-
-        ![](./images/Open-Connection.png)
-
-    4. Select the **Setup** > **Serial port** to set the settings about serial communication protocol on **TeraTerm**.
-
-        Set the settings for the serial communication in **TeraTerm** as below:
+    === "RZ/G2UL"
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            |   Variable   |        Value          |
-            |:------------:|:----------------------|
-            | Baud rate    | `#!bash 115200` bps   |
-            | Data         |`#!bash 8 bit`         |
-            | Parity       | `#!bash none`         |
-            | Stop         | `#!bash 1 bit`        |
-            | Flow control | `#!bash none`         |
+            ![](images/smarc-carrier/SW11_SCIF.png){ align=left .switch-icon }
 
-        ![](./images/Serialport-Settings.png)
+            |     SW11-1     |     SW11-2     |     SW11-3     |     SW11-4     |
+            |:--------------:|:--------------:|:--------------:|:--------------:|
+            |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  | ON {: .green } |
 
-    5. Select the **Setup** > **Terminal** to set the new-line code.
+    === "RZ/G3S"
 
         !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-            |   Variable   |             Value              |
-            |:------------:|:-------------------------------|
-            | New-line     | `#!bash CR` or `#!bash AUTO`   |
-
-        ![](./images/Terminal-Settings.png)
-
-    6. After finishing all settings, when the reset button is pressed, the message below will be displayed on the terminal.
-
-        ![](./images/RZG2L_EVK_RESET.png)
-
-        ![](./images/SCIF-Mode.svg)
-
-=== "RZ/G3S"
-    1. To set the board to SCIF Download mode, set the SW_MODE as below.
-
-        !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
-            ![](images/smarc-rzg3s-board-SWMODE_SCIF.JPG){ align=left .switch-icon }
+            ![](images/smarc-carrier-II/SWMODE_SCIF.JPG){ align=left .switch-icon }
 
             |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
             |:--------------:|:--------------:|:--------------:|:--------------:|
             |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  | ON {: .green } |
 
-    2. Press the power button to turn on the power.
+2. Press the power button to turn on the power.
+    * When turning on the power, press and hold the power button for 1 second.
+    * When turn off the power, press and hold the power button for 2 seconds
 
-        ![](./images/RZG3S_EVK_POWER.png)
+    === "RZ/G2L"
 
-    3. Bring up **TeraTerm** and select the **File** > **New Connection** to set the connection on the software.
+        ![](./images/smarc-carrier/POWER.png)
 
-        ![](./images/Open-Connection.png)
+    === "RZ/G2LC"
 
-    4. Select the **Setup** > **Serial port** to set the settings about serial communication protocol on **TeraTerm**.
+        ![](./images/smarc-carrier/POWER.png)
 
-        Set the settings for the serial communication in **TeraTerm** as below:
+    === "RZ/G2UL"
 
-        !!! content-wrapper no-indent table-no-sort table-no-hover ""
+        ![](./images/smarc-carrier/POWER.png)
 
-            |   Variable   |        Value          |
-            |:------------:|:----------------------|
-            | Baud rate    | `#!bash 115200` bps   |
-            | Data         |`#!bash 8 bit`         |
-            | Parity       | `#!bash none`         |
-            | Stop         | `#!bash 1 bit`        |
-            | Flow control | `#!bash none`         |
+    === "RZ/G3S"
 
-        ![](./images/Serialport-Settings.png)
+        ![](./images/smarc-carrier-II/POWER.png)
 
-    5. Select the **Setup** > **Terminal** to set the new-line code.
+3. Bring up **TeraTerm** and select the **File** > **New Connection** to set the connection on the software.
 
-        !!! content-wrapper no-indent table-no-sort table-no-hover ""
+    ![](./../../getting_started/images/Open-Connection.png)
 
-            |   Variable   |             Value              |
-            |:------------:|:-------------------------------|
-            | New-line     | `#!bash CR` or `#!bash AUTO`   |
+4. Select the **Setup** > **Serial port** to set the settings about serial communication protocol on **TeraTerm**.
 
-        ![](./images/Terminal-Settings.png)
+    Set the settings for the serial communication in **TeraTerm** as below:
 
-    6. After finishing all settings, when the reset button is pressed, the message below will be displayed on the terminal.
+    !!! content-wrapper no-indent table-no-sort table-no-hover ""
 
-        ![](./images/RZG3S_EVK_RESET.png)
+        |   Variable   |        Value          |
+        |:------------:|:----------------------|
+        | Baud rate    | `#!bash 115200` bps   |
+        | Data         | `#!bash 8 bit`        |
+        | Parity       | `#!bash none`         |
+        | Stop         | `#!bash 1 bit`        |
+        | Flow control | `#!bash none`         |
 
-        ![](./images/SCIF-Mode.svg)
+    ![](./../../getting_started/images/Serialport-Settings.png)
+
+5. Select the **Setup** > **Terminal** to set the new-line code.
+
+    !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+        |   Variable   |             Value              |
+        |:------------:|:-------------------------------|
+        | New-line     | `#!bash CR` or `#!bash AUTO`   |
+
+    ![](./../../getting_started/images/Terminal-Settings.png)
+
+6. After finishing all settings, when the reset button is pressed, the message below will be displayed on the terminal.
+
+    === "RZ/G2L"
+
+        ![](./images/smarc-carrier/RESET.png)
+
+    === "RZ/G2LC"
+
+        ![](./images/smarc-carrier/RESET.png)
+
+    === "RZ/G2UL"
+
+        ![](./images/smarc-carrier/RESET.png)
+
+    === "RZ/G3S"
+
+        ![](./images/smarc-carrier-II/RESET.png)
+
+    ![](./../../getting_started/images/SCIF-Mode.svg)
 
 ### 4. Download Flash Writer to RAM
 
@@ -637,29 +539,43 @@ please send !
 
 Send an image of `#!bash Flash Writer` using the terminal software after the message **please send !** is shown.
 
-=== "RZ/G2L"
+`#!bash Flash Writer` image file is:
 
-    `#!bash Flash Writer` image file is:
+=== "RZ/G2L"
 
     * `#!bash Flash_Writer_SCIF_RZG2L_SMARC_PMIC_DDR4_2GB_1PCS.mot`
 
-    Below is a sample procedure with **TeraTerm**.
+=== "RZ/G2LC"
 
-    1. Open a **Send file** dialog by selecting **File** > **Send file** menu.
+    * `#!bash Flash_Writer_SCIF_RZG2LC_SMARC_DDR4_1GB_1PCS.mot`
 
-        ![](./images/SCIF-Mode.svg)
+=== "RZ/G2UL"
 
-        ![](./images/Send-File.png)
+    * `#!bash Flash_Writer_SCIF_RZG2UL_SMARC_DDR4_1GB_1PCS.mot`
 
-    2. Select the image to be send and click **Open** button.
+=== "RZ/G3S"
 
-        ![](./images/Select-Flashwriter.svg)
+    * `#!bash FlashWriter-smarc-rzg3s.mot`
 
-    3. The image will be sent to the board via serial connection.
+Below is a sample procedure with **TeraTerm**.
 
-        ![](./images/Send-Flashwriter.svg)
+1. Open a **Send file** dialog by selecting **File** > **Send file** menu.
 
-    4. After successfully downloading the binary, `#!bash Flash Writer` starts automatically and shows a message like below on the terminal.
+    ![](./../../getting_started/images/SCIF-Mode.svg)
+
+    ![](./../../getting_started/images/Send-File.png)
+
+2. Select the image to be send and click **Open** button.
+
+    ![](./../../getting_started/images/Select-Flashwriter.svg)
+
+3. The image will be sent to the board via serial connection.
+
+    ![](./../../getting_started/images/Send-Flashwriter.svg)
+
+4. After successfully downloading the binary, `#!bash Flash Writer` starts automatically and shows a message like below on the terminal.
+
+    === "RZ/G2L"
 
         ``` console
         Flash writer for RZ/G2 Series V1.02 Nov.15,2021
@@ -667,29 +583,7 @@ Send an image of `#!bash Flash Writer` using the terminal software after the mes
         >
         ```
 
-=== "RZ/G2LC"
-
-    `#!bash Flash Writer` image file is:
-
-    * `#!bash Flash_Writer_SCIF_RZG2LC_SMARC_DDR4_1GB_1PCS.mot`
-
-    Below is a sample procedure with **TeraTerm**.
-
-    1. Open a **Send file** dialog by selecting **File** > **Send file** menu.
-
-        ![](./images/SCIF-Mode.svg)
-
-        ![](./images/Send-File.png)
-
-    2. Select the image to be send and click **Open** button. The following image is for the RZ/G2L. Please select the Flash Writer image that corresponds to your target device.
-
-        ![](./images/Select-Flashwriter.svg)
-
-    3. The image will be sent to the board via serial connection.
-
-        ![](./images/Send-Flashwriter.svg)
-
-    4. After successfully downloading the binary, `#!bash Flash Writer` starts automatically and shows a message like below on the terminal.
+    === "RZ/G2LC"
 
         ``` console
         Flash writer for RZ/G2 Series V1.02 Nov.15,2021
@@ -697,29 +591,7 @@ Send an image of `#!bash Flash Writer` using the terminal software after the mes
         >
         ```
 
-=== "RZ/G2UL"
-
-    `#!bash Flash Writer` image file is:
-
-    * `#!bash Flash_Writer_SCIF_RZG2UL_SMARC_DDR4_1GB_1PCS.mot`
-
-    Below is a sample procedure with **TeraTerm**.
-
-    1. Open a **Send file** dialog by selecting **File** > **Send file** menu.
-
-        ![](./images/SCIF-Mode.svg)
-
-        ![](./images/Send-File.png)
-
-    2. Select the image to be send and click **Open** button. The following image is for the RZ/G2L. Please select the Flash Writer image that corresponds to your target device.
-
-        ![](./images/Select-Flashwriter.svg)
-
-    3. The image will be sent to the board via serial connection.
-
-        ![](./images/Send-Flashwriter.svg)
-
-    4. After successfully downloading the binary, `#!bash Flash Writer` starts automatically and shows a message like below on the terminal.
+    === "RZ/G2UL"
 
         ``` console
         Flash writer for RZ/G2 Series V1.02 Nov.15,2021
@@ -727,29 +599,7 @@ Send an image of `#!bash Flash Writer` using the terminal software after the mes
         >
         ```
 
-=== "RZ/G3S"
-
-    `#!bash Flash Writer` image file is:
-
-    * `#!bash FlashWriter-smarc-rzg3s.mot`
-
-    Below is a sample procedure with **TeraTerm**.
-
-    1. Open a **Send file** dialog by selecting **File** > **Send file** menu.
-
-        ![](./images/SCIF-Mode.svg)
-
-        ![](./images/Send-File.png)
-
-    2. Select the image to be send and click **Open** button. The following image is for the RZ/G2L. Please select the Flash Writer image that corresponds to your target device.
-
-        ![](./images/Select-Flashwriter.svg)
-
-    3. The image will be sent to the board via serial connection.
-
-        ![](./images/Send-Flashwriter.svg)
-
-    4. After successfully downloading the binary, `#!bash Flash Writer` starts automatically and shows a message like below on the terminal.
+    === "RZ/G3S"
 
         ``` console
         Flash writer for RZ/G3 Series V1.02 Nov.15,2021

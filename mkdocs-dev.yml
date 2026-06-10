@@ -1,0 +1,41 @@
+# load all default config here
+INHERIT: ./mkdocs.yml
+
+# overwrite plugins:
+#   disable glightbox
+#   as this take time when updating site for debug
+
+plugins:
+  # search must be in the top one
+  - search
+  - exclude:
+      glob:
+        - _*
+        # - guidelines/_*/*
+        - guidelines/*
+        - evk/_*/*
+        - RZ*/*/_*/*
+        - history/_*/*
+        - getting_started/_*/*
+  # - glightbox
+  - include-markdown
+  # - mkdocs-video
+  - minify_html:
+      keep_closing_tags: true
+      keep_html_and_head_opening_tags: true
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+          remove_comments: true
+      cache_safe: true
+      js_files:
+          - assets/javascripts/tablesort.js
+      css_files:
+          - assets/stylesheets/extra.css
+  - table-reader
+  # macros must be in the bottom one
+  - macros:
+      include_yaml:
+        - gst: docs/RZG/appendix/_tables/gstreamer_data.yml
