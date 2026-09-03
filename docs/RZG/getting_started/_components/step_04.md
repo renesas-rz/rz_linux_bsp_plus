@@ -70,6 +70,21 @@ Below steps are for `#!bash wic` image.
         !!! danger "Caution"
             Even if you see a message such as `#!bash you need to format the disk` before/after writing the image, do not format the SD card.
 
+    === "RZ/G3L, RZ/G3SE"
+
+        Image file is:
+
+        * `#!bash <image name>-smarc-rzg3l.rootfs.wic.gz`
+
+        !!! note
+            Where `#!bash <image name>` is one of the following:
+
+            * `#!bash core-image-minimal`
+            * `#!bash core-image-weston`
+
+        !!! danger "Caution"
+            Even if you see a message such as `#!bash you need to format the disk` before/after writing the image, do not format the SD card.
+
 ### 2. In case of Linux PC (Ubuntu)
 
 1.  Download or copy the release package into your PC
@@ -200,3 +215,20 @@ Below steps are for `#!bash wic` image.
             Where `#!bash <image name>` is one of the following:
 
             * `#!bash core-image-minimal`
+
+    === "RZ/G3L, RZ/G3SE"
+
+        Image file is:
+
+        * `#!bash <image name>-smarc-rzg3l.rootfs.wic.gz`
+
+        !!! note
+            Additionally, the file below is also required:
+
+            * `#!bash <image name>-smarc-rzg3l.rootfs.wic.bmap`
+
+        !!! note
+            Where `#!bash <image name>` is one of the following:
+
+            * `#!bash core-image-minimal`
+            * `#!bash core-image-weston`

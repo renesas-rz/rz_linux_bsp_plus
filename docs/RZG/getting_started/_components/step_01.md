@@ -63,3 +63,24 @@ Click the button below to get the board.
     | ------------------------- | -------------------------------------------------- |
     | RZ/G3S Evaluation Board   | Evaluation board itself                            |
     | Micro USB to Serial Cable | For serial communication between PC and the board  |
+
+===+ "RZ/G3L, RZ/G3SE"
+
+    ![](./../../evk/images/RZ-G3L-Board-Kit.png){ align=right width=220 style=max-width:35%; }
+
+    The RZ/G3L Evaluation Board Kit (EVK) is the ideal board kit for both RZ/G3L and RZ/G3SE evaluation.
+
+    RZ/G3SE is pin-compatible with RZ/G3L and provides the same functionality as RZ/G3L except for Graphics and Codec features.
+
+    Following items are included in the RZ/G3L Evaluation Board Kit.
+
+    !!! content-wrapper no-indent ""
+
+    | Equipment                 | Details                                            |
+    | ------------------------- | -------------------------------------------------- |
+    | RZ/G3L Evaluation Board   | Evaluation board itself                            |
+    | Micro USB to Serial Cable | For serial communication between PC and the board  |
+
+    !!! Note
+        * Devices with #AC0 or #BC0 in the part number, as well as RZ/G3L EVKIT with Lot # 0000308367 –0000309059 that incorporate these devices, have limitations in the MIPI DSI feature.
+        * For details, please contact a Renesas Electronics sales representative.

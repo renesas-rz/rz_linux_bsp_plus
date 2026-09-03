@@ -7,3 +7,5 @@
 {% include "./_components/gstreamer.md" %}
 
 {% include "./_components/panfrost.md" %}
+
+{% include "./_components/display_configuration.md" %}

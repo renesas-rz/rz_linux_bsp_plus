@@ -116,11 +116,97 @@ In this case use **QSPI boot** and SD card.
 
         For eMMC and/or eSD Boot, please refer to [Appendix](../appendix/index.md).
 
-### 2. Turn on EVK and start Linux BSP Plus
+=== "RZ/G3L, RZ/G3SE"
 
-1.  Insert the bootable SD card created at [Step 4](#step-4-deploy-renesas-rz-linux-bsp-plus) into the microSD card slot on SMARC module board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
-2.  Connect a USB cable to the connector for power supply.
-3.  Press and hold power button for 1 second to turn on the EVK.
+    Set up DIP switch SW_CONFIG and SW_MODE as follows.
+
+    * SYS
+
+        !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+            ![](images/smarc-rzg3l/SYS_eMMC.JPG){ align=left .switch-icon }
+
+            |  SW_CONFIG[1]  |  SW_CONFIG[2]  |  SW_CONFIG[3]  |  SW_CONFIG[4]  |  SW_CONFIG[5]  |  SW_CONFIG[6]  |
+            |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
+            |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  |
+
+    * BOOT
+
+        !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+            ![](images/smarc-rzg3l/BOOT.JPG){ align=left .switch-icon }
+
+            |  SW_CONFIG[1]  |  SW_CONFIG[2]  |  SW_CONFIG[3]  |  SW_CONFIG[4]  |  SW_CONFIG[5]  |  SW_CONFIG[6]  |
+            |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
+            |  ON {: .green} |  OFF {: .red}  | OFF {: .red }  |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  |
+
+    * SW_MODE
+
+        !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+            ![](images/smarc-carrier-II/SWMODE_QSPI.JPG){ align=left .switch-icon }
+
+            |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
+            |:--------------:|:--------------:|:--------------:|:--------------:|
+            |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } |
 
     !!! note
-        Press and hold the button for 2 seconds when you turn off the EVK.
+
+        For eMMC and/or eSD Boot, please refer to [Appendix](../appendix/index.md).
+
+### 2. Turn on EVK and start Linux BSP Plus
+
+=== "RZ/G2L"
+    1.  Insert the bootable SD card created at [Step 4](#step-4-deploy-renesas-rz-linux-bsp-plus) into the microSD card slot on SMARC module board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
+    2.  Connect a USB cable to the connector for power supply.
+    3.  Press and hold power button for 1 second to turn on the EVK.
+
+        !!! note
+            Press and hold the button for 2 seconds when you turn off the EVK.
+
+=== "RZ/G2LC"
+    1.  Insert the bootable SD card created at [Step 4](#step-4-deploy-renesas-rz-linux-bsp-plus) into the microSD card slot on SMARC module board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
+    2.  Connect a USB cable to the connector for power supply.
+    3.  Press and hold power button for 1 second to turn on the EVK.
+
+        !!! note
+            Press and hold the button for 2 seconds when you turn off the EVK.
+
+=== "RZ/G2UL"
+    1.  Insert the bootable SD card created at [Step 4](#step-4-deploy-renesas-rz-linux-bsp-plus) into the microSD card slot on SMARC module board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
+    2.  Connect a USB cable to the connector for power supply.
+    3.  Press and hold power button for 1 second to turn on the EVK.
+
+        !!! note
+            Press and hold the button for 2 seconds when you turn off the EVK.
+
+=== "RZ/G3S"
+    1.  Insert the bootable SD card created at [Step 4](#step-4-deploy-renesas-rz-linux-bsp-plus) into the microSD card slot on SMARC module board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
+    2.  Connect a USB cable to the connector for power supply.
+    3.  Press and hold power button for 1 second to turn on the EVK.
+
+        !!! note
+            Press and hold the button for 2 seconds when you turn off the EVK.
+
+=== "RZ/G3L, RZ/G3SE"
+    1.  Insert the bootable SD card created at [Step 4](#step-4-deploy-renesas-rz-linux-bsp-plus) into the microSD card slot on SMARC module board as illustrated in the figure at ["1. Setup EVK's peripheral"](#1-setup-evks-peripheral).
+    2.  Connect a USB cable to the connector for power supply.
+    3.  Press and hold power button for 1 second to turn on the EVK.
+
+        !!! note
+            Press and hold the button for 2 seconds when you turn off the EVK.
+
+        !!! note
+            RZ Linux BSP Plus provides the following documentation. Please refer to the documents below for details.
+
+            * **[BSP Manual Set](https://www.renesas.com/document/mas/rzg2l-rzv2l-rzv2n-rzv2h-rzg3e-rzg3s-rzg3l-and-rzfive-bsp-manual-set){: target=_blank }**
+
+                BSP Manual Set is a software manual that describes the function and interface specifications of driver module. Please refer to it when controlling hardware in each product.
+
+            * **[GStreamer Software Manual](https://www.renesas.com/document/mas/rzg3l-group-linux-interface-specification-gstreamer-software-manual){: target=_blank }**
+
+                GStreamer Software Manual describes the functions and interface specifications of GStreamer plugins. Please refer to this document when evaluating GStreamer plugins related to RZ Linux BSP Plus for RZ/G3L.
+
+        !!! note
+            RZ/G3L supports MIPI-DSI, Parallel, and LVDS as display output interfaces, and users can select and use the interface that best suits their requirements.
+            For more details, please refer to the [Display Configuration](../appendix/index.md#display-configuration) section in the Appendix.

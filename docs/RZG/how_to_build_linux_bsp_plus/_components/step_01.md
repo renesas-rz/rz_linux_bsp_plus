@@ -41,3 +41,13 @@ please download from [Renesas.com](https://www.renesas.com/){: target=_blank } w
         RZ/G3S does not support Graphics and Video Codecs packages.
 
         Please skip this step.
+
+=== "RZ/G3L, RZ/G3SE"
+    !!! Note
+        Graphics and Codec functions are not supported on RZ/G3SE. If you are using RZ/G3SE, skip this section and continue with the following section.
+
+    [:octicons-download-16: Get Graphics package](https://www.renesas.com/document/swo/rz-graphics-library-package-v5132){ .md-button .btn-round target=_blank }
+
+    [:octicons-download-16: Get Video Codecs package](https://www.renesas.com/document/swo/rz-64bit-linux-video-codec-library-package-v5150){ .md-button .btn-round target=_blank }
+
+    Once downloaded, please check the Release Note included inside each package.

@@ -188,6 +188,52 @@ In this section, the steps to boot from eSD are described.
             |             |            | &nbsp;                                                          |
             +-------------+------------+-----------------------------------------------------------------+
 
+=== "RZ/G3L, RZ/G3SE"
+    Prepare the micro SD card using the `#!bash wic` image file.
+
+    Two files (`#!bash bl2_bp_esd-smarc-rzg3l.bin` and `#!bash fip-smarc-rzg3l.bin`) are used for boot from eSD.
+    
+    - File and directory in the micro SD card
+
+        !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+            +-------------+------------+-----------------------------------------------------------------+
+            | Type/Number | Filesystem | Contents                                                        |
+            +=============+============+=================================================================+
+            | Primary #1  | FAT32      | * `#!bash Flash_Writer_SCIF_RZG3L_SMARC_LPDDR4.mot`             |
+            |             |            | * `#!bash bl2_bp_mmc-smarc-rzg3l.srec`                          |
+            |             |            | * `#!bash bl2_bp_spi-smarc-rzg3l.srec`                          |
+            |             |            | * `#!bash bl2_bp_esd-smarc-rzg3l.bin`                           |
+            |             |            | * `#!bash fip-smarc-rzg3l.srec`                                 |
+            |             |            | * `#!bash fip-smarc-rzg3l.bin`                                  |
+            +-------------+------------+-----------------------------------------------------------------+
+            |             |            | &nbsp;                                                          |
+            |             |            |                                                                 |
+            | Primary #2  | Ext4       |     ./                                                          |
+            |             |            |     ├── bin                                                     |
+            |             |            |     ├── boot                                                    |
+            |             |            |     　  ├─ Image                                                |
+            |             |            |     　  ├─ Image-smarc-rzg3l.bin             |
+            |             |            |       　└─ r9a08g046l48-smarc.dtb                               |
+            |             |            |     ├── dev                                                     |
+            |             |            |     ├── etc                                                     |
+            |             |            |     ├── home                                                    |
+            |             |            |     ├── lib                                                     |
+            |             |            |     ├── media                                                   |
+            |             |            |     ├── mnt                                                     |
+            |             |            |     ├── proc                                                    |
+            |             |            |     ├── root                                                    |
+            |             |            |     ├── run                                                     |
+            |             |            |     ├── sbin                                                    |
+            |             |            |     ├── srv                                                     |
+            |             |            |     ├── sys                                                     |
+            |             |            |     ├── tmp                                                     |
+            |             |            |     ├── usr                                                     |
+            |             |            |     └── var                                                     |
+            |             |            |                                                                 |
+            |             |            | &nbsp;                                                          |
+            +-------------+------------+-----------------------------------------------------------------+
+
 ### Set SMARC EVK board for eSD boot
 
 === "RZ/G2L"
@@ -293,6 +339,32 @@ In this section, the steps to boot from eSD are described.
     Please insert the micro SD card into the SOM module slot.
 
     ![](./images/Insert-microSD-SMARC-EVK-for-eSD_G3S.png)
+
+=== "RZ/G3L, RZ/G3SE"
+
+    To set the board to eSD Boot mode, set the SW_MODE as below:
+
+    !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+        ![](./../getting_started/images/smarc-carrier-II/SWMODE_eSD.JPG){ align=left .switch-icon }
+
+        |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
+        |:--------------:|:--------------:|:--------------:|:--------------:|
+        | ON {: .green } | ON {: .green } |  OFF {: .red}  | ON {: .green } |
+
+    Then, change SYS on the module to enable micro SD card slot.
+
+    !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+        ![](./../getting_started/images/smarc-rzg3l/SYS_uSD0.JPG){ align=left .switch-icon }
+
+        |  SW_CONFIG[1]  |  SW_CONFIG[2]  |  SW_CONFIG[3]  |  SW_CONFIG[4]  |  SW_CONFIG[5]  |  SW_CONFIG[6]  |
+        |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
+        |  ON {: .green} | OFF {: .red }  | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  |
+
+    Please insert the micro SD card into the SOM module slot.
+
+    ![](./images/Insert-microSD-SMARC-EVK-for-eSD_G3L.png)
 
 ### Power on and boot
 
@@ -540,4 +612,65 @@ In this section, the steps to boot from eSD are described.
 
     smarc-rzg3s login: root
     root@smarc-rzg3s:~#
+    ```
+
+=== "RZ/G3L, RZ/G3SE"
+
+    After pressing the POWER button to turn on the power and RESET button, Linux will be booted from eSD.
+
+    ``` console
+    NOTICE:  BL2: v2.10.5(release):2.10.5/rzg3l_1.0.0-dirty 
+    NOTICE:  BL2: Built : 17:16:06, Dec 19 2025 
+    NOTICE:  BL2: SYS_LSI_MODE: 0x13001 
+    NOTICE:  BL2: SYS_LSI_DEVID: 0x87d9447 
+    NOTICE:  BL2: Booting BL31 
+    NOTICE:  BL31: v2.10.5(release):2.10.5/rzg3l_1.0.0-dirty 
+    NOTICE:  BL31: Built : 17:16:06, Dec 19 2025 
+    
+    
+    U-Boot 2024.07 (Dec 22 2025 - 10:40:43 +0000) 
+    
+    CPU:   Renesas Electronics R9A08G046 rev 1.0 
+    Model: smarc-rzg3l 
+    DRAM:  1.9 GiB 
+    Core:  27 devices, 15 uclasses, devicetree: separate 
+    MMC:   sd@11c00000: 0, sd@11c10000: 1 
+    Loading Environment from MMC... MMC partition switch failed 
+    *** Warning - MMC partition switch failed, using default environment 
+    
+    In:    serial@100ac000 
+    Out:   serial@100ac000 
+    Err:   serial@100ac000 
+    Net: 
+    Error: ethernet@11c40000 No valid MAC address found. 
+    
+    Error: ethernet@11c30000 No valid MAC address found. 
+    
+    Error: ethernet@11c30000 No valid MAC address found. 
+    
+    Error: ethernet@11c40000 No valid MAC address found. 
+    No ethernet found. 
+    
+    Hit any key to stop autoboot:  0 
+    ## Resetting to default environment 
+    Card did not respond to voltage select! : -110 
+    27380224 bytes read in 6696 ms (3.9 MiB/s) 
+    48357 bytes read in 15 ms (3.1 MiB/s) 
+    Moving Image from 0x48080000 to 0x48200000, end=49cd0000 
+    ## Flattened Device Tree blob at 48000000 
+    Booting using the fdt blob at 0x48000000 
+    Working FDT set to 48000000 
+    Loading Device Tree to 0000000057ff1000, end 0000000057fffce4 ... OK 
+    Working FDT set to 57ff1000 
+    
+    Starting kernel ... 
+    
+    [    0.000000] Booting Linux on physical CPU 0x0000000000 [0x412fd050] 
+    [    0.000000] Linux version 6.12.46-cip8-yocto-standard-g5d171f88f035 oe-us 
+    : 
+    : 
+    Poky (Yocto Project Reference Distro) 5.0.11 smarc-rzg3l ttySC3 
+    
+    smarc-rzg3l login: root 
+    root@smarc-rzg3l:~#
     ```

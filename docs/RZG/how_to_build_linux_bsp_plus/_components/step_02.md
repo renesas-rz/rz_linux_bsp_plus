@@ -68,6 +68,14 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
         export BOARD=smarc-rzg3s
         ```
         {: .dollar }
+    
+    === "RZ/G3L, RZ/G3SE"
+
+        ```bash
+        export WORK=<A directory path for building>
+        export BOARD=smarc-rzg3l
+        ```
+        {: .dollar }
 
 4.  Clone Yocto recipe package
 
@@ -79,37 +87,175 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
     ```
     {: .dollar }
 
-    ```bash
-    git clone https://git.yoctoproject.org/git/poky
-    cd poky
-    git checkout -b tmp ae2d52758fc2fcb0ed996aa234430464ebf4b310
-    cd ${WORK}
-    ```
-    {: .dollar }
+    === "RZ/G2L"
 
-    ```bash
-    git clone https://git.yoctoproject.org/meta-arm
-    cd meta-arm
-    git checkout -b tmp 8e0f8af90fefb03f08cd2228cde7a89902a6b37c
-    cd ${WORK}
-    ```
-    {: .dollar }
+        ```bash
+        git clone https://git.yoctoproject.org/git/poky
+        cd poky
+        git checkout -b tmp ae2d52758fc2fcb0ed996aa234430464ebf4b310
+        cd ${WORK}
+        ```
+        {: .dollar }
 
-    ```bash
-    git clone https://git.openembedded.org/meta-openembedded
-    cd meta-openembedded
-    git checkout -b tmp c29a18fa39ede952f3f6108ec007c1906e2d9a0d
-    cd ${WORK}
-    ```
-    {: .dollar }
+        ```bash
+        git clone https://git.yoctoproject.org/meta-arm
+        cd meta-arm
+        git checkout -b tmp 8e0f8af90fefb03f08cd2228cde7a89902a6b37c
+        cd ${WORK}
+        ```
+        {: .dollar }
 
-    ```bash
-    git clone https://github.com/renesas-rz/meta-renesas
-    cd meta-renesas
-    git checkout -b tmp BSP-PLUS-K6.12-V2.0
-    cd ${WORK}
-    ```
-    {: .dollar }
+        ```bash
+        git clone https://git.openembedded.org/meta-openembedded
+        cd meta-openembedded
+        git checkout -b tmp c29a18fa39ede952f3f6108ec007c1906e2d9a0d
+        cd ${WORK}
+        ```
+        {: .dollar }
+
+        ```bash
+        git clone https://github.com/renesas-rz/meta-renesas
+        cd meta-renesas
+        git checkout -b tmp BSP-PLUS-K6.12-V2.0
+        cd ${WORK}
+        ```
+        {: .dollar }
+
+    === "RZ/G2LC"
+
+        ```bash
+        git clone https://git.yoctoproject.org/git/poky
+        cd poky
+        git checkout -b tmp ae2d52758fc2fcb0ed996aa234430464ebf4b310
+        cd ${WORK}
+        ```
+        {: .dollar }
+
+        ```bash
+        git clone https://git.yoctoproject.org/meta-arm
+        cd meta-arm
+        git checkout -b tmp 8e0f8af90fefb03f08cd2228cde7a89902a6b37c
+        cd ${WORK}
+        ```
+        {: .dollar }
+
+        ```bash
+        git clone https://git.openembedded.org/meta-openembedded
+        cd meta-openembedded
+        git checkout -b tmp c29a18fa39ede952f3f6108ec007c1906e2d9a0d
+        cd ${WORK}
+        ```
+        {: .dollar }
+
+        ```bash
+        git clone https://github.com/renesas-rz/meta-renesas
+        cd meta-renesas
+        git checkout -b tmp BSP-PLUS-K6.12-V2.0
+        cd ${WORK}
+        ```
+        {: .dollar }
+
+    === "RZ/G2UL"
+
+        ```bash
+        git clone https://git.yoctoproject.org/git/poky
+        cd poky
+        git checkout -b tmp ae2d52758fc2fcb0ed996aa234430464ebf4b310
+        cd ${WORK}
+        ```
+        {: .dollar }
+
+        ```bash
+        git clone https://git.yoctoproject.org/meta-arm
+        cd meta-arm
+        git checkout -b tmp 8e0f8af90fefb03f08cd2228cde7a89902a6b37c
+        cd ${WORK}
+        ```
+        {: .dollar }
+
+        ```bash
+        git clone https://git.openembedded.org/meta-openembedded
+        cd meta-openembedded
+        git checkout -b tmp c29a18fa39ede952f3f6108ec007c1906e2d9a0d
+        cd ${WORK}
+        ```
+        {: .dollar }
+
+        ```bash
+        git clone https://github.com/renesas-rz/meta-renesas
+        cd meta-renesas
+        git checkout -b tmp BSP-PLUS-K6.12-V2.0
+        cd ${WORK}
+        ```
+        {: .dollar }
+
+    === "RZ/G3S"
+
+        ```bash
+        git clone https://git.yoctoproject.org/git/poky
+        cd poky
+        git checkout -b tmp ae2d52758fc2fcb0ed996aa234430464ebf4b310
+        cd ${WORK}
+        ```
+        {: .dollar }
+
+        ```bash
+        git clone https://git.yoctoproject.org/meta-arm
+        cd meta-arm
+        git checkout -b tmp 8e0f8af90fefb03f08cd2228cde7a89902a6b37c
+        cd ${WORK}
+        ```
+        {: .dollar }
+
+        ```bash
+        git clone https://git.openembedded.org/meta-openembedded
+        cd meta-openembedded
+        git checkout -b tmp c29a18fa39ede952f3f6108ec007c1906e2d9a0d
+        cd ${WORK}
+        ```
+        {: .dollar }
+
+        ```bash
+        git clone https://github.com/renesas-rz/meta-renesas
+        cd meta-renesas
+        git checkout -b tmp BSP-PLUS-K6.12-V2.0
+        cd ${WORK}
+        ```
+        {: .dollar }
+
+    === "RZ/G3L, RZ/G3SE"
+
+        ```bash
+        git clone https://git.yoctoproject.org/git/poky
+        cd poky
+        git checkout -b tmp 7e8674996b0164b07e56bc066d0fba790e627061
+        cd ${WORK}
+        ```
+        {: .dollar }
+
+        ```bash
+        git clone https://git.yoctoproject.org/meta-arm
+        cd meta-arm
+        git checkout -b tmp 8e0f8af90fefb03f08cd2228cde7a89902a6b37c
+        cd ${WORK}
+        ```
+        {: .dollar }
+
+        ```bash
+        git clone https://git.openembedded.org/meta-openembedded
+        cd meta-openembedded
+        git checkout -b tmp 89a01c3d9ad1f8fce6aeb4dd0e694cfa28d42099
+        cd ${WORK}
+        ```
+        {: .dollar }
+
+        ```bash
+        git clone https://github.com/renesas-rz/meta-renesas
+        cd meta-renesas
+        git checkout -b tmp RZG3L-BSP-1.0.0
+        cd ${WORK}
+        ```
+        {: .dollar }
 
 5.  Enable Graphics and Video Codec
 
@@ -197,13 +343,52 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
 
             Please skip this step.
 
+    === "RZ/G3L, RZ/G3SE"
+  
+        !!! Note
+            Graphics and Codec functions are not supported on RZ/G3SE. If you are using RZ/G3SE, skip this section and continue with the following section.
+
+        Graphics package is **RTK0EF0045Z14001ZJ-*.zip**.
+
+        Video Codec package is **RTK0EF0045Z16002ZJ-*.zip**.
+
+        - Graphics package
+
+            !!! note
+                if you want to enable the graphics on rzg3l when building `#!bash core-image-weston`,
+                please copy the graphics package to working directory and run the commands below.
+
+                if you build `#!bash core-image-minimal`, please ignore this step.
+
+            After copying the graphics package, please extract the package as below.
+
+            ```bash
+            cd ${WORK}
+            unzip ./RTK0EF0045Z14001ZJ-*.zip
+            tar zxvf ./RTK0EF0045Z14001ZJ-*/meta-rz-features-*.tar.gz
+            ```
+            {: .dollar }
+
+        - Video Codec package
+
+            After copying the video codec package, please extract the package as below.
+
+            ```bash
+            cd ${WORK}
+            unzip ./RTK0EF0045Z16002ZJ-*.zip
+            unzip ./RTK0EF0045Z16002ZJ-*/RTK0EF0239Z00001ZJ-*.zip
+            tar zxvf ./RTK0EF0045Z16002ZJ-*/meta-rz-features_codec-*.tar.gz
+            tar zxvf ./meta-rz-features_codec-*_prebuilt.tar.gz
+            ```
+            {: .dollar }
+
 6.  Initialize build environment
 
     Run an environment setup script as follows.
 
     ```bash
     cd ${WORK}
-    TEMPLATECONF=${PWD}/meta-renesas/meta-rz-distro/conf/templates/rz-bsp-plus-conf/ source poky/oe-init-build-env build
+    TEMPLATECONF=${PWD}/meta-renesas/meta-rz-distro/conf/templates/bsp-plus-conf/ source poky/oe-init-build-env build
     ```
     {: .dollar }
 
@@ -259,19 +444,98 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
 
             Please skip this step.
 
-8.  Enable `#!bash mke2fs` (Make Extended Filesystem) command sets
+    === "RZ/G3L, RZ/G3SE"
+        !!! Note
+            Graphics and Codec functions are not supported on RZ/G3SE. If you are using RZ/G3SE, skip this section and continue with the following section.
 
-    If you need to create the filesystem for the block devices on the evaluation board,
-    please add `#!bash mke2fs` command sets to root filesystem by local.conf.
 
-    !!! danger "Caution"
-        If eMMC boot is required, this step is mandatory.
+        * Graphics: Please run the command below if you need the Graphics library.
 
-    ```bash
-    cd ${WORK}/build
-    echo 'IMAGE_INSTALL:append = " e2fsprogs-mke2fs"'>> conf/local.conf
-    ```
-    {: .dollar }
+            ```bash
+            cd ${WORK}/build
+            bitbake-layers add-layer ../meta-rz-features/meta-rz-graphics
+            ```
+            {: .dollar }
+
+        * Video Codec: Please run the command below if you need the video codec library.
+
+            ```bash
+            cd ${WORK}/build
+            bitbake-layers add-layer ../meta-rz-features/meta-rz-codecs
+            ```
+            {: .dollar }
+
+8.  Enable the command for writing a boot image to eMMC
+
+    === "RZ/G2L"
+
+        If you need to create the filesystem for the block devices on the evaluation board,
+        please add `#!bash mke2fs` command sets to root filesystem by local.conf.
+
+        !!! danger "Caution"
+            If eMMC boot is required, this step is mandatory.
+
+        ```bash
+        cd ${WORK}/build
+        echo 'IMAGE_INSTALL:append = " e2fsprogs-mke2fs"'>> conf/local.conf
+        ```
+        {: .dollar }
+
+    === "RZ/G2LC"
+
+        If you need to create the filesystem for the block devices on the evaluation board,
+        please add `#!bash mke2fs` command sets to root filesystem by local.conf.
+
+        !!! danger "Caution"
+            If eMMC boot is required, this step is mandatory.
+
+        ```bash
+        cd ${WORK}/build
+        echo 'IMAGE_INSTALL:append = " e2fsprogs-mke2fs"'>> conf/local.conf
+        ```
+        {: .dollar }
+
+    === "RZ/G2UL"
+
+        If you need to create the filesystem for the block devices on the evaluation board,
+        please add `#!bash mke2fs` command sets to root filesystem by local.conf.
+
+        !!! danger "Caution"
+            If eMMC boot is required, this step is mandatory.
+
+        ```bash
+        cd ${WORK}/build
+        echo 'IMAGE_INSTALL:append = " e2fsprogs-mke2fs"'>> conf/local.conf
+        ```
+        {: .dollar }
+
+    === "RZ/G3S"
+
+        If you need to create the filesystem for the block devices on the evaluation board,
+        please add `#!bash mke2fs` command sets to root filesystem by local.conf.
+
+        !!! danger "Caution"
+            If eMMC boot is required, this step is mandatory.
+
+        ```bash
+        cd ${WORK}/build
+        echo 'IMAGE_INSTALL:append = " e2fsprogs-mke2fs"'>> conf/local.conf
+        ```
+        {: .dollar }
+
+    === "RZ/G3L, RZ/G3SE"
+
+        If you need to create the filesystem for the block devices on the evaluation board,
+        please add `#!bash bmaptool` command sets to root filesystem by local.conf.
+
+        !!! danger "Caution"
+            If eMMC boot is required, this step is mandatory.
+
+        ```bash
+        cd ${WORK}/build
+        echo 'IMAGE_INSTALL:append = " bmaptool"'>> conf/local.conf
+        ```
+        {: .dollar }
 
 9.  Build images
 
@@ -492,3 +756,64 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
             ${WORK}/build/tmp/deploy/sdk/
             ```
             {: .dollar }
+
+    === "RZ/G3L, RZ/G3SE"
+
+        ```bash
+        cd ${WORK}/build
+        MACHINE=${BOARD} bitbake <image name>
+        ```
+        {: .dollar }
+
+        !!! note
+            Available build options (`#!bash <image name>`) are:
+
+            * `#!bash core-image-minimal`
+            * `#!bash core-image-weston`
+
+        !!! note
+            After building images, you can find them in the following directories.
+
+            * Images: `#!bash ${WORK}/build/tmp/deploy/images/${BOARD}/`
+
+            !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+                +--------+------------------+---------------------------------------------------------------+
+                | Device | Category         | File name                                                     |
+                +========+==================+===============================================================+
+                | RZ/G3L | Linux kernel     | `#!bash Image-smarc-rzg3l.bin`                                |
+                |        +------------------+---------------------------------------------------------------+
+                |        | Device tree file | `#!bash r9a08g046l48-smarc.dtb`                               |
+                |        +------------------+---------------------------------------------------------------+
+                |        | Root filesystem  | `#!bash <image name>-smarc-rzg3l.rootfs.tar.bz2`              |
+                |        +------------------+---------------------------------------------------------------+
+                |        | Boot loader      | * `#!bash bl2_bp_esd-smarc-rzg3l.bin`                         |
+                |        |                  | * `#!bash bl2_bp_mmc-smarc-rzg3l.srec`                        |
+                |        |                  | * `#!bash bl2_bp_spi-smarc-rzg3l.srec`                        |
+                |        |                  | * `#!bash fip-smarc-rzg3l.srec`                               |
+                |        +------------------+---------------------------------------------------------------+
+                |        | Flash Writer     | `#!bash Flash_Writer_SCIF_RZG3L_SMARC_LPDDR4.mot`             |
+                |        +------------------+---------------------------------------------------------------+
+                |        | SD image (wic)   | * `#!bash <image name>-smarc-rzg3l.rootfs.wic.gz`             |
+                |        |                  | * `#!bash <image name>-smarc-rzg3l.rootfs.wic.bmap`           |
+                +--------+------------------+---------------------------------------------------------------+
+
+        !!! note
+            If you need to create an SDK toolchain, run `#!bash bitbake`
+            command as follows.
+
+            ```bash
+            cd ${WORK}/build
+            MACHINE=${BOARD} bitbake <image name> -c populate_sdk
+            ```
+            {: .dollar }
+
+            After building SDK toolchain, you can find them in the following directory.
+            ```bash
+            ${WORK}/build/tmp/deploy/sdk/
+            ```
+            {: .dollar }
+        
+        !!! note
+            The RZ/G3L EVK is equipped with a MIPI DSI sub-board, the default display output setting of the Kernel is configured for MIPI DSI.<br>
+            If you want to change the display output interface, please refer to the "LCDC Software Manual"*"LINK URL* for configuration instructions.

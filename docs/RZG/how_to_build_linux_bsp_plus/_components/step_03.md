@@ -108,4 +108,38 @@ Please obtain the necessary files from the following links according to the feat
 
     </div>
 
+=== "RZ/G3L, RZ/G3SE"
+
+    <div class="grid cards" markdown>
+
+    -   **Security package**
+
+        ---
+
+        This package is to add Security functions such as Secure Boot, Trusted Execution Environment, Hardware Cryptographic IP, Secure Debug and Security Configurator to RZ MPU. Provided functions are different for each device. For more datails, please refer to the documentation included in the package.
+
+        [:octicons-download-16: Get Security package](https://www.renesas.com/document/sws/rzg3l-security-package-linux-bsp-plus-kernel-612-v10){ .md-button .btn-round target=_blank}
+
+        !!! note
+
+            Renesas' approval is required to obtain the security package. Please apply using the form at the link.
+
+    -   **Multi-OS package**
+
+        ---
+
+        This package is the software package consisting of RZ/G Flexible Software Package (FSP) as software package for Renesas MCU with Arm Cortex-M Core and OpenAMP as standardization API of framework for interprocessor communication for developing multi OS solution.
+
+        [:octicons-download-16: Get Multi-OS package](https://github.com/renesas-rz/meta-rz-multi-os){ .md-button .btn-round target=_blank}
+
+    -   **Time Sensitive Network package**
+
+        ---
+
+        This package includes examples for using Time-sensitive Network which is a set of networking technologies designed to enable real-time communication over Ethernet. For more datails, please refer to the documentation included in the package.
+
+        [:octicons-download-16: Get Time-sensitive Network Package](https://www.renesas.com/document/swo/rzg3l-time-sensitive-network-package-v100){ .md-button .btn-round target=_blank}
+
+    </div>
+
 [Back to the Getting Started >](../../RZG/getting_started/index.md#step-3-obtain-and-build-renesas-rz-linux-bsp-plus-source-code){ .md-button .md-button--primary .btn-right }

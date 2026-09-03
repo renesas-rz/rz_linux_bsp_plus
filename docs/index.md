@@ -18,6 +18,8 @@ A S/W package with latest LTS Kernel and Yocto support running on Renesas EVK.
 
 ![](assets/images/banner-02.svg){ width=100% }
 
+{% include "./home/_tables/linux_bsp_plus_coverage.md" %}
+
 {% include "./history/_components/__front_matter.md" %}
 
 {% include "./getting_started/_components/__front_matter.md" %}

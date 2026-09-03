@@ -20,6 +20,10 @@ Please setup following below diagram.
 
     ![](images/smarc-carrier-II/hardware-requirements.png)
 
+=== "RZ/G3L, RZ/G3SE"
+
+    ![](images/smarc-carrier-II/hardware-requirements.png)
+
 ### 2. EVK's DIP switch
 
 === "RZ/G2L"
@@ -407,11 +411,99 @@ Please setup following below diagram.
 
         </div>
 
+=== "RZ/G3L, RZ/G3SE"
+
+    EVK's DIP switch (SYS, BOOT and SW_MODE) reference.
+
+    * SYS
+
+        <div class="grid cards cards-fullwidth" markdown>
+
+        - **SD Card**
+
+            ---
+
+            !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+                ![](images/smarc-rzg3l/SYS_uSD0.JPG){ align=left .switch-icon }
+
+                |  SW_CONFIG[1]  |  SW_CONFIG[2]  |  SW_CONFIG[3]  |  SW_CONFIG[4]  |  SW_CONFIG[5]  |  SW_CONFIG[6]  |
+                |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
+                |  ON {: .green} | OFF {: .red }  | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  |
+
+        - **eMMC**
+
+            ---
+
+            !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+                ![](images/smarc-rzg3l/SYS_eMMC.JPG){ align=left .switch-icon }
+
+                |  SW_CONFIG[1]  |  SW_CONFIG[2]  |  SW_CONFIG[3]  |  SW_CONFIG[4]  |  SW_CONFIG[5]  |  SW_CONFIG[6]  |
+                |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
+                |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  |
+
+        </div>
+
+    * SW_MODE
+
+        <div class="grid cards cards-fullwidth" markdown>
+
+        - **SCIF Download Mode**
+
+            ---
+
+            !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+                ![](images/smarc-carrier-II/SWMODE_SCIF.JPG){ align=left .switch-icon }
+
+                |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
+                |:--------------:|:--------------:|:--------------:|:--------------:|
+                |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  | ON {: .green } |
+
+        - **QSPI Boot Mode**
+
+            ---
+
+            !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+                ![](images/smarc-carrier-II/SWMODE_QSPI.JPG){ align=left .switch-icon }
+
+                |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
+                |:--------------:|:--------------:|:--------------:|:--------------:|
+                |  OFF {: .red}  |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } |
+
+        - **eMMC Boot Mode**
+
+            ---
+
+            !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+                ![](images/smarc-carrier-II/SWMODE_eMMC.JPG){ align=left .switch-icon }
+
+                |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
+                |:--------------:|:--------------:|:--------------:|:--------------:|
+                | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  | ON {: .green } |
+
+        - **eSD Boot Mode**
+
+            ---
+
+            !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+                ![](images/smarc-carrier-II/SWMODE_eSD.JPG){ align=left .switch-icon }
+
+                |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
+                |:--------------:|:--------------:|:--------------:|:--------------:|
+                | ON {: .green } | ON {: .green } |  OFF {: .red}  | ON {: .green } |
+
+        </div>
+
 ### 3. Prepare for Flashing Boot Loader into EVK
 
 Connect the board to the programing PC by using the USB serial cable.
 
-1. To set the board to SCIF Download mode, set the SW11 as below.
+1. To set the board to SCIF Download mode, set the switch as below.
 
     === "RZ/G2L"
 
@@ -453,6 +545,16 @@ Connect the board to the programing PC by using the USB serial cable.
             |:--------------:|:--------------:|:--------------:|:--------------:|
             |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  | ON {: .green } |
 
+    === "RZ/G3L, RZ/G3SE"
+
+        !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+            ![](images/smarc-carrier-II/SWMODE_SCIF.JPG){ align=left .switch-icon }
+
+            |   SW_MODE[1]   |   SW_MODE[2]   |   SW_MODE[3]   |   SW_MODE[4]   |
+            |:--------------:|:--------------:|:--------------:|:--------------:|
+            |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  | ON {: .green } |
+
 2. Press the power button to turn on the power.
     * When turning on the power, press and hold the power button for 1 second.
     * When turn off the power, press and hold the power button for 2 seconds
@@ -470,6 +572,10 @@ Connect the board to the programing PC by using the USB serial cable.
         ![](./images/smarc-carrier/POWER.png)
 
     === "RZ/G3S"
+
+        ![](./images/smarc-carrier-II/POWER.png)
+    
+    === "RZ/G3L, RZ/G3SE"
 
         ![](./images/smarc-carrier-II/POWER.png)
 
@@ -520,6 +626,10 @@ Connect the board to the programing PC by using the USB serial cable.
     === "RZ/G3S"
 
         ![](./images/smarc-carrier-II/RESET.png)
+    
+    === "RZ/G3L, RZ/G3SE"
+
+        ![](./images/smarc-carrier-II/RESET.png)
 
     ![](./../../getting_started/images/SCIF-Mode.svg)
 
@@ -556,6 +666,9 @@ Send an image of `#!bash Flash Writer` using the terminal software after the mes
 === "RZ/G3S"
 
     * `#!bash FlashWriter-smarc-rzg3s.mot`
+
+=== "RZ/G3L, RZ/G3SE"
+    * `#!bash Flash_Writer_SCIF_RZG3L_SMARC_LPDDR4.mot`
 
 Below is a sample procedure with **TeraTerm**.
 
@@ -605,6 +718,13 @@ Below is a sample procedure with **TeraTerm**.
         Flash writer for RZ/G3 Series V1.02 Nov.15,2021
         Product Code : RZ/G3S
         >
+        ```
+    
+    === "RZ/G3L, RZ/G3SE"
+
+        ``` console
+        Flash writer for RZ/G3L Series V1.00 Jul.07,2026
+        Product Code : RZ/G3L
         ```
 
 ### 5. Write the Bootloader
@@ -850,7 +970,8 @@ This command receives binary data from the serial port and writes the data to a 
     ===========================================================
     ```
 
-    !!! note
+    !!! no ls
+    \s 
 
         ``` console
         SPI Data Clear(H'FF) Check : H'00000000-0000FFFF,Clear OK?(y/n)
@@ -932,7 +1053,7 @@ This command receives binary data from the serial port and writes the data to a 
     please send ! ('.' & CR stop load)
     ```
 
-    Send the data of `#!bash bl2_bp_spi-smarc-rzg3s.srec` from terminal software after the message **please send !** is shown.
+    Send the data of `#!bash bl2_bp_spi-smarc-rzg3l.srec` from terminal software after the message **please send !** is shown.
 
     After successfully downloading the binary, messages like below are shown on the terminal.
 
@@ -971,7 +1092,7 @@ This command receives binary data from the serial port and writes the data to a 
     please send ! ('.' & CR stop load)
     ```
 
-    Send the data of `#!bash fip-smarc-rzg3s.srec` from terminal software after the message **please send !** is shown.
+    Send the data of `#!bash fip-smarc-rzg3l.srec` from terminal software after the message **please send !** is shown.
 
     After successfully downloading the binary, messages like below are shown on the terminal.
 
@@ -1006,3 +1127,98 @@ This command receives binary data from the serial port and writes the data to a 
                 |:-----------------------------------------:|:----------------------:|:----------------------:|
                 | `#!bash bl2_bp_spi-smarc-rzg3s.srec`      | `#!bash A1E00`         | `#!bash 00000`         |
                 | `#!bash fip-smarc-rzg3s.srec`             | `#!bash 00000`         | `#!bash 60000`         |
+
+=== "RZ/G3L, RZ/G3SE"
+
+    For example, this part describes how to write boot loader files:
+
+    ``` console
+    >XLS2
+    ===== Qspi writing of RZ/G3L Board Command =============
+    Load Program to Spiflash
+    Writes to any of SPI address.
+     Dialog : AT25QL128A
+    Program Top Address & Qspi Save Address
+    ===== Please Input Program Top Address ============
+      Please Input : H'21E00
+
+    ===== Please Input Qspi Save Address ===
+      Please Input : H'00000
+    please send ! ('.' & CR stop load)
+    ```
+
+    Send the data of `#!bash bl2_bp_spi-smarc-rzg3l.srec` from terminal software after the message **please send !** is shown.
+
+    After successfully downloading the binary, messages like below are shown on the terminal.
+
+    ``` console
+    Erase SPI Flash memory...
+    Erase Completed
+    Write to SPI Flash memory.
+    ======= Qspi  Save Information  =================
+    SpiFlashMemory Stat Address : H'00000000
+    SpiFlashMemory End Address  : H'0001E80F
+    ===========================================================
+    ```
+
+    !!! note
+
+        ``` console
+        SPI Data Clear(H'FF) Check : H'00000000-0000FFFF,Clear OK?(y/n)
+        ```
+
+        In case a message to prompt to clear data like above, please enter ++y++.
+
+    Next, write another loader file by using `#!bash XLS2` command again.
+
+    ``` console
+    >XLS2
+    ===== Qspi writing of RZ/G3L Board Command =============
+    Load Program to Spiflash
+    Writes to any of SPI address.
+     Dialog : AT25QL128A
+    Program Top Address & Qspi Save Address
+    ===== Please Input Program Top Address ============
+      Please Input : H'00000
+
+    ===== Please Input Qspi Save Address ===
+      Please Input : H'60000
+    please send ! ('.' & CR stop load)
+    ```
+
+    Send the data of `#!bash fip-smarc-rzg3l.srec` from terminal software after the message **please send !** is shown.
+
+    After successfully downloading the binary, messages like below are shown on the terminal.
+
+    ``` console
+    Erase SPI Flash memory...
+    Erase Completed
+    Write to SPI Flash memory.
+    ======= Qspi  Save Information  =================
+    SpiFlashMemory Stat Address : H'00060000
+    SpiFlashMemory End Address  : H'0014FA96
+    ===========================================================
+    ```
+
+    !!! note
+
+        ``` console
+        SPI Data Clear(H'FF) Check : H'00000000-0000FFFF,Clear OK?(y/n)
+        ```
+
+        In case a message to prompt to clear data like above, please enter ++y++.
+
+    After writing the two loader files normally, change the serial communication protocol speed from `#!bash 921600` bps to `#!bash 115200` bps.
+
+    At last, turn off the power of the board by pressing POWER.
+
+    !!! note
+
+        - Address for sending each loader binary file for QSPI boot
+
+            !!! content-wrapper no-indent table-no-sort table-no-hover ""
+
+                |                 File name                 | Address to load to RAM | Address to save to ROM |
+                |:-----------------------------------------:|:----------------------:|:----------------------:|
+                | `#!bash bl2_bp_spi-smarc-rzg3l.srec`      | `#!bash 21E00`         | `#!bash 00000`         |
+                | `#!bash fip-smarc-rzg3l.srec`             | `#!bash 00000`         | `#!bash 60000`         |

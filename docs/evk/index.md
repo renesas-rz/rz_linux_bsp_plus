@@ -14,6 +14,7 @@ hide:
 {% include "./_components/rz-g2lc-evk.md" %}
 {% include "./_components/rz-g2ul-evk.md" %}
 {% include "./_components/rz-g3s-evk.md" %}
+{% include "./_components/rz-g3l-evk.md" %}
 
 </div>
 
