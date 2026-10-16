@@ -64,14 +64,27 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
     ```
     {: .dollar }
 
-    ```bash
-    git clone https://github.com/renesas-rz/meta-renesas
-    cd meta-renesas
-    git checkout -b tmp BSP-PLUS-K6.12-V3.0
-    cd ../
-    kas checkout meta-renesas/kas/base.yml
-    ```
-    {: .dollar }
+    === "RZ/T2H"
+
+        ```bash
+        git clone https://github.com/renesas-rz/meta-renesas
+        cd meta-renesas
+        git checkout -b tmp BSP-PLUS-K6.12-V3.0
+        cd ../
+        kas checkout meta-renesas/kas/base.yml
+        ```
+        {: .dollar }
+
+    === "RZ/N2H"
+
+        ```bash
+        git clone https://github.com/renesas-rz/meta-renesas
+        cd meta-renesas
+        git checkout -b tmp BSP-PLUS-K6.12-V3.0
+        cd ../
+        kas checkout meta-renesas/kas/base.yml
+        ```
+        {: .dollar }
 
 5.  Initialize build environment
 
@@ -83,13 +96,17 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
     ```
     {: .dollar }
 
-6.  Install `#!bash ethtool` command
+6.  Enable the command for writing a boot image to eMMC
 
-    `#!bash ethtool` command is a command for configuring network interfaces. If you want to install the `#!bash ethtool` command on Linux, modify local.conf by the following instruction.
+    If you need to create the filesystem for the block devices on the evaluation board,
+    please add `#!bash bmaptool` command sets to root filesystem by local.conf.
+
+    !!! danger "Caution"
+        If eMMC boot is required, this step is mandatory.
 
     ```bash
     cd ${WORK}/build
-    echo 'IMAGE_INSTALL:append = " ethtool"' >> conf/local.conf
+    echo 'IMAGE_INSTALL:append = " bmaptool"'>> conf/local.conf
     ```
     {: .dollar }
 
