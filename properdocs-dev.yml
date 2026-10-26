@@ -1,5 +1,5 @@
 # load all default config here
-INHERIT: ./mkdocs.yml
+INHERIT: ./properdocs.yml
 
 # overwrite plugins:
 #   disable glightbox

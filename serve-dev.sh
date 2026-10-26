@@ -8,4 +8,4 @@ port=8000
 
 address=$ip:$port
 
-mkdocs serve -f mkdocs-dev.yml -a $address
+properdocs serve -f properdocs-dev.yml -a $address
