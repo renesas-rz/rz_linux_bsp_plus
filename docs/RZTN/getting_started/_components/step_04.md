@@ -30,6 +30,15 @@ Below steps are for `#!bash wic` image.
         !!! danger "Caution"
             Even if you see a message such as `#!bash you need to format the disk` before/after writing the image, do not format the SD card.
 
+    === "RZ/T2N"
+
+        Image file is:
+
+        * `#!bash core-image-minimal-rzt2n-dev.rootfs.wic.gz`
+
+        !!! danger "Caution"
+            Even if you see a message such as `#!bash you need to format the disk` before/after writing the image, do not format the SD card.
+
 ### 2. In case of Linux PC (Ubuntu)
 
 1.  Download or copy the release package into your PC
@@ -116,3 +125,14 @@ Below steps are for `#!bash wic` image.
             Additionally, the file below is also required:
 
             * `#!bash core-image-minimal-rzn2h-dev.rootfs.wic.bmap`
+
+    === "RZ/T2N"
+
+        Image file is:
+
+        * `#!bash core-image-minimal-rzt2n-dev.rootfs.wic.gz`
+
+        !!! note
+            Additionally, the file below is also required:
+
+            * `#!bash core-image-minimal-rzt2n-dev.rootfs.wic.bmap`

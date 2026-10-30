@@ -27,6 +27,7 @@ hide:
 
 {% include "./_components/rz-t2h-evk.md" %}
 {% include "./_components/rz-n2h-evk.md" %}
+{% include "./_components/rz-t2n-evk.md" %}
 
 </div>
 

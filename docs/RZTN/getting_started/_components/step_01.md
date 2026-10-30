@@ -37,3 +37,25 @@ Click the button below to get the board.
     | USB Mini B Cable          | For serial communication between PC and the board  |
     | USB Type C Cable          | For Power supply (15V)                             |
     | USB Micro B Cable         | For on-board emulator connection                   |
+
+=== "RZ/T2N"
+
+    ![](./../../evk/images/RZ-T2N-EVK-angle.png){ align=right width=220 style=max-width:35%; }
+
+    The RZ/T2N Evaluation Board Kit (EVK) is the ideal board kit for RZ/T2N evaluation.
+
+    Following items are included in the RZ/T2N Evaluation Board Kit.
+
+    !!! content-wrapper no-indent ""
+
+    +---------------------------+---------------------------------------------------+
+    | Equipment                 | Details                                           |
+    +===========================+===================================================+
+    | RZ/T2N Evaluation         | Evaluation board itself                           |
+    +---------------------------+---------------------------------------------------+
+    | USB Micro B Cable (x2)    | For serial communication between PC and the board |
+    |                           |                                                   |
+    |                           | For on-board emulator connection                  |
+    +---------------------------+---------------------------------------------------+
+    | USB Type C Cable          | For Power supply (15V)                            |
+    +---------------------------+---------------------------------------------------+
