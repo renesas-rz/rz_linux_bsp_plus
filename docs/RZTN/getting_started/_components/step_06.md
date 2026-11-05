@@ -107,6 +107,6 @@ In this case use **xSPI boot** and SD card.
         !!! note
             RZ Linux BSP Plus provides the following documentation. Please refer to the documents below for details.
 
-            * **[BSP Manual Set](https://www.renesas.com/document/swo/bsp-manual-set-rzt2h-rzn2h-and-rzt2n-group){: target=_blank }**
+            * **[BSP Manual Set](https://www.renesas.com/document/mas/bsp-manual-set-rzt2h-rzn2h-and-rzt2n-group){: target=_blank }**
 
                 BSP Manual Set is a software manual that describes the function and interface specifications of driver module. Please refer to it when controlling hardware in each product.

@@ -233,21 +233,6 @@ Please setup following below diagram.
                 |:--------------:|:--------------:|:--------------:|:--------------:|
                 |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |
 
-    * MODE (BOOT) SW8
-
-        <div class="grid cards cards-fullwidth" markdown>
-
-        - **SCIF Download Mode**
-
-            ---
-
-            !!! content-wrapper no-indent table-no-sort table-no-hover ""
-
-
-                |      SW8-1     |      SW8-2     |      SW8-3     |      SW8-4     |
-                |:--------------:|:--------------:|:--------------:|:--------------:|
-                |  OFF {: .red}  | ON {: .green } |  OFF {: .red}  |  OFF {: .red}  |
-
         - **xSPI Boot Mode**
 
             ---

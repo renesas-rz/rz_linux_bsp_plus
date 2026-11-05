@@ -124,27 +124,10 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
         ```bash
         git clone https://github.com/renesas-rz/meta-renesas
         cd meta-renesas
-        git checkout -b tmp RZT2N-BSP-1.0.0-RC2
+        git checkout -b tmp RZT2N-BSP-1.0.0
         cd ${WORK}
         ```
         {: .dollar }
-
-        !!! danger "Caution"
-
-            Optional fix for the USB2 PHY driver issue.  
-            If you need to work around this issue, please refer to the following procedure to rebuild the environment and apply the fix.  
-
-            ```bash
-            cd ${WORK}/meta-renesas
-            git cherry-pick 3a0ace60e
-            cd ${WORK}
-            ```
-            {: .dollar}
-
-            Please note that the following packages are not compatible with this procedure.
-
-            * Industrial Network Package 
-            * Time Sensitive Network Package
 
 5.  Initialize build environment
 
@@ -364,7 +347,7 @@ This step explains how to build Linux environment with Renesas RZ Linux BSP Plus
             {: .dollar }
 
         !!! note
-            Refer to the [RZ/T2N Group DDR Design Contents](https://www.renesas.com/document/gde/rzt2n-group-ddr-design-contents) available on the Renesas website. Follow the accompanying guide to generate an ECC-enabled DDR memory initialization parameter file, and integrate the generated file into the build environment.
+            Refer to the [RZ/T2N Group DDR Design Contents](https://www.renesas.com/document/bdf/rzt2n-group-ddr-design-contents) available on the Renesas website. Follow the accompanying guide to generate an ECC-enabled DDR memory initialization parameter file, and integrate the generated file into the build environment.
 
         !!! note
             If you need the Flash Programmer source code, please download and use it from the link below.  
