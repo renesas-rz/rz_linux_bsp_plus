@@ -136,12 +136,10 @@ plugins:
   - exclude:
       glob:
         - _*
+        - "*/_*"
+        - "*/*/_*"
         # - guidelines/_*/*
         - guidelines/*
-        - evk/_*/*
-        - RZ*/*/_*/*
-        - history/_*/*
-        - getting_started/_*/*
   - glightbox
   - include-markdown
   # - mkdocs-video
