@@ -52,13 +52,13 @@ Please obtain the necessary files from the following links according to the feat
 
         [:octicons-download-16: Get Industrial Network Package](https://www.renesas.com/document/swo/rzt2h-rzn2h-industrial-network-package-v5010){ .md-button .btn-round target=_blank}
 
-    -   **Openplc Package**
+    -   **OpenPLC Package**
 
         ---
 
         This package provides instructions for installing OpenPLC and the OpenPLC Runtime on a Windows PC and the evaluation board. For more datails, please refer to the documentation included in the package. This package is also compatible with Verified Linux Package v5.0.0. When using Linux BSP Plus, replace the package name in the document accordingly.
 
-        [:octicons-download-16: Get Openplc Package](https://www.renesas.com/document/apn/rzt2h-rzn2h-openplc-runtime-installation-and-connectivity){ .md-button .btn-round target=_blank}
+        [:octicons-download-16: Get OpenPLC Package](https://www.renesas.com/document/apn/rzt2h-rzn2h-openplc-runtime-installation-and-connectivity){ .md-button .btn-round target=_blank}
 
     -   **CODESYS Package**
 
@@ -118,13 +118,13 @@ Please obtain the necessary files from the following links according to the feat
 
         [:octicons-download-16: Get Industrial Network Package](https://www.renesas.com/document/swo/rzt2h-rzn2h-industrial-network-package-v5010){ .md-button .btn-round target=_blank}
 
-    -   **Openplc Package**
+    -   **OpenPLC Package**
 
         ---
 
         This package provides instructions for installing OpenPLC and the OpenPLC Runtime on a Windows PC and the evaluation board. For more datails, please refer to the documentation included in the package. This package is also compatible with Verified Linux Package v5.0.0. When using Linux BSP Plus, replace the package name in the document accordingly.
 
-        [:octicons-download-16: Get Openplc Package](https://www.renesas.com/document/apn/rzt2h-rzn2h-openplc-runtime-installation-and-connectivity){ .md-button .btn-round target=_blank}
+        [:octicons-download-16: Get OpenPLC Package](https://www.renesas.com/document/apn/rzt2h-rzn2h-openplc-runtime-installation-and-connectivity){ .md-button .btn-round target=_blank}
 
     -   **CODESYS Package**
 
